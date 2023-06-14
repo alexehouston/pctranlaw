@@ -1,0 +1,14 @@
+.nav-link a {
+    font-size: .85rem;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+.social-icon {
+    transition: all .5s ease;
+}
+
+.social-icon:hover {
+    color: var(--pctpink);
+    transform: scale(1.3);
+}
