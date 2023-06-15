@@ -7,8 +7,9 @@ export default function Home() {
     <>
         <div className="home-banner container-fluid p-0 h-75"></div>
 
-        <div className="home-text position-absolute">
-            <h1 className="home-title text-uppercase text-white">Justice With Claws</h1>
+        <div className="home-text position-absolute top-50">
+            <img className="home-title pb-5" src="/assets/PCT-logo-txtonly.png" width="600" />
+            <h1 className="home-subtitle text-uppercase">Justice With Claws</h1>
             <div className="home-btn parallelogram text-uppercase mt-2">Learn More <FontAwesomeIcon icon={faChevronRight} className="ps-2 text-pink" /></div>
         </div>
 

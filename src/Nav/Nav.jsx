@@ -35,16 +35,16 @@ export default function Nav() {
                 <span className="text-white underline-animation">ptran@pctranlaw.com</span>
             </a>
           </li>
-          <li>
+          {/* <li>
             <a className="text-white" href="" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faFacebook} className="social-icon px-4" /></a>
             <a className="text-white" href="" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faTwitter} className="social-icon px-4" /></a>
             <a className="text-white" href="" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faInstagram} className="social-icon px-4" /></a>
-          </li>
+          </li> */}
         </ul>
       </div>
-      <div className="container-fluid pt-4 pb-5">
-        <div className="row mx-auto d-flex align-items-center w-50">
-            <div className="col-4 text-center text-uppercase d-flex">
+      <div className="container-fluid pt-3 pb-4">
+        <div className="row mx-auto d-flex align-items-center w-75">
+            <div className="col-5 text-center text-uppercase d-flex">
                 <div className="nav-link col-6">
                     <a className="text-black underline-animation" href="" target="_blank" rel="noreferrer">Home</a>
                 </div>
@@ -52,8 +52,8 @@ export default function Nav() {
                     <a className="text-black underline-animation" href="" target="_blank" rel="noreferrer">Practice Areas</a>
                 </div>
             </div>
-            <div className="col-4 text-center"><img src="/assets/PCT-logo-notxt.png" height="150" /></div>
-            <div className="col-4 text-center text-uppercase d-flex">
+            <div className="col-2 text-center"><img src="/assets/PCT-logo.png" height="180" /></div>
+            <div className="col-5 text-center text-uppercase d-flex">
                 <div className="nav-link col-4">
                     <a className="text-black underline-animation" href="" target="_blank" rel="noreferrer">Contact</a>
                 </div>
