@@ -32,11 +32,12 @@ li {
 .home-banner {
   background-image: url("https://static.vecteezy.com/system/resources/previews/004/340/263/large_2x/judge-gavel-on-a-wooden-desk-law-concept-free-photo.jpg");
   background-size: cover;
-  background-position: bottom;
+  background-position: top;
+  background-attachment: fixed;
 }
 
 .home-text {
-  bottom: 35%;
+  bottom: 28%;
   left: 12%;
 }
 
@@ -68,4 +69,48 @@ li {
   background: var(--pctwhite);
   z-index: -1;
   transform: skew(-15deg);
+}
+
+.parallelogram-inverse {
+  padding: 10px 20px;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+}
+
+.parallelogram-inverse:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  border: 2px solid var(--pctwhite);
+  z-index: -1;
+  transform: skew(-15deg);
+}
+
+.underline-animation {
+  display: inline-block;
+  position: relative;
+  color: #0087ca;
+}
+
+.underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--pctgold);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
