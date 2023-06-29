@@ -11,7 +11,7 @@ export default function Nav() {
   return (
     <div className="Nav">
       <div className="container-fluid bg-black p-0">
-        <ul className="text-white d-flex justify-content-around m-0 py-3 px-5">
+        <ul className="text-white d-flex justify-content-around m-0 py-2 px-5">
           <li>
             <a className="text-uppercase text-thin" href="tel:8327766979">
               <FontAwesomeIcon icon={faPhone} className="pe-2 text-pink" />
@@ -52,11 +52,13 @@ export default function Nav() {
         </ul>
       </div>
 
-      <div className="container-fluid pt-3 pb-4">
-        <div className="row mx-auto d-flex flex-column justify-content-center align-items-center w-75">
-          <div className="text-center">
-            <img src="/assets/PCT-logo.png" height="200" />
-          </div>
+      <div className="container-fluid pt-3 pb-4 d-flex flex-column justify-content-center align-items-center">
+        <div className="coin mb-4">
+          <div className="front"></div>
+          <div className="back"></div>
+          <div className="side"></div>
+        </div>
+        <div className="d-flex flex-column justify-content-center align-items-center w-75">
           <ul className="ribbon-nav w-50 position-relative d-flex justify-content-around">
             <li className="nav-link p-0 lh-1 text-uppercase">
               <a className="underline-animation" href="#">
@@ -75,7 +77,8 @@ export default function Nav() {
             </li>
             <li className="nav-link p-0 lh-1 text-uppercase">
               <a className="underline-animation" href="#">
-                Consultation <FontAwesomeIcon icon={faChevronRight} className="text-pink" />
+                Consultation{" "}
+                <FontAwesomeIcon icon={faChevronRight} className="text-pink" />
               </a>
             </li>
           </ul>

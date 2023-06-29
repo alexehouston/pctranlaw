@@ -60,3 +60,32 @@
 .ribbon-nav > li > a:hover {
   color: var(--pctpink);
 }
+
+.coin {
+  height: 12rem;
+  width: 12rem;
+  transform-style: preserve-3d;
+  transform-origin: 50%;
+  animation: spin 8s infinite;
+  animation-timing-function: linear;
+}
+
+.coin .front,
+.coin .back {
+  position: absolute;
+  height: 12rem;
+  width: 12rem;
+  border-radius: 50%;
+  background-size: cover;
+  background-color: var(--pctwhite);
+  background-image: url("/assets/PCT-logo.png");
+}
+
+@keyframes spin {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}

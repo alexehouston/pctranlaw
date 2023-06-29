@@ -1,7 +1,6 @@
 .home-banner {
-  background-image: url("https://www.nossaman.com/assets/images-t1687562887/146.jpeg");
+  background-image: url("/assets/lady-justice.webp");
   background-size: cover;
-  /* background-position: bottom; */
   /* background-attachment: fixed; */
 }
 

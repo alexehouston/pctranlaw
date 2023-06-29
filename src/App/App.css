@@ -64,7 +64,7 @@ li {
   bottom: 0;
   left: 0;
   background: transparent;
-  border: 2px solid var(--pctwhite);
+  border: 2px solid var(--pctgold);
   z-index: -1;
   transform: skew(-15deg);
 }
