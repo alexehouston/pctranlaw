@@ -7,6 +7,13 @@
   --pctgold: #ffbf46;
 }
 
+body {
+  background-image: url("/assets/lady-justice.jpg");
+  background-size: cover;
+  background-position: center;
+  /* background-attachment: fixed; */
+}
+
 * {
   box-sizing: border-box;
   font-family: "Jost", sans-serif;
@@ -35,6 +42,7 @@ li {
   position: relative;
   color: var(--pctblack);
   z-index: 1;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .parallelogram:before {
@@ -48,6 +56,7 @@ li {
   z-index: -1;
   transform: skew(-15deg);
 }
+
 
 .parallelogram-inverse {
   padding: 10px 20px;
@@ -90,4 +99,13 @@ li {
 .underline-animation:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
+}
+
+.btn-hover {
+  transition: all .5s ease;
+}
+
+.btn-hover:hover {
+  color: var(--pctpink) !important;
+  transform: translateY(-15%);
 }

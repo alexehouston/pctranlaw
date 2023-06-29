@@ -3,6 +3,7 @@ import Home from '../Home/Home';
 import Social from '../Social/Social';
 import Footer from '../Footer/Footer'
 import "bootstrap/dist/css/bootstrap.min.css";
+import 'animate.css';
 import "./App.css";
 
 export default function App() {

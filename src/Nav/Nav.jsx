@@ -1,16 +1,17 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faPhone,
-  faLocationDot,
-  faEnvelope,
+  // faPhone,
+  // faLocationDot,
+  // faClock,
+  // faEnvelope,
   faChevronRight,
 } from "@fortawesome/free-solid-svg-icons";
 import "./Nav.css";
 
 export default function Nav() {
   return (
-    <div className="Nav">
-      <div className="container-fluid bg-black p-0">
+    <div className="Nav animate__animated animate__fadeInDown animate__slow">
+      {/* <div className="container-fluid bg-black p-0">
         <ul className="text-white d-flex justify-content-around m-0 py-2 px-5">
           <li>
             <a className="text-uppercase text-thin" href="tel:8327766979">
@@ -43,6 +44,19 @@ export default function Nav() {
               target="_blank"
               rel="noreferrer"
             >
+              <FontAwesomeIcon icon={faClock} className="pe-2 text-pink" />
+              <span className="text-white underline-animation">
+                Mon - Fri: 9AM - 5PM
+              </span>
+            </a>
+          </li>
+          <li>
+            <a
+              className="text-uppercase text-thin"
+              href="mailto:ptran@pctranlaw.com?subject=PCT Law Inquiry"
+              target="_blank"
+              rel="noreferrer"
+            >
               <FontAwesomeIcon icon={faEnvelope} className="pe-2 text-pink" />
               <span className="text-white underline-animation">
                 ptran@pctranlaw.com
@@ -50,13 +64,12 @@ export default function Nav() {
             </a>
           </li>
         </ul>
-      </div>
+      </div> */}
 
-      <div className="container-fluid pt-3 pb-4 d-flex flex-column justify-content-center align-items-center">
-        <div className="coin mb-4">
+      <div className="container-fluid pb-5 d-flex flex-column justify-content-center align-items-center">
+        <div className="pct-logo my-5">
           <div className="front"></div>
           <div className="back"></div>
-          <div className="side"></div>
         </div>
         <div className="d-flex flex-column justify-content-center align-items-center w-75">
           <ul className="ribbon-nav w-50 position-relative d-flex justify-content-around">
@@ -72,7 +85,7 @@ export default function Nav() {
             </li>
             <li className="nav-link p-0 lh-1 text-uppercase">
               <a className="underline-animation" href="#">
-                Contact
+                Contact Us
               </a>
             </li>
             <li className="nav-link p-0 lh-1 text-uppercase">
