@@ -11,13 +11,13 @@ export default function Nav({ isSmallScreen }) {
           <div className="front"></div>
           <div className="back"></div>
         </div>
-        <ul className="ribbon-nav position-relative d-flex justify-content-center align-items-center px-3">
+        <ul className="ribbon-nav position-relative d-flex justify-content-center align-items-center p-0 py-3">
           {isSmallScreen ? (
             <>
-              <li className="nav-link lh-1 pe-3 text-uppercase my-3">
+              <li className="nav-link lh-1 text-uppercase">
                 <div className="dropdown">
                   <a
-                    className="underline-animation dropdown-toggle text-white"
+                    className="underline-animation dropdown-toggle text-white d-flex align-items-center mx-3"
                     href="#"
                     role="button"
                     id="navLinksDropdown"
@@ -27,7 +27,7 @@ export default function Nav({ isSmallScreen }) {
                     Explore{" "}
                     <FontAwesomeIcon
                       icon={faChevronDown}
-                      className="text-pink"
+                      className="text-pink ps-1"
                     />
                   </a>
                   <ul
@@ -52,8 +52,8 @@ export default function Nav({ isSmallScreen }) {
                   </ul>
                 </div>
               </li>
-              <li className="nav-link text-uppercase">
-                <a href="#" className="underline-animation p-0 my-3 ps-3">
+              <li className="nav-link text-uppercase mx-3 d-flex align-items-center">
+                <a href="#" className="underline-animation p-0">
                   Consultation{" "}
                   <FontAwesomeIcon icon={faChevronDown} className="text-pink" />
                 </a>

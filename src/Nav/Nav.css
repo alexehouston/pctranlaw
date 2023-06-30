@@ -6,7 +6,6 @@
 }
 
 .nav-link a {
-  font-size: 0.9rem;
   letter-spacing: 2px;
   font-weight: 500;
 }
@@ -91,6 +90,10 @@
 
 .dropdown-toggle::after {
   display: none !important;
+}
+
+#navLinksDropdown {
+  height: 21.6px !important;
 }
 
 @keyframes spin {
