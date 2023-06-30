@@ -67,7 +67,7 @@ export default function Nav({ isSmallScreen }) {
                 </a>
               </li>
               <li className="nav-link text-uppercase">
-                <div className="dropdown underline-animation p-0 my-2 mx-4">
+                <div className="dropdown underline-animation p-0 my-2 mx-4 d-flex align-items-center">
                   <a
                     className="dropdown-toggle text-white"
                     href="#"

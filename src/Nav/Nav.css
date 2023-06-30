@@ -96,6 +96,14 @@
   height: 21.6px !important;
 }
 
+.dropdown-toggle {
+  transition: all .5s ease;
+}
+
+.dropdown:hover .dropdown-toggle {
+  color: var(--pctpink) !important;
+}
+
 @keyframes spin {
   from {
     transform: rotateY(0deg);
