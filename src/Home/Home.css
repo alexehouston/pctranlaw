@@ -4,13 +4,22 @@
   letter-spacing: 13px;
 }
 
+.responsive-image {
+  max-width: 38rem;
+  height: auto;
+}
+
 .home-btn {
   letter-spacing: 5px;
 }
 
 .home-about {
   z-index: 999;
-  margin-top: -17rem;
+  margin-top: -16rem;
+}
+
+.home-contact {
+  margin-top: -13rem;
 }
 
 .about-img {
@@ -23,8 +32,44 @@
 }
 
 @media (max-width: 576px) {
-  .home-services, .home-contact {
+  .home-landing {
+    background-image: url("/assets/lady-justice-mobile.jpg") !important;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }
+
+  .responsive-image {
+    max-width: 21rem;
+    margin: 0 !important;
+  }
+  
+  .home-title {
+    z-index: -1;
+  }
+
+  .home-subtitle {
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 6px;
+    line-height: 0;
+  }
+
+  .home-services {
     flex-direction: column !important;
     row-gap: 3rem;
+  }
+
+  .home-about {
+    margin-top: -10rem;
+    width: 90%;
+  }
+
+  .home-contact {
+    margin-top: 0;
+  }
+
+  .home-contact-inner {
+    width: 90% !important;
   }
 }

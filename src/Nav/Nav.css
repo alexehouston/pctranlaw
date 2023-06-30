@@ -1,6 +1,8 @@
 .Nav {
   background-size: cover;
   background-attachment: fixed;
+  position: relative;
+  z-index: 10;
 }
 
 .nav-link a {
@@ -34,7 +36,7 @@
 .ribbon-nav::before {
   content: "";
   position: absolute;
-  top: 6px;
+  top: -8px;
   border: 23px solid #000;
   z-index: -1;
   border-radius: 5px;
@@ -70,6 +72,8 @@
   transform-origin: 50%;
   animation: spin 8s infinite;
   animation-timing-function: linear;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 .pct-logo .front,
@@ -81,11 +85,33 @@
   background-image: url("/assets/PCT-3d-logo.png");
 }
 
+.dropdown-item:hover {
+  background-color: var(--pctpink) !important;
+}
+
+.dropdown-toggle::after {
+  display: none !important;
+}
+
 @keyframes spin {
   from {
     transform: rotateY(0deg);
   }
   to {
     transform: rotateY(360deg);
+  }
+}
+
+@media (max-width: 576px) {
+  .Nav {
+    z-index: 5000 !important;
+  }
+  .pct-logo {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .ribbon-nav {
+    margin: 2rem;
   }
 }
