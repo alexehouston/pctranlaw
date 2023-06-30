@@ -370,15 +370,15 @@ export default function Home({ isSmallScreen }) {
               </div>
               <div className="col-12 col-lg-7 ps-5">
                 <h2 className="text-center">Let Us Know How We Can Help!</h2>
-                <div className="d-flex justify-content-around py-5 text-uppercase w-75 mx-auto">
-                  <div className="btn-hover text-center bg-dark text-white rounded-pill h-50 p-3">
+                <div className="d-flex justify-content-around py-5 mb-2 text-uppercase w-75 mx-auto">
+                  <div className="contact-btn btn-hover text-center bg-dark text-white rounded-pill h-50 p-3">
                     <FontAwesomeIcon
                       className="text-pink pe-2"
                       icon={faPhone}
                     />{" "}
                     (832) 776 - 6979
                   </div>
-                  <div className="btn-hover text-center bg-dark text-white rounded-pill h-50 p-3">
+                  <div className="contact-btn btn-hover text-center bg-dark text-white rounded-pill h-50 p-3">
                     <FontAwesomeIcon
                       className="text-pink pe-2"
                       icon={faEnvelope}

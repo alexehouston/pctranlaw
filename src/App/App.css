@@ -4,7 +4,8 @@
   --pctwhite: #ffffff;
   --pctblack: #000000;
   --pctpink: #facbe7;
-  --pctgold: #ffbf46;
+  --pctgold: #ffd077;
+  --pct-pink-shadow: rgba(255, 142, 221, 0.4) 0px 5px, rgba(255, 142, 221, 0.3) 0px 10px, rgba(255, 142, 221, 0.2) 0px 15px, rgba(255, 142, 221, 0.1) 0px 20px, rgba(255, 142, 221, 0.05) 0px 25px;
 }
 
 body {
@@ -107,8 +108,8 @@ li {
 }
 
 .btn-hover:hover {
-  color: var(--pctpink) !important;
-  transform: translateY(-15%);
+  color: var(--pctgold) !important;
+  transform: translateY(-20%) scale(1.1);
   cursor: pointer;
 }
 
