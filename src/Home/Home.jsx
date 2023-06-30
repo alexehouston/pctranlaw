@@ -338,7 +338,7 @@ export default function Home({ isSmallScreen }) {
               </div>
               <div className="col-12 shadow">
                 <Iframe
-                  className="border-0 rounded"
+                  className="border-0 rounded shadow container-fluid p-0"
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3464.3534410827156!2d-95.4788744!3d29.738482599999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640c3d8b898e3b1%3A0xc802476ac45119d8!2s5718%20Westheimer%20Rd%20%231125%2C%20Houston%2C%20TX%2077057!5e0!3m2!1sen!2sus!4v1688058584961!5m2!1sen!2sus"
                   height="100%"
                   width="100%"
