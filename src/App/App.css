@@ -109,15 +109,6 @@ li {
 
 .btn-hover:hover {
   color: var(--pctgold) !important;
-  transform: translateY(-20%) scale(1.1);
+  transform: translateY(-15%);
   cursor: pointer;
-}
-
-@media (max-width: 576px) {
-  /* body {
-    background-image: url("/assets/lady-justice-mobile.jpg") !important;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: bottom;
-  } */
 }

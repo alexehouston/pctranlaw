@@ -17,7 +17,7 @@ export default function Social({ isSmallScreen }) {
           >
             <FontAwesomeIcon
               icon={faFacebook}
-              className="social-icon btn-hover fs-1 p-2 text-white bg-dark rounded-pill"
+              className="social-icon btn-hover fs-1 p-3 text-white bg-dark rounded-pill"
             />
           </a>
           <a
@@ -28,7 +28,7 @@ export default function Social({ isSmallScreen }) {
           >
             <FontAwesomeIcon
               icon={faInstagram}
-              className="social-icon btn-hover fs-1 p-2 text-white bg-dark rounded-pill"
+              className="social-icon btn-hover fs-1 p-3 text-white bg-dark rounded-pill"
             />
           </a>
           <a
@@ -39,7 +39,7 @@ export default function Social({ isSmallScreen }) {
           >
             <FontAwesomeIcon
               icon={faEnvelope}
-              className="social-icon btn-hover fs-1 p-2 text-white bg-dark rounded-pill"
+              className="social-icon btn-hover fs-1 p-3 text-white bg-dark rounded-pill"
             />
           </a>
         </div>
