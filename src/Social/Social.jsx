@@ -10,36 +10,36 @@ export default function Social({ isSmallScreen }) {
       {isSmallScreen ? (
         <div className="Social position-fixed bottom-0 w-100 d-flex justify-content-center animate__animated animate__fadeInUp animate__slower">
           <a
-            className="btn-hover mx-4 mb-5"
+            className="social-icon btn-hover mx-4 mb-5 bg-dark rounded-pill"
             href=""
             target="_blank"
             rel="noreferrer"
           >
             <FontAwesomeIcon
               icon={faFacebook}
-              className="social-icon btn-hover fs-1 p-3 text-white bg-dark rounded-pill"
+              className="fs-1 p-2 text-white"
             />
           </a>
           <a
-            className="btn-hover mx-4 mb-5"
+            className="social-icon btn-hover mx-4 mb-5 bg-dark rounded-pill"
             href=""
             target="_blank"
             rel="noreferrer"
           >
             <FontAwesomeIcon
               icon={faInstagram}
-              className="social-icon btn-hover fs-1 p-3 text-white bg-dark rounded-pill"
+              className="fs-1 p-2 text-white"
             />
           </a>
           <a
-            className="btn-hover mx-4 mb-5"
+            className="social-icon btn-hover mx-4 mb-5 bg-dark rounded-pill"
             href=""
             target="_blank"
             rel="noreferrer"
           >
             <FontAwesomeIcon
               icon={faEnvelope}
-              className="social-icon btn-hover fs-1 p-3 text-white bg-dark rounded-pill"
+              className="fs-1 p-2 text-white"
             />
           </a>
         </div>
