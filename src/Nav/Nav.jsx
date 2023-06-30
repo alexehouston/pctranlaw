@@ -17,7 +17,7 @@ export default function Nav({ isSmallScreen }) {
               <li className="nav-link lh-1 text-uppercase">
                 <div className="dropdown">
                   <a
-                    className="underline-animation dropdown-toggle text-white d-flex align-items-center mx-3"
+                    className="underline-animation dropdown-toggle text-white mx-3"
                     href="#"
                     role="button"
                     id="navLinksDropdown"
@@ -63,7 +63,7 @@ export default function Nav({ isSmallScreen }) {
         ) : (
           <>
             <ul className="ribbon-nav position-relative d-flex justify-content-center align-items-center p-0 py-2">
-              <li className="nav-link text-uppercase">
+              <li className="nav-link text-uppercase mx-auto">
                 <a href="#" className="underline-animation p-0 my-2 mx-4">
                   Home
                 </a>

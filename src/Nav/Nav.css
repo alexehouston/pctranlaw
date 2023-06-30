@@ -5,6 +5,10 @@
   z-index: 10;
 }
 
+.nav-link {
+  height: 2.5rem !important;
+}
+
 .nav-link a {
   letter-spacing: 2px;
   font-weight: 500;
@@ -116,6 +120,10 @@
 @media (max-width: 576px) {
   .Nav {
     z-index: 5000 !important;
+  }
+
+  .nav-link {
+    height: 1.1rem !important;
   }
 
   .nav-link a {
