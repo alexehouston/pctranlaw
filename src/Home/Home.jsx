@@ -24,10 +24,10 @@ export default function Home({ isSmallScreen }) {
           <h1 className="home-subtitle text-uppercase ps-2 mt-3">
             Justice With Claws
           </h1>
-          <div className="btn-hover home-btn parallelogram text-uppercase mt-5">
+          <a href="#PracticeAreas" className="btn-hover home-btn parallelogram text-uppercase mt-5">
             Learn More{" "}
             <FontAwesomeIcon icon={faChevronDown} className="ps-2 text-pink" />
-          </div>
+          </a>
         </div>
       ) : (
         <div className="d-flex flex-column align-items-center home-text mt-3 mb-2 animate__animated animate__fadeInUp animate__slow h-50 mt-5 mb-5">
@@ -38,15 +38,15 @@ export default function Home({ isSmallScreen }) {
           <h1 className="home-subtitle text-uppercase ps-2 mt-3">
             Justice With Claws
           </h1>
-          <div className="btn-hover home-btn parallelogram text-uppercase mt-5">
+          <a href="#PracticeAreas" className="btn-hover home-btn parallelogram text-uppercase mt-5">
             Learn More{" "}
             <FontAwesomeIcon icon={faChevronDown} className="ps-2 text-pink" />
-          </div>
+          </a>
         </div>
       )}
 
       {isSmallScreen ? (
-        <div className="container-fluid p-0 pb-5 bg-black position-relative">
+        <div id="PracticeAreas" className="container-fluid p-0 pb-5 bg-black position-relative">
           <div className="container-fluid p-0 w-75 text-white">
             <h1 className="py-5 text-uppercase text-thin text-center">
               Our Practice Areas
@@ -93,7 +93,7 @@ export default function Home({ isSmallScreen }) {
           </div>
         </div>
       ) : (
-        <div className="container-fluid p-0 h-75 bg-black position-relative">
+        <div id="PracticeAreas" className="container-fluid p-0 h-75 bg-black position-relative">
           <div className="container-fluid p-0 w-75 text-white">
             <h1 className="py-5 text-uppercase text-thin">
               Our Practice Areas
@@ -219,20 +219,20 @@ export default function Home({ isSmallScreen }) {
               <div className="col-12">
                 <h2 className="text-center fs-4">Let Us Know How We Can Help!</h2>
                 <div className="d-flex flex-column justify-content-center pt-4 pb-5 text-uppercase mx-auto">
-                  <div className="btn-hover text-center bg-dark text-white rounded-pill h-50 p-3 my-2">
+                  <a href="tel:8327766979" className="btn-hover text-center bg-dark text-white rounded-pill h-50 p-3 my-2">
                     <FontAwesomeIcon
                       className="text-pink pe-2"
                       icon={faPhone}
                     />{" "}
                     (832) 776 - 6979
-                  </div>
-                  <div className="btn-hover text-center bg-dark text-white rounded-pill h-50 p-3 my-2">
+                  </a>
+                  <a href="mailto:ptran@pctranlaw.com?subject=PCT Law Inquiry" className="btn-hover text-center bg-dark text-white rounded-pill h-50 p-3 my-2">
                     <FontAwesomeIcon
                       className="text-pink pe-2"
                       icon={faEnvelope}
                     />{" "}
                     ptran<span className="text-pink small">@</span>pctranlaw.com
-                  </div>
+                  </a>
                 </div>
                 <div className="row mx-auto pb-5 d-flex justify-content-center">
                   <div className="col-6">
@@ -371,20 +371,20 @@ export default function Home({ isSmallScreen }) {
               <div className="col-12 col-lg-7 ps-5">
                 <h2 className="text-center">Let Us Know How We Can Help!</h2>
                 <div className="d-flex justify-content-around py-5 mb-2 text-uppercase w-75 mx-auto">
-                  <div className="contact-btn btn-hover text-center bg-dark text-white rounded-pill h-50 p-3">
+                  <a href="tel:8327766969" className="contact-btn btn-hover text-center bg-dark text-white rounded-pill h-50 p-3">
                     <FontAwesomeIcon
                       className="text-pink pe-2"
                       icon={faPhone}
                     />{" "}
                     (832) 776 - 6979
-                  </div>
-                  <div className="contact-btn btn-hover text-center bg-dark text-white rounded-pill h-50 p-3">
+                  </a>
+                  <a href="mailto:ptran@pctranlaw.com?subject=PCT Law Inquiry" className="contact-btn btn-hover text-center bg-dark text-white rounded-pill h-50 p-3">
                     <FontAwesomeIcon
                       className="text-pink pe-2"
                       icon={faEnvelope}
                     />{" "}
                     ptran<span className="text-pink small">@</span>pctranlaw.com
-                  </div>
+                  </a >
                 </div>
                 <div className="row mx-auto pb-3 d-flex justify-content-center">
                   <div className="col-5">

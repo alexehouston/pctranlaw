@@ -39,6 +39,10 @@ iframe {
   box-shadow: var(--pct-pink-shadow);
 }
 
+#PracticeAreas {
+  scroll-margin-top: -10px;
+}
+
 @media (max-width: 576px) {
   .home-landing {
     background-image: url("/assets/lady-justice-mobile.jpg") !important;

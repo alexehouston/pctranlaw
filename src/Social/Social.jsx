@@ -33,9 +33,7 @@ export default function Social({ isSmallScreen }) {
           </a>
           <a
             className="social-icon btn-hover mx-4 mb-5 bg-dark rounded-pill"
-            href=""
-            target="_blank"
-            rel="noreferrer"
+            href="mailto:ptran@pctranlaw.com?subject=PCT Law Inquiry"
           >
             <FontAwesomeIcon
               icon={faEnvelope}
@@ -69,9 +67,7 @@ export default function Social({ isSmallScreen }) {
           </a>
           <a
             className="btn-hover mx-4 mb-5"
-            href=""
-            target="_blank"
-            rel="noreferrer"
+            href="mailto:ptran@pctranlaw.com?subject=PCT Law Inquiry"
           >
             <FontAwesomeIcon
               icon={faEnvelope}
