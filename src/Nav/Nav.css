@@ -122,6 +122,10 @@
     font-size: .8rem;
   }
 
+  .ribbon-nav {
+    padding: 10rem !important;
+  }
+
   .pct-logo {
     margin-top: 2rem;
     margin-bottom: 1rem;
