@@ -12,7 +12,8 @@ body {
   background-image: url("/assets/lady-justice.jpg");
   background-size: cover;
   background-position: center;
-  background-color: #f8f2f2;
+  background-color: #ffffff;
+  background-repeat: no-repeat;
 }
 
 * {
@@ -111,4 +112,16 @@ li {
   color: var(--pctgold) !important;
   transform: translateY(-15%);
   cursor: pointer;
+}
+
+.btn-primary {
+  background-color: var(--pctblack);
+  border: none;
+  box-shadow: var(--pct-pink-shadow);
+  transition: all .5s ease;
+}
+
+.btn-primary:hover {
+  background-color: var(--pctblack);
+  color: var(--pctgold);
 }
