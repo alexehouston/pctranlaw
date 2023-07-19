@@ -9,10 +9,9 @@
 }
 
 body {
-  background-image: url("/assets/lady-justice.jpg");
   background-size: cover;
   background-position: center;
-  background-color: #ffffff;
+  background-color: #fff;
   background-repeat: no-repeat;
 }
 

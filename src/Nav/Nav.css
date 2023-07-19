@@ -27,63 +27,21 @@
   font-size: 0.7rem;
 }
 
-/* ribbon nav */
-
-.ribbon-nav {
-  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
-  background: #222;
-  border-radius: 5px;
-}
-
-.ribbon-nav::after,
-.ribbon-nav::before {
-  content: "";
-  position: absolute;
-  top: -8px;
-  border: 23px solid #000;
-  z-index: -1;
-  border-radius: 5px;
-}
-
-/* The left ribbon */
-.ribbon-nav::before {
-  border-left-color: transparent;
-  left: -30px;
-}
-
-/* The right ribbon */
-.ribbon-nav::after {
-  border-right-color: transparent;
-  right: -30px;
-}
-
-.ribbon-nav > li > a {
-  display: inline-block;
-  color: #fff;
-  padding: 15px;
-  text-shadow: 1px 2px rgba(0, 0, 0, 0.2);
-  transition: all 0.5s ease;
-}
-.ribbon-nav > li > a:hover {
-  color: var(--pctpink);
-}
-
 .pct-logo {
-  height: 13rem;
-  width: 13rem;
+  height: 11rem;
+  width: 11rem;
   transform-style: preserve-3d;
   transform-origin: 50%;
   animation: spin 8s infinite;
   animation-timing-function: linear;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+  margin: 2rem;
 }
 
 .pct-logo .front,
 .pct-logo .back {
   position: absolute;
-  height: 13rem;
-  width: 13rem;
+  height: 11rem;
+  width: 11rem;
   background-size: cover;
   background-image: url("/assets/PCT-3d-logo.png");
 }
@@ -118,28 +76,12 @@
 }
 
 @media (max-width: 576px) {
-  .Nav {
-    z-index: 5000 !important;
-  }
-
-  .nav-link {
-    height: 1.1rem !important;
-  }
-
   .nav-link a {
     font-size: .8rem;
-  }
-
-  .ribbon-nav {
-    padding: 10rem !important;
   }
 
   .pct-logo {
     margin-top: 2rem;
     margin-bottom: 1rem;
-  }
-
-  .ribbon-nav {
-    margin: 2rem;
   }
 }

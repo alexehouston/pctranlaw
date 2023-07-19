@@ -42,7 +42,7 @@ export default function Social({ isSmallScreen }) {
           </a>
         </div>
       ) : (
-        <div className="Social position-fixed top-50 d-flex flex-column animate__animated animate__fadeInLeft animate__slower">
+        <div className="Social position-fixed bottom-0 d-flex flex-column animate__animated animate__fadeInLeft animate__slower">
           <a
             className="btn-hover mx-4 mb-5"
             href=""

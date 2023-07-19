@@ -1,8 +1,14 @@
 .Social {
-    margin-top: -8rem;
+    margin-bottom: 15rem;
     z-index: 1000;
 }
 
 .social-icon {
     box-shadow: var(--pct-pink-shadow);
+}
+
+@media (max-width: 576px) {
+    .Social {
+        margin-bottom: 0;
+    }
 }

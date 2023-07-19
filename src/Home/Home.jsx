@@ -16,9 +16,9 @@ export default function Home({ isSmallScreen }) {
   return (
     <>
       {isSmallScreen ? (
-        <div className="home-landing d-flex flex-column align-items-center home-text animate__animated animate__fadeInUp animate__slow mt-4 h-50">
+        <div className="home-landing d-flex flex-column align-items-center home-text animate__animated animate__fadeInUp animate__slow h-75">
           <img
-            className="home-title pb-2 responsive-image"
+            className="home-title pb-2 responsive-image mt-5 pt-5"
             src="/assets/PCT-logo-txtonly.png"
           />
           <h1 className="home-subtitle text-uppercase ps-2 mt-3">
@@ -33,21 +33,26 @@ export default function Home({ isSmallScreen }) {
           </a>
         </div>
       ) : (
-        <div className="d-flex flex-column align-items-center home-text mt-3 mb-2 animate__animated animate__fadeInUp animate__slow h-50 mt-5 mb-5">
-          <img
-            className="home-title pb-2 responsive-image mt-5"
-            src="/assets/PCT-logo-txtonly.png"
-          />
-          <h1 className="home-subtitle text-uppercase ps-2 mt-3">
-            Justice With Claws
-          </h1>
-          <a
-            href="#PracticeAreas"
-            className="btn-hover home-btn parallelogram text-uppercase mt-5"
-          >
-            Learn More{" "}
-            <FontAwesomeIcon icon={faChevronDown} className="ps-2 text-pink" />
-          </a>
+        <div className="home-landing d-flex flex-column align-items-center home-text animate__animated animate__fadeInUp animate__slow h-75">
+          <div className="home-landing-inner position-absolute">
+            <img
+              className="home-title pb-2 responsive-image mt-5"
+              src="/assets/PCT-logo-txtonly.png"
+            />
+            <h1 className="home-subtitle text-uppercase ps-2 mt-3">
+              Justice With Claws
+            </h1>
+            <a
+              href="#PracticeAreas"
+              className="btn-hover home-btn parallelogram text-uppercase mt-5"
+            >
+              Learn More{" "}
+              <FontAwesomeIcon
+                icon={faChevronDown}
+                className="ps-2 text-pink"
+              />
+            </a>
+          </div>
         </div>
       )}
 
@@ -376,110 +381,111 @@ export default function Home({ isSmallScreen }) {
         </div>
       ) : (
         <div className="bg-white container-fluid">
-        <div className="container-fluid bg-white pb-5">
-          <div className="container-fluid p-0 w-75">
-            <h1 className="py-5 text-uppercase text-thin">Contact Us</h1>
-            <div className="d-flex pb-5">
-              <div className="col-12 col-lg-5 shadow">
-                <Iframe
-                  className="border-0 rounded"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3464.3534410827156!2d-95.4788744!3d29.738482599999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640c3d8b898e3b1%3A0xc802476ac45119d8!2s5718%20Westheimer%20Rd%20%231125%2C%20Houston%2C%20TX%2077057!5e0!3m2!1sen!2sus!4v1688058584961!5m2!1sen!2sus"
-                  height="100%"
-                  width="100%"
-                  frameBorder="0"
-                  allowFullScreen
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                />
-              </div>
-              <div className="col-12 col-lg-7 ps-5">
-                <h2 className="text-center">Let Us Know How We Can Help!</h2>
-                <div className="d-flex justify-content-around py-5 mb-2 text-uppercase w-75 mx-auto">
-                  <a
-                    href="tel:8327766969"
-                    className="contact-btn btn-hover text-center bg-dark text-white rounded-pill h-50 p-3"
-                  >
-                    <FontAwesomeIcon
-                      className="text-pink pe-2"
-                      icon={faPhone}
-                    />{" "}
-                    (832) 776 - 6979
-                  </a>
-                  <a
-                    href="mailto:ptran@pctranlaw.com?subject=PCT Law Inquiry"
-                    className="contact-btn btn-hover text-center bg-dark text-white rounded-pill h-50 p-3"
-                  >
-                    <FontAwesomeIcon
-                      className="text-pink pe-2"
-                      icon={faEnvelope}
-                    />{" "}
-                    ptran<span className="text-pink small">@</span>pctranlaw.com
-                  </a>
+          <div className="container-fluid bg-white pb-5">
+            <div className="container-fluid p-0 w-75">
+              <h1 className="py-5 text-uppercase text-thin">Contact Us</h1>
+              <div className="d-flex pb-5">
+                <div className="col-12 col-lg-5 shadow">
+                  <Iframe
+                    className="border-0 rounded"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3464.3534410827156!2d-95.4788744!3d29.738482599999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640c3d8b898e3b1%3A0xc802476ac45119d8!2s5718%20Westheimer%20Rd%20%231125%2C%20Houston%2C%20TX%2077057!5e0!3m2!1sen!2sus!4v1688058584961!5m2!1sen!2sus"
+                    height="100%"
+                    width="100%"
+                    frameBorder="0"
+                    allowFullScreen
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                  />
                 </div>
-                <div className="row justify-content-center mx-auto pb-3">
-                  <div className="col-5">
-                    <div className="input-group">
-                      <input
-                        className="form-control shadow"
-                        placeholder="Name"
-                        type="text"
-                        name="your-name"
-                      />
-                    </div>
+                <div className="col-12 col-lg-7 ps-5">
+                  <h2 className="text-center">Let Us Know How We Can Help!</h2>
+                  <div className="d-flex justify-content-around py-5 mb-2 text-uppercase w-75 mx-auto">
+                    <a
+                      href="tel:8327766969"
+                      className="contact-btn btn-hover text-center bg-dark text-white rounded-pill h-50 p-3"
+                    >
+                      <FontAwesomeIcon
+                        className="text-pink pe-2"
+                        icon={faPhone}
+                      />{" "}
+                      (832) 776 - 6979
+                    </a>
+                    <a
+                      href="mailto:ptran@pctranlaw.com?subject=PCT Law Inquiry"
+                      className="contact-btn btn-hover text-center bg-dark text-white rounded-pill h-50 p-3"
+                    >
+                      <FontAwesomeIcon
+                        className="text-pink pe-2"
+                        icon={faEnvelope}
+                      />{" "}
+                      ptran<span className="text-pink small">@</span>
+                      pctranlaw.com
+                    </a>
                   </div>
-                  <div className="col-5">
-                    <div className="input-group">
-                      <input
-                        className="form-control shadow"
-                        placeholder="Email"
-                        type="text"
-                        name="your-email"
-                      />
+                  <div className="row justify-content-center mx-auto pb-3">
+                    <div className="col-5">
+                      <div className="input-group">
+                        <input
+                          className="form-control shadow"
+                          placeholder="Name"
+                          type="text"
+                          name="your-name"
+                        />
+                      </div>
                     </div>
-                  </div>
-                  <div className="col-5">
-                    <div className="input-group">
-                      <input
-                        className="form-control shadow my-4"
-                        placeholder="Phone"
-                        type="text"
-                        name="phone"
-                      />
+                    <div className="col-5">
+                      <div className="input-group">
+                        <input
+                          className="form-control shadow"
+                          placeholder="Email"
+                          type="text"
+                          name="your-email"
+                        />
+                      </div>
                     </div>
-                  </div>
-                  <div className="col-5">
-                    <div className="input-group">
-                      <input
-                        className="form-control shadow my-4"
-                        placeholder="Subject"
-                        type="text"
-                        name="text-99"
-                      />
+                    <div className="col-5">
+                      <div className="input-group">
+                        <input
+                          className="form-control shadow my-4"
+                          placeholder="Phone"
+                          type="text"
+                          name="phone"
+                        />
+                      </div>
                     </div>
-                  </div>
-                  <div className="col-10">
-                    <div className="input-group input-button col-12">
-                      <textarea
-                        className="form-control shadow"
-                        placeholder="Brief Description of Your Legal Issue"
-                        name="message"
-                      ></textarea>
+                    <div className="col-5">
+                      <div className="input-group">
+                        <input
+                          className="form-control shadow my-4"
+                          placeholder="Subject"
+                          type="text"
+                          name="text-99"
+                        />
+                      </div>
                     </div>
-                  </div>
-                  <div className="col-10">
-                    <div className="input-group input-button">
-                      <input
-                        className="form-control btn btn-primary mt-5"
-                        type="submit"
-                        value="SEND MESSAGE"
-                      />
+                    <div className="col-10">
+                      <div className="input-group input-button col-12">
+                        <textarea
+                          className="form-control shadow"
+                          placeholder="Brief Description of Your Legal Issue"
+                          name="message"
+                        ></textarea>
+                      </div>
+                    </div>
+                    <div className="col-10">
+                      <div className="input-group input-button">
+                        <input
+                          className="form-control btn btn-primary mt-5"
+                          type="submit"
+                          value="SEND MESSAGE"
+                        />
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
         </div>
       )}
     </>

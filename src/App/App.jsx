@@ -1,4 +1,5 @@
 import {useState, useEffect } from 'react';
+import ContactBar from '../ContactBar/ContactBar';
 import Nav from '../Nav/Nav';
 import Home from '../Home/Home';
 import Social from '../Social/Social';
@@ -24,6 +25,7 @@ export default function App() {
 
   return (
     <div className="container-fluid p-0 vh-100">
+      <ContactBar />
       <Nav isSmallScreen={isSmallScreen} />
       <Home isSmallScreen={isSmallScreen} />
       <Social isSmallScreen={isSmallScreen} />
