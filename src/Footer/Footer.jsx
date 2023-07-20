@@ -10,26 +10,40 @@ export default function Footer({ isSmallScreen }) {
         <div className="row d-flex justify-content-center text-center text-white py-5 mb-5">
           <div className="col-4 col-lg-2">
             <h6 className="ftr-title text-uppercase">Services</h6>
-            <li className="ftr-link">
+            <li className="ftr-link text-start">
               <FontAwesomeIcon
                 icon={faChevronRight}
                 className="ftr-chevron text-pink"
               />
               &ensp;Business
             </li>
-            <li className="ftr-link">
+            <li className="ftr-link text-start">
               <FontAwesomeIcon
                 icon={faChevronRight}
                 className="ftr-chevron text-pink"
               />
               &ensp;Personal
             </li>
-            <li className="ftr-link">
+            <li className="ftr-link text-start">
               <FontAwesomeIcon
                 icon={faChevronRight}
                 className="ftr-chevron text-pink"
               />
               &ensp;Financial
+            </li>
+            <li className="ftr-link text-start">
+              <FontAwesomeIcon
+                icon={faChevronRight}
+                className="ftr-chevron text-pink"
+              />
+              &ensp;Criminal
+            </li>
+            <li className="ftr-link text-start">
+              <FontAwesomeIcon
+                icon={faChevronRight}
+                className="ftr-chevron text-pink"
+              />
+              &ensp;Employment
             </li>
           </div>
           <div className="col-4 col-lg-1">
@@ -37,21 +51,21 @@ export default function Footer({ isSmallScreen }) {
           </div>
           <div className="col-4 col-lg-2">
             <h6 className="ftr-title text-uppercase">Contact</h6>
-            <li className="ftr-link">
+            <li className="ftr-link text-start">
               <FontAwesomeIcon
                 icon={faChevronRight}
                 className="ftr-chevron text-pink"
               />
               &ensp;Business
             </li>
-            <li className="ftr-link">
+            <li className="ftr-link text-start">
               <FontAwesomeIcon
                 icon={faChevronRight}
                 className="ftr-chevron text-pink"
               />
               &ensp;Personal
             </li>
-            <li className="ftr-link">
+            <li className="ftr-link text-start">
               <FontAwesomeIcon
                 icon={faChevronRight}
                 className="ftr-chevron text-pink"
@@ -62,55 +76,45 @@ export default function Footer({ isSmallScreen }) {
         </div>
       ) : (
         <div className="row d-flex justify-content-center text-center text-white py-5">
-          <div className="col-4 col-lg-2">
-            <h6 className="ftr-title text-uppercase">Services</h6>
-            <li className="ftr-link">
-              <FontAwesomeIcon
-                icon={faChevronRight}
-                className="ftr-chevron text-pink"
-              />
-              &ensp;Business
-            </li>
-            <li className="ftr-link">
-              <FontAwesomeIcon
-                icon={faChevronRight}
-                className="ftr-chevron text-pink"
-              />
-              &ensp;Personal
-            </li>
-            <li className="ftr-link">
-              <FontAwesomeIcon
-                icon={faChevronRight}
-                className="ftr-chevron text-pink"
-              />
-              &ensp;Financial
-            </li>
-          </div>
           <div className="col-4 col-lg-1">
-            <img src="/assets/PCT-logo.png" height="100" />
+            <img src="/assets/PCT-logo.png" height="150" />
           </div>
-          <div className="col-4 col-lg-2">
-            <h6 className="ftr-title text-uppercase">Contact</h6>
-            <li className="ftr-link">
+          <div className="col-4 col-lg-1 ms-4">
+            <h6 className="ftr-title text-uppercase text-start">Services</h6>
+            <li className="ftr-link text-start">
               <FontAwesomeIcon
                 icon={faChevronRight}
                 className="ftr-chevron text-pink"
               />
               &ensp;Business
             </li>
-            <li className="ftr-link">
+            <li className="ftr-link text-start">
               <FontAwesomeIcon
                 icon={faChevronRight}
                 className="ftr-chevron text-pink"
               />
               &ensp;Personal
             </li>
-            <li className="ftr-link">
+            <li className="ftr-link text-start">
               <FontAwesomeIcon
                 icon={faChevronRight}
                 className="ftr-chevron text-pink"
               />
               &ensp;Financial
+            </li>
+            <li className="ftr-link text-start">
+              <FontAwesomeIcon
+                icon={faChevronRight}
+                className="ftr-chevron text-pink"
+              />
+              &ensp;Criminal
+            </li>
+            <li className="ftr-link text-start">
+              <FontAwesomeIcon
+                icon={faChevronRight}
+                className="ftr-chevron text-pink"
+              />
+              &ensp;Employment
             </li>
           </div>
         </div>

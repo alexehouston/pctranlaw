@@ -124,9 +124,3 @@ li {
   background-color: var(--pctblack);
   color: var(--pctgold);
 }
-
-.Nav {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
