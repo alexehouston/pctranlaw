@@ -1,13 +1,13 @@
 import PropTypes from "prop-types";
+import Logo from "../Logo/Logo";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faChevronDown,
+  faFolderOpen,
   faScaleBalanced,
-  faGavel,
-  faBuildingColumns,
-  faSuitcaseMedical,
+  faCar,
   faPhone,
   faEnvelope,
+  faChevronRight,
 } from "@fortawesome/free-solid-svg-icons";
 import Iframe from "react-iframe";
 import "./Home.css";
@@ -16,25 +16,20 @@ export default function Home({ isSmallScreen }) {
   return (
     <>
       {isSmallScreen ? (
-        <div className="home-landing d-flex flex-column align-items-center home-text animate__animated animate__fadeInUp animate__slow h-75">
+        <div className="home-landing d-flex flex-column align-items-center home-text animate__animated animate__fadeInUp animate__slow h-100 pt-5">
+          <Logo />
           <img
-            className="home-title pb-2 responsive-image mt-5 pt-5"
+            className="home-title pb-2 responsive-image pt-3"
             src="/assets/PCT-logo-txtonly.png"
           />
           <h1 className="home-subtitle text-uppercase ps-2 mt-3">
             Justice With Claws
           </h1>
-          <a
-            href="#PracticeAreas"
-            className="home-btn parallelogram text-uppercase mt-5"
-          >
-            Learn More{" "}
-            <FontAwesomeIcon icon={faChevronDown} className="ps-2 text-pink" />
-          </a>
         </div>
       ) : (
-        <div className="home-landing home-text animate__animated animate__fadeInUp animate__slow h-75">
+        <div className="home-landing home-text animate__animated animate__fadeInUp animate__slow h-100">
           <div className="home-landing-inner position-absolute d-flex flex-column align-items-center">
+            <Logo />
             <img
               className="home-title pb-2 responsive-image mt-5"
               src="/assets/PCT-logo-txtonly.png"
@@ -42,63 +37,53 @@ export default function Home({ isSmallScreen }) {
             <h1 className="home-subtitle text-uppercase ps-2 mt-3">
               Justice With Claws
             </h1>
-            <a
-              href="#PracticeAreas"
-              className="home-btn parallelogram text-uppercase mt-5"
-            >
-              Learn More{" "}
-              <FontAwesomeIcon
-                icon={faChevronDown}
-                className="ps-2 text-pink"
-              />
-            </a>
           </div>
         </div>
       )}
 
       {isSmallScreen ? (
-        <div
-          id="PracticeAreas"
-          className="container-fluid p-0 pb-5 bg-black position-relative"
-        >
+        <div className="container-fluid p-0 pb-5 bg-black position-relative">
           <div className="container-fluid p-0 w-75 text-white">
             <h1 className="py-5 text-uppercase text-thin text-center">
               Our Practice Areas
             </h1>
             <div className="home-services d-flex justify-content-around">
-              <div className="col-12 col-lg-2 position-relative parallelogram-inverse btn-hover">
+              <div
+                className="practices col-12 col-lg-2 position-relative btn-hover"
+                data-bs-toggle="modal"
+                data-bs-target="#personalInjuryModal"
+              >
                 <div className="fs-1 ps-3 text-pink position-absolute top-0 start-0 ms-4 mt-3 w-75 d-flex justify-content-between align-items-center">
                   <span>1</span>
-                  <FontAwesomeIcon icon={faSuitcaseMedical} />
+                  <FontAwesomeIcon icon={faCar} />
                 </div>
                 <p className="fs-2 mt-5 pt-3 text-center pe-3">
                   Personal Injury
                 </p>
               </div>
-              <div className="col-12 col-lg-2 position-relative parallelogram-inverse btn-hover">
+              <div
+                className="practices col-12 col-lg-2 position-relative btn-hover"
+                data-bs-toggle="modal"
+                data-bs-target="#intellectualPropertyModal"
+              >
                 <div className="fs-1 ps-3 text-pink position-absolute top-0 start-0 ms-4 mt-3 w-75 d-flex justify-content-between align-items-center">
                   <span>2</span>
-                  <FontAwesomeIcon icon={faGavel} />
+                  <FontAwesomeIcon icon={faFolderOpen} />
                 </div>
                 <p className="fs-2 mt-5 pt-3 text-center pe-3">
                   Intellectual Property
                 </p>
               </div>
-              <div className="col-12 col-lg-2 position-relative parallelogram-inverse btn-hover">
+              <div
+                className="practices col-12 col-lg-2 position-relative btn-hover"
+                data-bs-toggle="modal"
+                data-bs-target="#businessLawModal"
+              >
                 <div className="fs-1 ps-3 text-pink position-absolute top-0 start-0 ms-4 mt-3 w-75 d-flex justify-content-between align-items-center">
                   <span>3</span>
-                  <FontAwesomeIcon icon={faBuildingColumns} />
-                </div>
-                <p className="fs-2 mt-5 pt-3 text-center pe-3">Business Law</p>
-              </div>
-              <div className="col-12 col-lg-2 position-relative parallelogram-inverse btn-hover">
-                <div className="fs-1 ps-3 text-pink position-absolute top-0 start-0 ms-4 mt-3 w-75 d-flex justify-content-between align-items-center">
-                  <span>4</span>
                   <FontAwesomeIcon icon={faScaleBalanced} />
                 </div>
-                <p className="fs-2 mt-5 pt-3 text-center pe-3">
-                  Real Estate Law
-                </p>
+                <p className="fs-2 mt-5 pt-3 text-center pe-3">Business Law</p>
               </div>
             </div>
           </div>
@@ -107,48 +92,48 @@ export default function Home({ isSmallScreen }) {
           </div>
         </div>
       ) : (
-        <div
-          id="PracticeAreas"
-          className="container-fluid p-0 h-75 bg-black position-relative"
-        >
+        <div className="container-fluid p-0 h-75 bg-black position-relative mb-5">
           <div className="container-fluid p-0 w-75 text-white">
             <h1 className="py-5 text-uppercase text-thin">
               Our Practice Areas
             </h1>
             <div className="pt-5 home-services d-flex justify-content-around">
-              <div className="col-12 col-lg-2 position-relative parallelogram-inverse btn-hover">
+              <div
+                className="practices col-12 col-lg-3 position-relative btn-hover"
+                data-bs-toggle="modal"
+                data-bs-target="#personalInjuryModal"
+              >
                 <div className="fs-3 ps-3 text-pink position-absolute top-0 start-0 ms-4 mt-3 w-75 d-flex justify-content-between align-items-center">
                   <span>1</span>
-                  <FontAwesomeIcon icon={faSuitcaseMedical} />
+                  <FontAwesomeIcon icon={faCar} />
                 </div>
-                <p className="fs-5 mt-5 pt-3 text-center pe-3">
+                <p className="fs-3 mt-5 mb-4 pt-5 text-center pe-3">
                   Personal Injury
                 </p>
               </div>
-              <div className="col-12 col-lg-2 position-relative parallelogram-inverse btn-hover">
+              <div
+                className="practices col-12 col-lg-3 position-relative btn-hover"
+                data-bs-toggle="modal"
+                data-bs-target="#intellectualPropertyModal"
+              >
                 <div className="fs-3 ps-3 text-pink position-absolute top-0 start-0 ms-4 mt-3 w-75 d-flex justify-content-between align-items-center">
                   <span>2</span>
-                  <FontAwesomeIcon icon={faGavel} />
+                  <FontAwesomeIcon icon={faFolderOpen} />
                 </div>
-                <p className="fs-5 mt-5 pt-3 text-center pe-3">
+                <p className="fs-3 mt-5 mb-4 pt-5 text-center pe-3">
                   Intellectual Property
                 </p>
               </div>
-              <div className="col-12 col-lg-2 position-relative parallelogram-inverse btn-hover">
+              <div
+                className="practices col-12 col-lg-3 position-relative btn-hover"
+                data-bs-toggle="modal"
+                data-bs-target="#businessLawModal"
+              >
                 <div className="fs-3 ps-3 text-pink position-absolute top-0 start-0 ms-4 mt-3 w-75 d-flex justify-content-between align-items-center">
                   <span>3</span>
-                  <FontAwesomeIcon icon={faBuildingColumns} />
-                </div>
-                <p className="fs-5 mt-5 pt-3 text-center pe-3">Business Law</p>
-              </div>
-              <div className="col-12 col-lg-2 position-relative parallelogram-inverse btn-hover">
-                <div className="fs-3 ps-3 text-pink position-absolute top-0 start-0 ms-4 mt-3 w-75 d-flex justify-content-between align-items-center">
-                  <span>4</span>
                   <FontAwesomeIcon icon={faScaleBalanced} />
                 </div>
-                <p className="fs-5 mt-5 pt-3 text-center pe-3">
-                  Real Estate Law
-                </p>
+                <p className="fs-3 mt-5 mb-4 pt-5 text-center pe-3">Business Law</p>
               </div>
             </div>
           </div>
@@ -487,6 +472,163 @@ export default function Home({ isSmallScreen }) {
           </div>
         </div>
       )}
+
+      {/* Modals */}
+      <div
+        className="modal fade"
+        id="personalInjuryModal"
+        tabIndex="-1"
+        aria-labelledby="personalInjuryModalLabel"
+        aria-hidden="true"
+      >
+        <div className="modal-dialog modal-dialog-centered">
+          <div className="modal-content">
+            <div className="modal-header">
+              <h1
+                className="modal-title fs-3 w-100 text-center"
+                id="personalInjuryModalLabel"
+              >
+                Personal Injury
+              </h1>
+              <button
+                type="button"
+                className="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div className="modal-body text-center">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+              faucibus luctus elit, eu tristique turpis bibendum nec.
+              Suspendisse potenti. Cras condimentum convallis nisi, eu consequat
+              lorem. Quisque imperdiet metus sed vehicula venenatis. Suspendisse
+              neque justo, ultricies vitae eleifend et, elementum sit amet
+              massa. Donec ut massa lobortis, scelerisque sem quis, dignissim
+              metus. In nulla erat, fermentum id commodo id, dictum a odio.
+              Morbi interdum ut tellus in blandit. Etiam egestas iaculis
+              consequat. Cras tellus lorem, ullamcorper ac consectetur
+              scelerisque, consequat volutpat leo. Nullam eget condimentum nisi.
+              Nulla venenatis lacinia ullamcorper. Nunc turpis metus, feugiat ut
+              lectus vitae, mattis eleifend ipsum. Suspendisse potenti. Morbi
+              euismod non nisl eu dictum. Nam vel finibus odio. Sed vehicula
+              finibus pharetra.
+            </div>
+            <div className="modal-footer d-flex justify-content-center align-items-center">
+              <a className="modal-btn contact-btn btn-hover text-uppercase text-center bg-dark text-white rounded-pill h-50 p-3 m-3">
+                Get A Consultation
+                <FontAwesomeIcon
+                  className="text-pink ps-2"
+                  icon={faChevronRight}
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        className="modal fade"
+        id="intellectualPropertyModal"
+        tabIndex="-1"
+        aria-labelledby="intellectualPropertyModalLabel"
+        aria-hidden="true"
+      >
+        <div className="modal-dialog modal-dialog-centered">
+          <div className="modal-content">
+            <div className="modal-header">
+              <h1
+                className="modal-title fs-3 w-100 text-center"
+                id="intellectualPropertyModalLabel"
+              >
+                Intellectual Property
+              </h1>
+              <button
+                type="button"
+                className="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div className="modal-body text-center">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+              faucibus luctus elit, eu tristique turpis bibendum nec.
+              Suspendisse potenti. Cras condimentum convallis nisi, eu consequat
+              lorem. Quisque imperdiet metus sed vehicula venenatis. Suspendisse
+              neque justo, ultricies vitae eleifend et, elementum sit amet
+              massa. Donec ut massa lobortis, scelerisque sem quis, dignissim
+              metus. In nulla erat, fermentum id commodo id, dictum a odio.
+              Morbi interdum ut tellus in blandit. Etiam egestas iaculis
+              consequat. Cras tellus lorem, ullamcorper ac consectetur
+              scelerisque, consequat volutpat leo. Nullam eget condimentum nisi.
+              Nulla venenatis lacinia ullamcorper. Nunc turpis metus, feugiat ut
+              lectus vitae, mattis eleifend ipsum. Suspendisse potenti. Morbi
+              euismod non nisl eu dictum. Nam vel finibus odio. Sed vehicula
+              finibus pharetra.
+            </div>
+            <div className="modal-footer d-flex justify-content-center align-items-center">
+              <a className="modal-btn contact-btn btn-hover text-uppercase text-center bg-dark text-white rounded-pill h-50 p-3 m-3">
+                Get A Consultation
+                <FontAwesomeIcon
+                  className="text-pink ps-2"
+                  icon={faChevronRight}
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        className="modal fade"
+        id="businessLawModal"
+        tabIndex="-1"
+        aria-labelledby="businessLawModalLabel"
+        aria-hidden="true"
+      >
+        <div className="modal-dialog modal-dialog-centered">
+          <div className="modal-content">
+            <div className="modal-header">
+              <h1
+                className="modal-title fs-3 w-100 text-center"
+                id="businessLawModalLabel"
+              >
+                Business Law
+              </h1>
+              <button
+                type="button"
+                className="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div className="modal-body text-center">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+              faucibus luctus elit, eu tristique turpis bibendum nec.
+              Suspendisse potenti. Cras condimentum convallis nisi, eu consequat
+              lorem. Quisque imperdiet metus sed vehicula venenatis. Suspendisse
+              neque justo, ultricies vitae eleifend et, elementum sit amet
+              massa. Donec ut massa lobortis, scelerisque sem quis, dignissim
+              metus. In nulla erat, fermentum id commodo id, dictum a odio.
+              Morbi interdum ut tellus in blandit. Etiam egestas iaculis
+              consequat. Cras tellus lorem, ullamcorper ac consectetur
+              scelerisque, consequat volutpat leo. Nullam eget condimentum nisi.
+              Nulla venenatis lacinia ullamcorper. Nunc turpis metus, feugiat ut
+              lectus vitae, mattis eleifend ipsum. Suspendisse potenti. Morbi
+              euismod non nisl eu dictum. Nam vel finibus odio. Sed vehicula
+              finibus pharetra.
+            </div>
+            <div className="modal-footer d-flex justify-content-center align-items-center">
+              <a className="modal-btn contact-btn btn-hover text-uppercase text-center bg-dark text-white rounded-pill h-50 p-3 m-3">
+                Get A Consultation
+                <FontAwesomeIcon
+                  className="text-pink ps-2"
+                  icon={faChevronRight}
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </>
   );
 }

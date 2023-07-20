@@ -4,7 +4,7 @@
   --pctwhite: #ffffff;
   --pctblack: #000000;
   --pctpink: #facbe7;
-  --pctgold: #ffd077;
+  --pctgold: #c88f31;
   --pct-pink-shadow: rgba(255, 142, 221, 0.4) 0px 5px, rgba(255, 142, 221, 0.3) 0px 10px, rgba(255, 142, 221, 0.2) 0px 15px, rgba(255, 142, 221, 0.1) 0px 20px, rgba(255, 142, 221, 0.05) 0px 25px;
 }
 
@@ -33,51 +33,12 @@ li {
   color: var(--pctpink);
 }
 
+.text-gold {
+  color: var(--pctgold);
+}
+
 .text-thin {
     font-weight: 300;
-}
-
-.parallelogram {
-  padding: 10px 20px;
-  display: inline-block;
-  position: relative;
-  color: var(--pctblack);
-  z-index: 1;
-
-}
-
-.parallelogram:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: var(--pctwhite);
-  z-index: -1;
-  transform: skew(-15deg);
-  box-shadow: rgba(149, 157, 165, .5) 0px 0px 15px;
-}
-
-
-.parallelogram-inverse {
-  padding: 10px 20px;
-  display: inline-block;
-  position: relative;
-  z-index: 1;
-}
-
-.parallelogram-inverse:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: transparent;
-  border: 2px solid var(--pctgold);
-  z-index: -1;
-  transform: skew(-15deg);
 }
 
 .underline-animation {

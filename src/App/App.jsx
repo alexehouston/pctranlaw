@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import Logo from "../Logo/Logo";
+// import Logo from "../Logo/Logo";
 import ContactBar from "../ContactBar/ContactBar";
 import Nav from "../Nav/Nav";
 import Home from "../Home/Home";
@@ -27,7 +27,7 @@ export default function App() {
   return (
     <div className="container-fluid p-0 vh-100">
       <ContactBar />
-      <Logo />
+      {/* <Logo /> */}
       <Nav isSmallScreen={isSmallScreen} />
       <Home isSmallScreen={isSmallScreen} />
       <Social isSmallScreen={isSmallScreen} />

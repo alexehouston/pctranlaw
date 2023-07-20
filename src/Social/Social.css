@@ -1,5 +1,5 @@
 .Social {
-    margin-bottom: 18rem;
+    margin-bottom: 20rem;
     z-index: 1000;
 }
 
@@ -15,6 +15,6 @@
 
 @media (max-width: 576px) {
     .Social {
-        margin-bottom: 0;
+        margin-bottom: 4rem;
     }
 }

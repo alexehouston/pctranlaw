@@ -1,6 +1,6 @@
 .pct-logo {
-    height: 11rem;
-    width: 11rem;
+    height: 15rem;
+    width: 15rem;
     transform-style: preserve-3d;
     transform-origin: 50%;
     animation: spin 8s infinite;
@@ -11,8 +11,8 @@
   .pct-logo .front,
   .pct-logo .back {
     position: absolute;
-    height: 11rem;
-    width: 11rem;
+    height: 15rem;
+    width: 15rem;
     background-size: cover;
     background-image: url("/assets/PCT-3d-logo.png");
   }

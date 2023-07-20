@@ -1,0 +1,10 @@
+.ContactBar {
+  z-index: 1500;
+}
+
+@media (max-width: 576px) {
+  .contact-info {
+    font-size: 0.8rem;
+    line-height: 3;
+  }
+}
