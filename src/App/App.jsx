@@ -1,12 +1,13 @@
-import {useState, useEffect } from 'react';
-import ContactBar from '../ContactBar/ContactBar';
-import Nav from '../Nav/Nav';
-import Home from '../Home/Home';
-import Social from '../Social/Social';
-import Footer from '../Footer/Footer'
+import { useState, useEffect } from "react";
+import Logo from "../Logo/Logo";
+import ContactBar from "../ContactBar/ContactBar";
+import Nav from "../Nav/Nav";
+import Home from "../Home/Home";
+import Social from "../Social/Social";
+import Footer from "../Footer/Footer";
 import "bootstrap/dist/css/bootstrap.min.css";
-import 'bootstrap/dist/js/bootstrap.js';
-import 'animate.css';
+import "bootstrap/dist/js/bootstrap.js";
+import "animate.css";
 import "./App.css";
 
 export default function App() {
@@ -17,19 +18,20 @@ export default function App() {
       setIsSmallScreen(window.innerWidth <= 576);
     };
 
-    window.addEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
     handleResize();
 
-    return () => window.removeEventListener('resize', handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   return (
     <div className="container-fluid p-0 vh-100">
       <ContactBar />
+      <Logo />
       <Nav isSmallScreen={isSmallScreen} />
       <Home isSmallScreen={isSmallScreen} />
       <Social isSmallScreen={isSmallScreen} />
       <Footer isSmallScreen={isSmallScreen} />
     </div>
-  )
+  );
 }

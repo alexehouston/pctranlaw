@@ -22,6 +22,7 @@
 
 .home-btn {
   letter-spacing: 5px;
+  font-size: 1.25rem;
 }
 
 .home-about {
@@ -43,7 +44,7 @@
 }
 
 iframe {
-  filter: invert(1) hue-rotate(90deg) saturate(30%) brightness(1.5) contrast(.9);
+  filter: invert(1) hue-rotate(90deg) saturate(30%) brightness(1.5);
 }
 
 .contact-btn {

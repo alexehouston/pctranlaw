@@ -1,11 +1,17 @@
 .Social {
-    margin-bottom: 15rem;
+    margin-bottom: 18rem;
     z-index: 1000;
 }
 
 .social-icon {
+    transition: all 0.5s ease;
     box-shadow: var(--pct-pink-shadow);
 }
+
+.social-icon:hover {
+    color: var(--pctpink);
+    transform: scale(1.3);
+  }
 
 @media (max-width: 576px) {
     .Social {

@@ -26,15 +26,15 @@ export default function Home({ isSmallScreen }) {
           </h1>
           <a
             href="#PracticeAreas"
-            className="btn-hover home-btn parallelogram text-uppercase mt-5"
+            className="home-btn parallelogram text-uppercase mt-5"
           >
             Learn More{" "}
             <FontAwesomeIcon icon={faChevronDown} className="ps-2 text-pink" />
           </a>
         </div>
       ) : (
-        <div className="home-landing d-flex flex-column align-items-center home-text animate__animated animate__fadeInUp animate__slow h-75">
-          <div className="home-landing-inner position-absolute">
+        <div className="home-landing home-text animate__animated animate__fadeInUp animate__slow h-75">
+          <div className="home-landing-inner position-absolute d-flex flex-column align-items-center">
             <img
               className="home-title pb-2 responsive-image mt-5"
               src="/assets/PCT-logo-txtonly.png"
@@ -44,7 +44,7 @@ export default function Home({ isSmallScreen }) {
             </h1>
             <a
               href="#PracticeAreas"
-              className="btn-hover home-btn parallelogram text-uppercase mt-5"
+              className="home-btn parallelogram text-uppercase mt-5"
             >
               Learn More{" "}
               <FontAwesomeIcon
@@ -213,8 +213,7 @@ export default function Home({ isSmallScreen }) {
                 elit eget gravida cum sociis. Risus viverra adipiscing at in
                 tellus. Lobortis elementum nibh tellus molestie nunc non
                 blandit. Massa tincidunt dui ut ornare. Lorem donec massa sapien
-                faucibus et molestie ac feugiat sed. Duis tristique
-                sollicitudin.
+                faucibus et molestie ac feugiat sed.
               </p>
             </div>
             <div className="col-lg-5 d-flex align-items-center justify-content-center">

@@ -7,16 +7,11 @@ import {
 import "./Nav.css";
 
 export default function Nav({ isSmallScreen }) {
+
   return (
     <div className="Nav animate__animated animate__fadeInDown animate__slow">
-      <div className="container-fluid d-flex flex-column justify-content-center align-items-center p-0">
-        <div className="pct-logo">
-          <div className="front"></div>
-          <div className="back"></div>
-        </div>
-
         {isSmallScreen ? (
-          <ul className="bg-black container-fluid position-relative d-flex justify-content-center flex-wrap align-items-center m-0 py-2">
+          <ul className="bg-black container-fluid d-flex justify-content-center flex-wrap align-items-center m-0 py-2">
             <li className="nav-link text-uppercase">
               <a href="#" className="text-white underline-animation pt-1 my-2">
                 Home
@@ -62,11 +57,6 @@ export default function Nav({ isSmallScreen }) {
                 </ul>
               </div>
             </li>
-            {/* <li className="nav-link text-uppercase">
-              <a href="#" className="text-white underline-animation my-2 mx-5">
-                Contact Us
-              </a>
-            </li> */}
             <li className="nav-link text-uppercase">
               <a href="#" className="text-white underline-animation pt-1 my-2">
                 Consultation{" "}
@@ -75,7 +65,7 @@ export default function Nav({ isSmallScreen }) {
             </li>
           </ul>
         ) : (
-          <ul className="bg-black container-fluid position-relative d-flex justify-content-center flex-wrap align-items-center m-0 py-2">
+          <ul className="bg-black container-fluid d-flex justify-content-center flex-wrap align-items-center m-0 py-2">
             <li className="nav-link text-uppercase">
               <a href="#" className="text-white underline-animation my-2 mx-5">
                 Home
@@ -135,7 +125,6 @@ export default function Nav({ isSmallScreen }) {
           </ul>
         )}
       </div>
-    </div>
   );
 }
 
