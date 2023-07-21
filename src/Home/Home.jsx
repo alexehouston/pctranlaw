@@ -49,41 +49,55 @@ export default function Home({ isSmallScreen }) {
             </h1>
             <div className="home-services d-flex justify-content-around">
               <div
-                className="practices col-12 col-lg-2 position-relative btn-hover"
+                className="practices floating bg-white col-12 col-lg-3 btn-hover rounded py-2"
                 data-bs-toggle="modal"
                 data-bs-target="#personalInjuryModal"
               >
-                <div className="fs-1 ps-3 text-pink position-absolute top-0 start-0 ms-4 mt-3 w-75 d-flex justify-content-between align-items-center">
-                  <span>1</span>
-                  <FontAwesomeIcon icon={faCar} />
+                <div className="fs-1 px-4 pt-3 text-center">
+                  <FontAwesomeIcon
+                    icon={faCar}
+                    className="bg-black p-3 rounded-pill shadow text-pink"
+                  />
                 </div>
-                <p className="fs-2 mt-5 pt-3 text-center pe-3">
-                  Personal Injury
+                <p className="text-white fs-1 text-uppercase text-center pt-3">
+                  Personal
+                  <br />
+                  Injury
                 </p>
               </div>
               <div
-                className="practices col-12 col-lg-2 position-relative btn-hover"
+                className="practices floating col-12 col-lg-3 btn-hover rounded py-2"
                 data-bs-toggle="modal"
                 data-bs-target="#intellectualPropertyModal"
               >
-                <div className="fs-1 ps-3 text-pink position-absolute top-0 start-0 ms-4 mt-3 w-75 d-flex justify-content-between align-items-center">
-                  <span>2</span>
-                  <FontAwesomeIcon icon={faFolderOpen} />
+                <div className="fs-1 px-4 pt-3 text-center">
+                  <FontAwesomeIcon
+                    icon={faFolderOpen}
+                    className="bg-black p-3 rounded-pill shadow text-pink"
+                  />
                 </div>
-                <p className="fs-2 mt-5 pt-3 text-center pe-3">
-                  Intellectual Property
+                <p className="text-white fs-1 text-uppercase text-center pt-3">
+                  Intellectual
+                  <br />
+                  Property
                 </p>
               </div>
               <div
-                className="practices col-12 col-lg-2 position-relative btn-hover"
+                className="practices floating col-12 col-lg-3 btn-hover rounded py-2"
                 data-bs-toggle="modal"
                 data-bs-target="#businessLawModal"
               >
-                <div className="fs-1 ps-3 text-pink position-absolute top-0 start-0 ms-4 mt-3 w-75 d-flex justify-content-between align-items-center">
-                  <span>3</span>
-                  <FontAwesomeIcon icon={faScaleBalanced} />
+                <div className="fs-1 px-4 pt-3 text-center">
+                  <FontAwesomeIcon
+                    icon={faScaleBalanced}
+                    className="bg-black p-3 rounded-pill shadow text-pink"
+                  />
                 </div>
-                <p className="fs-2 mt-5 pt-3 text-center pe-3">Business Law</p>
+                <p className="text-white fs-1 text-uppercase text-center pt-3">
+                  Business
+                  <br />
+                  Law
+                </p>
               </div>
             </div>
           </div>
@@ -92,48 +106,62 @@ export default function Home({ isSmallScreen }) {
           </div>
         </div>
       ) : (
-        <div className="container-fluid p-0 h-75 bg-black position-relative mb-5">
+        <div className="container-fluid p-0 h-100 bg-black mb-5">
           <div className="container-fluid p-0 w-75 text-white">
             <h1 className="py-5 text-uppercase text-thin">
               Our Practice Areas
             </h1>
-            <div className="pt-5 home-services d-flex justify-content-around">
+            <div className="py-5 mt-5 home-services d-flex justify-content-around">
               <div
-                className="practices col-12 col-lg-3 position-relative btn-hover"
+                className="practices floating bg-white col-12 col-lg-3 btn-hover rounded py-4"
                 data-bs-toggle="modal"
                 data-bs-target="#personalInjuryModal"
               >
-                <div className="fs-3 ps-3 text-pink position-absolute top-0 start-0 ms-4 mt-3 w-75 d-flex justify-content-between align-items-center">
-                  <span>1</span>
-                  <FontAwesomeIcon icon={faCar} />
+                <div className="fs-2 px-4 pt-3 text-center">
+                  <FontAwesomeIcon
+                    icon={faCar}
+                    className="bg-black p-3 rounded-pill shadow text-pink"
+                  />
                 </div>
-                <p className="fs-3 mt-5 mb-4 pt-5 text-center pe-3">
-                  Personal Injury
+                <p className="text-white fs-2 text-uppercase text-center pt-3">
+                  Personal
+                  <br />
+                  Injury
                 </p>
               </div>
               <div
-                className="practices col-12 col-lg-3 position-relative btn-hover"
+                className="practices floating col-12 col-lg-3 btn-hover rounded py-4"
                 data-bs-toggle="modal"
                 data-bs-target="#intellectualPropertyModal"
               >
-                <div className="fs-3 ps-3 text-pink position-absolute top-0 start-0 ms-4 mt-3 w-75 d-flex justify-content-between align-items-center">
-                  <span>2</span>
-                  <FontAwesomeIcon icon={faFolderOpen} />
+                <div className="fs-2 px-4 pt-3 text-center">
+                  <FontAwesomeIcon
+                    icon={faFolderOpen}
+                    className="bg-black p-3 rounded-pill shadow text-pink"
+                  />
                 </div>
-                <p className="fs-3 mt-5 mb-4 pt-5 text-center pe-3">
-                  Intellectual Property
+                <p className="text-white fs-2 text-uppercase text-center pt-3">
+                  Intellectual
+                  <br />
+                  Property
                 </p>
               </div>
               <div
-                className="practices col-12 col-lg-3 position-relative btn-hover"
+                className="practices floating col-12 col-lg-3 btn-hover rounded py-4"
                 data-bs-toggle="modal"
                 data-bs-target="#businessLawModal"
               >
-                <div className="fs-3 ps-3 text-pink position-absolute top-0 start-0 ms-4 mt-3 w-75 d-flex justify-content-between align-items-center">
-                  <span>3</span>
-                  <FontAwesomeIcon icon={faScaleBalanced} />
+                <div className="fs-2 px-4 pt-3 text-center">
+                  <FontAwesomeIcon
+                    icon={faScaleBalanced}
+                    className="bg-black p-3 rounded-pill shadow text-pink"
+                  />
                 </div>
-                <p className="fs-3 mt-5 mb-4 pt-5 text-center pe-3">Business Law</p>
+                <p className="text-white fs-2 text-uppercase text-center pt-3">
+                  Business
+                  <br />
+                  Law
+                </p>
               </div>
             </div>
           </div>
@@ -169,7 +197,7 @@ export default function Home({ isSmallScreen }) {
           </div>
         </div>
       ) : (
-        <div className="home-about w-75 mx-auto position-relative bg-white shadow px-5 rounded">
+        <div className="home-about w-75 mx-auto bg-white shadow px-5 rounded">
           <div className="row">
             <div className="col-lg-7 pb-4">
               <h1 className="pt-5 pb-4 text-uppercase">
@@ -178,7 +206,7 @@ export default function Home({ isSmallScreen }) {
                   Tran
                 </div>
               </h1>
-              <p>
+              <p className="pe-5" style={{ textAlign: "justify" }}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim
                 nulla aliquet porttitor lacus. Eleifend mi in nulla posuere
@@ -198,13 +226,25 @@ export default function Home({ isSmallScreen }) {
                 elit eget gravida cum sociis. Risus viverra adipiscing at in
                 tellus. Lobortis elementum nibh tellus molestie nunc non
                 blandit. Massa tincidunt dui ut ornare. Lorem donec massa sapien
-                faucibus et molestie ac feugiat sed.
+                faucibus et molestie ac feugiat sed. Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua. Enim nulla aliquet porttitor
+                lacus. Eleifend mi in nulla posuere sollicitudin aliquam
+                ultrices sagittis. Commodo quis imperdiet massa tincidunt nunc
+                pulvinar. Sed ullamcorper morbi tincidunt ornare massa. Tempus
+                quam pellentesque nec nam aliquam sem et. Posuere urna nec
+                tincidunt praesent semper feugiat nibh sed pulvinar. Malesuada
+                pellentesque elit eget gravida cum sociis natoque penatibus. A
+                lacus vestibulum sed arcu non odio euismod lacinia at. In vitae
+                turpis massa sed elementum. Malesuada pellentesque elit eget
+                gravida cum sociis. Risus viverra adipiscing at in tellus.
+                Lobortis elementum nibh tellus molestie.
               </p>
             </div>
             <div className="col-lg-5 d-flex align-items-center justify-content-center">
               <img
-                className="rounded about-img"
-                src="https://drummoynetherapycentre.com.au/wp-content/uploads/2019/08/Headshot-Placeholder-Female-1.jpg"
+                className="rounded about-img py-5"
+                src="https://st4.depositphotos.com/9998432/24360/v/600/depositphotos_243600690-stock-illustration-person-gray-photo-placeholder-girl.jpg"
                 width="100%"
                 alt="Attorney Priscilla C. Tran"
               />
@@ -340,7 +380,7 @@ export default function Home({ isSmallScreen }) {
                   <div className="col-12">
                     <div className="input-group input-button">
                       <input
-                        className="form-control"
+                        className="form-control btn btn-primary"
                         type="submit"
                         value="SEND MESSAGE"
                       />
@@ -349,122 +389,106 @@ export default function Home({ isSmallScreen }) {
                 </div>
               </div>
               <div className="col-12 shadow">
-                <Iframe
-                  className="border-0 rounded shadow container-fluid p-0"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3464.3534410827156!2d-95.4788744!3d29.738482599999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640c3d8b898e3b1%3A0xc802476ac45119d8!2s5718%20Westheimer%20Rd%20%231125%2C%20Houston%2C%20TX%2077057!5e0!3m2!1sen!2sus!4v1688058584961!5m2!1sen!2sus"
-                  height="100%"
-                  width="100%"
-                  frameBorder="0"
-                  allowFullScreen
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
+                <img
+                  className="w-100 h-100 shadow rounded"
+                  src="https://images.squarespace-cdn.com/content/v1/568e945169492e8fd6b31c79/1608159840897-QU9MFY76NRTX2168NEYK/_99A1837.jpg"
                 />
               </div>
             </div>
           </div>
         </div>
       ) : (
-        <div className="bg-white container-fluid">
-          <div className="container-fluid bg-white pb-5">
-            <div className="container-fluid p-0 w-75">
-              <h1 className="py-5 text-uppercase text-thin">Contact Us</h1>
-              <div className="d-flex pb-5">
-                <div className="col-12 col-lg-5 shadow">
-                  <Iframe
-                    className="border-0 rounded"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3464.3534410827156!2d-95.4788744!3d29.738482599999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640c3d8b898e3b1%3A0xc802476ac45119d8!2s5718%20Westheimer%20Rd%20%231125%2C%20Houston%2C%20TX%2077057!5e0!3m2!1sen!2sus!4v1688058584961!5m2!1sen!2sus"
-                    height="100%"
-                    width="100%"
-                    frameBorder="0"
-                    allowFullScreen
-                    loading="lazy"
-                    referrerPolicy="no-referrer-when-downgrade"
-                  />
-                </div>
-                <div className="col-12 col-lg-7 ps-5">
-                  <h2 className="text-center">Let Us Know How We Can Help!</h2>
-                  <div className="d-flex justify-content-around py-5 mb-2 text-uppercase w-75 mx-auto">
-                    <a
-                      href="tel:8327766969"
-                      className="contact-btn btn-hover text-center bg-dark text-white rounded-pill h-50 p-3"
-                    >
-                      <FontAwesomeIcon
-                        className="text-pink pe-2"
-                        icon={faPhone}
-                      />{" "}
-                      (832) 776 - 6979
-                    </a>
-                    <a
-                      href="mailto:ptran@pctranlaw.com?subject=PCT Law Inquiry"
-                      className="contact-btn btn-hover text-center bg-dark text-white rounded-pill h-50 p-3"
-                    >
-                      <FontAwesomeIcon
-                        className="text-pink pe-2"
-                        icon={faEnvelope}
-                      />{" "}
-                      ptran<span className="text-pink small">@</span>
-                      pctranlaw.com
-                    </a>
+        <div
+          id="ContactUs"
+          className="bg-white container-fluid p-0 w-75 my-5 pb-5"
+        >
+          <h1 className="py-5 text-uppercase text-thin">Contact Us</h1>
+          <div className="d-flex pb-5">
+            <div className="col-12 col-lg-5">
+              <img
+                className="w-100 h-100 shadow rounded"
+                src="https://images.squarespace-cdn.com/content/v1/568e945169492e8fd6b31c79/1608159840897-QU9MFY76NRTX2168NEYK/_99A1837.jpg"
+              />
+            </div>
+            <div className="col-12 col-lg-7 ps-5">
+              <h2 className="text-center">Let Us Know How We Can Help!</h2>
+              <div className="d-flex justify-content-around py-5 mb-2 text-uppercase w-75 mx-auto">
+                <a
+                  href="tel:8327766969"
+                  className="contact-btn btn-hover text-center bg-dark text-white rounded-pill h-50 p-3"
+                >
+                  <FontAwesomeIcon className="text-pink pe-2" icon={faPhone} />{" "}
+                  (832) 776 - 6979
+                </a>
+                <a
+                  href="mailto:ptran@pctranlaw.com?subject=PCT Law Inquiry"
+                  className="contact-btn btn-hover text-center bg-dark text-white rounded-pill h-50 p-3"
+                >
+                  <FontAwesomeIcon
+                    className="text-pink pe-2"
+                    icon={faEnvelope}
+                  />{" "}
+                  ptran<span className="text-pink small">@</span>
+                  pctranlaw.com
+                </a>
+              </div>
+              <div className="row justify-content-center mx-auto pb-3">
+                <div className="col-5">
+                  <div className="input-group">
+                    <input
+                      className="form-control shadow"
+                      placeholder="Name"
+                      type="text"
+                      name="your-name"
+                    />
                   </div>
-                  <div className="row justify-content-center mx-auto pb-3">
-                    <div className="col-5">
-                      <div className="input-group">
-                        <input
-                          className="form-control shadow"
-                          placeholder="Name"
-                          type="text"
-                          name="your-name"
-                        />
-                      </div>
-                    </div>
-                    <div className="col-5">
-                      <div className="input-group">
-                        <input
-                          className="form-control shadow"
-                          placeholder="Email"
-                          type="text"
-                          name="your-email"
-                        />
-                      </div>
-                    </div>
-                    <div className="col-5">
-                      <div className="input-group">
-                        <input
-                          className="form-control shadow my-4"
-                          placeholder="Phone"
-                          type="text"
-                          name="phone"
-                        />
-                      </div>
-                    </div>
-                    <div className="col-5">
-                      <div className="input-group">
-                        <input
-                          className="form-control shadow my-4"
-                          placeholder="Subject"
-                          type="text"
-                          name="text-99"
-                        />
-                      </div>
-                    </div>
-                    <div className="col-10">
-                      <div className="input-group input-button col-12">
-                        <textarea
-                          className="form-control shadow"
-                          placeholder="Brief Description of Your Legal Issue"
-                          name="message"
-                        ></textarea>
-                      </div>
-                    </div>
-                    <div className="col-10">
-                      <div className="input-group input-button">
-                        <input
-                          className="form-control btn btn-primary mt-5"
-                          type="submit"
-                          value="SEND MESSAGE"
-                        />
-                      </div>
-                    </div>
+                </div>
+                <div className="col-5">
+                  <div className="input-group">
+                    <input
+                      className="form-control shadow"
+                      placeholder="Email"
+                      type="text"
+                      name="your-email"
+                    />
+                  </div>
+                </div>
+                <div className="col-5">
+                  <div className="input-group">
+                    <input
+                      className="form-control shadow my-4"
+                      placeholder="Phone"
+                      type="text"
+                      name="phone"
+                    />
+                  </div>
+                </div>
+                <div className="col-5">
+                  <div className="input-group">
+                    <input
+                      className="form-control shadow my-4"
+                      placeholder="Subject"
+                      type="text"
+                      name="text-99"
+                    />
+                  </div>
+                </div>
+                <div className="col-10">
+                  <div className="input-group input-button col-12">
+                    <textarea
+                      className="form-control shadow"
+                      placeholder="Brief Description of Your Legal Issue"
+                      name="message"
+                    ></textarea>
+                  </div>
+                </div>
+                <div className="col-10">
+                  <div className="input-group input-button">
+                    <input
+                      className="form-control btn btn-primary mt-5"
+                      type="submit"
+                      value="SEND MESSAGE"
+                    />
                   </div>
                 </div>
               </div>
@@ -473,7 +497,133 @@ export default function Home({ isSmallScreen }) {
         </div>
       )}
 
+      <div className="bg-black container-fluid h-75 d-flex flex-column">
+        <div className="container-fluid w-75 d-flex flex-column">
+          <h1 className="mt-4 py-5 text-uppercase text-white text-thin">
+            Client Testimonials
+          </h1>
+          <div className="mt-4 d-flex justify-content-between">
+            {isSmallScreen ? (
+              <>
+                <div id="testimonialCarousel" className="carousel slide">
+                  <div className="carousel-indicators">
+                    <button
+                      type="button"
+                      data-bs-target="#testimonialCarousel"
+                      data-bs-slide-to="0"
+                      className="active"
+                      aria-current="true"
+                      aria-label="Testimonial 1"
+                    ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#testimonialCarousel"
+                      data-bs-slide-to="1"
+                      aria-label="Testimonial 2"
+                      className="mx-2"
+                    ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#testimonialCarousel"
+                      data-bs-slide-to="2"
+                      aria-label="Testimonial 3"
+                    ></button>
+                  </div>
+                  <div className="carousel-inner">
+                    <div className="carousel-item active">
+                      <div className="card">
+                        <div className="card-body text-center p-4">
+                          <p className="card-text">
+                            &quot;Semper risus in hendrerit gravida rutrum
+                            quisque non. Commodo quis imperdiet massa tincidunt
+                            nunc pulvinar. Sed ullamcorper morbi tincidunt
+                            ornare massa. Tempus quam pellentesque nec nam
+                            aliquam sem et. Posuere urna nec tincidunt praesent
+                            semper feugiat nibh sed pulvinar.&quot;
+                          </p>
+                          <h5 className="card-title fs-4">- Priscilla C.</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="carousel-item">
+                      <div className="card">
+                        <div className="card-body text-center p-4">
+                          <p className="card-text">
+                            &quot;Semper risus in hendrerit gravida rutrum
+                            quisque non. Commodo quis imperdiet massa tincidunt
+                            nunc pulvinar. Sed ullamcorper morbi tincidunt
+                            ornare massa. Tempus quam pellentesque nec nam
+                            aliquam sem et. Posuere urna nec tincidunt praesent
+                            semper feugiat nibh sed pulvinar.&quot;
+                          </p>
+                          <h5 className="card-title fs-4">- Priscilla C.</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="carousel-item">
+                      <div className="card">
+                        <div className="card-body text-center p-4">
+                          <p className="card-text">
+                            &quot;Semper risus in hendrerit gravida rutrum
+                            quisque non. Commodo quis imperdiet massa tincidunt
+                            nunc pulvinar. Sed ullamcorper morbi tincidunt
+                            ornare massa. Tempus quam pellentesque nec nam
+                            aliquam sem et. Posuere urna nec tincidunt praesent
+                            semper feugiat nibh sed pulvinar.&quot;
+                          </p>
+                          <h5 className="card-title fs-4">- Priscilla C.</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </>
+            ) : (
+              <>
+                <div className="card">
+                  <div className="card-body text-center p-5">
+                    <p className="card-text fs-5">
+                      &quot;Semper risus in hendrerit gravida rutrum quisque
+                      non. Commodo quis imperdiet massa tincidunt nunc pulvinar.
+                      Sed ullamcorper morbi tincidunt ornare massa. Tempus quam
+                      pellentesque nec nam aliquam sem et. Posuere urna nec
+                      tincidunt praesent semper feugiat nibh sed pulvinar.&quot;
+                    </p>
+                    <h5 className="card-title fs-4">- Priscilla C.</h5>
+                  </div>
+                </div>
+                <div className="card mx-5">
+                  <div className="card-body text-center p-5">
+                    <p className="card-text fs-5">
+                      &quot;Semper risus in hendrerit gravida rutrum quisque
+                      non. Commodo quis imperdiet massa tincidunt nunc pulvinar.
+                      Sed ullamcorper morbi tincidunt ornare massa. Tempus quam
+                      pellentesque nec nam aliquam sem et. Posuere urna nec
+                      tincidunt praesent semper feugiat nibh sed pulvinar.&quot;
+                    </p>
+                    <h5 className="card-title fs-3">- Priscilla C.</h5>
+                  </div>
+                </div>
+                <div className="card">
+                  <div className="card-body text-center p-5">
+                    <p className="card-text fs-5">
+                      &quot;Semper risus in hendrerit gravida rutrum quisque
+                      non. Commodo quis imperdiet massa tincidunt nunc pulvinar.
+                      Sed ullamcorper morbi tincidunt ornare massa. Tempus quam
+                      pellentesque nec nam aliquam sem et. Posuere urna nec
+                      tincidunt praesent semper feugiat nibh sed pulvinar.&quot;
+                    </p>
+                    <h5 className="card-title fs-3">- Priscilla C.</h5>
+                  </div>
+                </div>
+              </>
+            )}
+          </div>
+        </div>
+      </div>
+
       {/* Modals */}
+
       <div
         className="modal fade"
         id="personalInjuryModal"

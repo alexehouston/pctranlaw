@@ -1,28 +1,35 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import "./Footer.css";
 
 export default function Footer() {
   return (
     <div className="container-fluid bg-white">
       <div className="ftr row d-flex justify-content-center align-items-center text-center text-black py-5">
-        <div className="col-5 col-lg-2">
-          <img src="/assets/PCT-logo.png" height="150" />
+        <div className="col-4 col-lg-2 text-center d-flex flex-column">
+          <h6 className="ftr-title fs-5 text-uppercase">Services</h6>
+          <a data-bs-toggle="modal" data-bs-target="#personalInjuryModal">
+            Personal Injury
+          </a>
+          <a data-bs-toggle="modal" data-bs-target="#intellectualPropertyModal">
+            Intellectual Property
+          </a>
+          <a data-bs-toggle="modal" data-bs-target="#businessLawModal">
+            Business Law
+          </a>
         </div>
-        <div className="col-5 col-lg-2">
-          <h6 className="ftr-title fs-4 text-uppercase text-start">Services</h6>
-          <li className="text-start">
-            <FontAwesomeIcon icon={faChevronRight} className="text-gold" />
-            &ensp;Personal Injury
-          </li>
-          <li className="text-start">
-            <FontAwesomeIcon icon={faChevronRight} className="text-gold" />
-            &ensp;Intellectual Property
-          </li>
-          <li className="text-start">
-            <FontAwesomeIcon icon={faChevronRight} className="text-gold" />
-            &ensp;Business Law
-          </li>
+        <div className="col-4 col-lg-1">
+          <img src="/assets/PCT-logo.png" height="125" />
+        </div>
+        <div className="col-4 col-lg-2 text-center d-flex flex-column">
+          <h6 className="ftr-title fs-5 text-uppercase">Follow Us</h6>
+          <a>
+            Facebook
+          </a>
+          <a>
+            Instagram
+          </a>
+          <a>
+            Yelp
+          </a>
         </div>
       </div>
       <div className="row pb-5">

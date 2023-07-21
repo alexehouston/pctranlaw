@@ -8,9 +8,9 @@ import "./Nav.css";
 
 export default function Nav({ isSmallScreen }) {
   return (
-    <div className="Nav animate__animated animate__fadeInDown animate__slow">
+    <div className="Nav animate__animated animate__fadeInDown animate__slow bg-black container-fluid border-bottom border-dark">
       {isSmallScreen ? (
-        <ul className="bg-black container-fluid d-flex justify-content-center flex-wrap align-items-center m-0 py-2">
+        <ul className="col-12 mx-auto d-flex justify-content-center flex-wrap align-items-center m-0 p-0 py-2">
           <li className="nav-link text-uppercase">
             <a href="#" className="text-white underline-animation pt-1 my-2">
               Home
@@ -68,7 +68,7 @@ export default function Nav({ isSmallScreen }) {
           </li>
         </ul>
       ) : (
-        <ul className="bg-black container-fluid d-flex justify-content-center flex-wrap align-items-center m-0 py-2">
+        <ul className="col-8 mx-auto d-flex justify-content-between align-items-center m-0 py-2">
           <li className="nav-link text-uppercase">
             <a href="#" className="text-white underline-animation my-2 mx-5">
               Home
@@ -119,7 +119,7 @@ export default function Nav({ isSmallScreen }) {
             </div>
           </li>
           <li className="nav-link text-uppercase">
-            <a href="#" className="text-white underline-animation my-2 mx-5">
+            <a href="#ContactUs" className="text-white underline-animation my-2 mx-5">
               Contact Us
             </a>
           </li>

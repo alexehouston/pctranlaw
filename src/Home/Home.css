@@ -26,12 +26,50 @@
 }
 
 .practices {
-  border: 3px solid var(--pctgold);
+  border: 1px solid var(--pctgold);
+  background: radial-gradient(
+      ellipse farthest-corner at right bottom,
+      #fedb37 0%,
+      #fdb931 8%,
+      #9f7928 30%,
+      #8a6e2f 40%,
+      transparent 80%
+    ),
+    radial-gradient(
+      ellipse farthest-corner at left top,
+      #ffffff 0%,
+      #ffffac 8%,
+      #d1b464 25%,
+      #5d4a1f 62.5%,
+      #5d4a1f 100%
+    );
+    box-shadow: 0 0 2px #fff, 0 0 5px #fff, 0 0 20px var(--pctpink);
+}
+
+.practices p {
+  letter-spacing: 5px;
+  text-shadow: 1px 1px 10px black;
+}
+
+.floating {
+  animation: floating 3s ease-in-out infinite;
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 15px);
+  }
+  100% {
+    transform: translate(0, -0px);
+  }
 }
 
 .home-about {
   z-index: 999;
-  margin-top: -16rem;
+  margin-top: -20rem;
 }
 
 .home-contact {
@@ -47,10 +85,6 @@
   border-bottom: 3px solid var(--pctpink);
 }
 
-iframe {
-  filter: invert(1) hue-rotate(90deg) saturate(30%) brightness(1.5);
-}
-
 .contact-btn {
   box-shadow: var(--pct-pink-shadow);
 }
@@ -58,6 +92,18 @@ iframe {
 .modal-btn {
   letter-spacing: 3px;
   font-weight: 500;
+}
+
+#ContactUs {
+  scroll-margin-top: 5rem;
+}
+
+iframe .formFooter, iframe .formFooter-heightMask {
+  display: none !important;
+}
+
+.carousel-indicators {
+  bottom: -25% !important;
 }
 
 @media (max-width: 576px) {

@@ -24,6 +24,10 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+  cursor: pointer;
+}
+
 ul,
 li {
   list-style-type: none;
