@@ -9,7 +9,6 @@ import {
   faEnvelope,
   faChevronRight,
 } from "@fortawesome/free-solid-svg-icons";
-import Iframe from "react-iframe";
 import "./Home.css";
 
 export default function Home({ isSmallScreen }) {
@@ -625,7 +624,7 @@ export default function Home({ isSmallScreen }) {
       {/* Modals */}
 
       <div
-        className="modal fade"
+        className="modal modal-lg fade"
         id="personalInjuryModal"
         tabIndex="-1"
         aria-labelledby="personalInjuryModalLabel"
@@ -648,23 +647,39 @@ export default function Home({ isSmallScreen }) {
               ></button>
             </div>
             <div className="modal-body text-center">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
-              faucibus luctus elit, eu tristique turpis bibendum nec.
-              Suspendisse potenti. Cras condimentum convallis nisi, eu consequat
-              lorem. Quisque imperdiet metus sed vehicula venenatis. Suspendisse
-              neque justo, ultricies vitae eleifend et, elementum sit amet
-              massa. Donec ut massa lobortis, scelerisque sem quis, dignissim
-              metus. In nulla erat, fermentum id commodo id, dictum a odio.
-              Morbi interdum ut tellus in blandit. Etiam egestas iaculis
-              consequat. Cras tellus lorem, ullamcorper ac consectetur
-              scelerisque, consequat volutpat leo. Nullam eget condimentum nisi.
-              Nulla venenatis lacinia ullamcorper. Nunc turpis metus, feugiat ut
-              lectus vitae, mattis eleifend ipsum. Suspendisse potenti. Morbi
-              euismod non nisl eu dictum. Nam vel finibus odio. Sed vehicula
-              finibus pharetra.
+              <p>
+                In broad terms, personal injury law deals with legal disputes
+                that arise when one person suffers an injury due to another
+                personn&apos;s negligence or wrongful conduct. Unlike criminal law,
+                personal injury cases do not involve the government prosecuting
+                the wrongdoer. Instead, a private plaintiff, the person who is
+                claiming an injury occurred, seeks compensation from a
+                defendant, the person or business accused of causing that
+                injury.
+              </p>
+              <p>
+                Personal injury claims can result from accidents as well as
+                intentional acts.
+                <br />
+                Common types of personal injury claims include:
+              </p>
+              <p className="">
+                <span className="fw-bold">Auto Accidents</span> |{" "}
+                <span className="fw-bold">Trucking Accidents</span> |{" "}
+                <span className="fw-bold">Workplace Accidents</span> |{" "}
+                <span className="fw-bold">Premises Liability</span> |{" "}
+                <span className="fw-bold">Product Liability</span>
+                <br />
+                <span className="fw-bold">Medical Malpractice</span> |{" "}
+                <span className="fw-bold">Assaults</span> |{" "}
+                <span className="fw-bold">Child Abuse</span> |{" "}
+                <span className="fw-bold">Negligent Security</span> |{" "}
+                <span className="fw-bold">Wrongful Death</span>
+              </p>
+              <small>* Consultations will start at $250/hour. *</small>
             </div>
             <div className="modal-footer d-flex justify-content-center align-items-center">
-              <a className="modal-btn contact-btn btn-hover text-uppercase text-center bg-dark text-white rounded-pill h-50 p-3 m-3">
+              <a className="modal-btn contact-btn btn-hover text-uppercase text-center bg-dark text-white rounded-pill h-50 p-3 mt-3 mb-4">
                 Get A Consultation
                 <FontAwesomeIcon
                   className="text-pink ps-2"
@@ -677,7 +692,7 @@ export default function Home({ isSmallScreen }) {
       </div>
 
       <div
-        className="modal fade"
+        className="modal modal-lg fade"
         id="intellectualPropertyModal"
         tabIndex="-1"
         aria-labelledby="intellectualPropertyModalLabel"
@@ -700,23 +715,39 @@ export default function Home({ isSmallScreen }) {
               ></button>
             </div>
             <div className="modal-body text-center">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
-              faucibus luctus elit, eu tristique turpis bibendum nec.
-              Suspendisse potenti. Cras condimentum convallis nisi, eu consequat
-              lorem. Quisque imperdiet metus sed vehicula venenatis. Suspendisse
-              neque justo, ultricies vitae eleifend et, elementum sit amet
-              massa. Donec ut massa lobortis, scelerisque sem quis, dignissim
-              metus. In nulla erat, fermentum id commodo id, dictum a odio.
-              Morbi interdum ut tellus in blandit. Etiam egestas iaculis
-              consequat. Cras tellus lorem, ullamcorper ac consectetur
-              scelerisque, consequat volutpat leo. Nullam eget condimentum nisi.
-              Nulla venenatis lacinia ullamcorper. Nunc turpis metus, feugiat ut
-              lectus vitae, mattis eleifend ipsum. Suspendisse potenti. Morbi
-              euismod non nisl eu dictum. Nam vel finibus odio. Sed vehicula
-              finibus pharetra.
+              <p>
+                In broad terms, personal injury law deals with legal disputes
+                that arise when one person suffers an injury due to another
+                person&apos;s negligence or wrongful conduct. Unlike criminal law,
+                personal injury cases do not involve the government prosecuting
+                the wrongdoer. Instead, a private plaintiff, the person who is
+                claiming an injury occurred, seeks compensation from a
+                defendant, the person or business accused of causing that
+                injury.
+              </p>
+              <p>
+                Personal injury claims can result from accidents as well as
+                intentional acts.
+                <br />
+                Common types of personal injury claims include:
+              </p>
+              <p className="">
+                <span className="fw-bold">Auto Accidents</span> |{" "}
+                <span className="fw-bold">Trucking Accidents</span> |{" "}
+                <span className="fw-bold">Workplace Accidents</span> |{" "}
+                <span className="fw-bold">Premises Liability</span> |{" "}
+                <span className="fw-bold">Product Liability</span>
+                <br />
+                <span className="fw-bold">Medical Malpractice</span> |{" "}
+                <span className="fw-bold">Assaults</span> |{" "}
+                <span className="fw-bold">Child Abuse</span> |{" "}
+                <span className="fw-bold">Negligent Security</span> |{" "}
+                <span className="fw-bold">Wrongful Death</span>
+              </p>
+              <small>* Consultations will start at $250/hour. *</small>
             </div>
             <div className="modal-footer d-flex justify-content-center align-items-center">
-              <a className="modal-btn contact-btn btn-hover text-uppercase text-center bg-dark text-white rounded-pill h-50 p-3 m-3">
+              <a className="modal-btn contact-btn btn-hover text-uppercase text-center bg-dark text-white rounded-pill h-50 p-3 mt-3 mb-4">
                 Get A Consultation
                 <FontAwesomeIcon
                   className="text-pink ps-2"
@@ -729,7 +760,7 @@ export default function Home({ isSmallScreen }) {
       </div>
 
       <div
-        className="modal fade"
+        className="modal modal-lg fade"
         id="businessLawModal"
         tabIndex="-1"
         aria-labelledby="businessLawModalLabel"
@@ -752,23 +783,39 @@ export default function Home({ isSmallScreen }) {
               ></button>
             </div>
             <div className="modal-body text-center">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
-              faucibus luctus elit, eu tristique turpis bibendum nec.
-              Suspendisse potenti. Cras condimentum convallis nisi, eu consequat
-              lorem. Quisque imperdiet metus sed vehicula venenatis. Suspendisse
-              neque justo, ultricies vitae eleifend et, elementum sit amet
-              massa. Donec ut massa lobortis, scelerisque sem quis, dignissim
-              metus. In nulla erat, fermentum id commodo id, dictum a odio.
-              Morbi interdum ut tellus in blandit. Etiam egestas iaculis
-              consequat. Cras tellus lorem, ullamcorper ac consectetur
-              scelerisque, consequat volutpat leo. Nullam eget condimentum nisi.
-              Nulla venenatis lacinia ullamcorper. Nunc turpis metus, feugiat ut
-              lectus vitae, mattis eleifend ipsum. Suspendisse potenti. Morbi
-              euismod non nisl eu dictum. Nam vel finibus odio. Sed vehicula
-              finibus pharetra.
+              <p>
+                In broad terms, personal injury law deals with legal disputes
+                that arise when one person suffers an injury due to another
+                personn&apos;s negligence or wrongful conduct. Unlike criminal law,
+                personal injury cases do not involve the government prosecuting
+                the wrongdoer. Instead, a private plaintiff, the person who is
+                claiming an injury occurred, seeks compensation from a
+                defendant, the person or business accused of causing that
+                injury.
+              </p>
+              <p>
+                Personal injury claims can result from accidents as well as
+                intentional acts.
+                <br />
+                Common types of personal injury claims include:
+              </p>
+              <p className="">
+                <span className="fw-bold">Auto Accidents</span> |{" "}
+                <span className="fw-bold">Trucking Accidents</span> |{" "}
+                <span className="fw-bold">Workplace Accidents</span> |{" "}
+                <span className="fw-bold">Premises Liability</span> |{" "}
+                <span className="fw-bold">Product Liability</span>
+                <br />
+                <span className="fw-bold">Medical Malpractice</span> |{" "}
+                <span className="fw-bold">Assaults</span> |{" "}
+                <span className="fw-bold">Child Abuse</span> |{" "}
+                <span className="fw-bold">Negligent Security</span> |{" "}
+                <span className="fw-bold">Wrongful Death</span>
+              </p>
+              <small>* Consultations will start at $250/hour. *</small>
             </div>
             <div className="modal-footer d-flex justify-content-center align-items-center">
-              <a className="modal-btn contact-btn btn-hover text-uppercase text-center bg-dark text-white rounded-pill h-50 p-3 m-3">
+              <a className="modal-btn contact-btn btn-hover text-uppercase text-center bg-dark text-white rounded-pill h-50 p-3 mt-3 mb-4">
                 Get A Consultation
                 <FontAwesomeIcon
                   className="text-pink ps-2"
