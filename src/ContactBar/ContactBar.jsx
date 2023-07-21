@@ -26,7 +26,7 @@ export default function ContactBar() {
         >
           <FontAwesomeIcon icon={faLocationDot} className="pe-2 text-pink" />
           <span className="contact-info text-white underline-animation">
-            5718 Westheimer Road, Suite 1125 Houston, TX 77057
+            5718 Westheimer Road, Suite 1000-1125 Houston, TX 77057
           </span>
         </a>
         <a
