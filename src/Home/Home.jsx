@@ -112,7 +112,7 @@ export default function Home({ isSmallScreen }) {
             </h1>
             <div className="py-5 mt-5 home-services d-flex justify-content-around">
               <div
-                className="practices floating bg-white col-12 col-lg-3 btn-hover rounded py-4"
+                className="practices floating bg-white btn-hover rounded py-2"
                 data-bs-toggle="modal"
                 data-bs-target="#personalInjuryModal"
               >
@@ -122,14 +122,14 @@ export default function Home({ isSmallScreen }) {
                     className="bg-black p-3 rounded-pill shadow text-pink"
                   />
                 </div>
-                <p className="text-white fs-2 text-uppercase text-center pt-3">
+                <p className="text-white fs-3 text-uppercase text-center pt-3">
                   Personal
                   <br />
                   Injury
                 </p>
               </div>
               <div
-                className="practices floating col-12 col-lg-3 btn-hover rounded py-4"
+                className="practices floating btn-hover rounded py-2"
                 data-bs-toggle="modal"
                 data-bs-target="#intellectualPropertyModal"
               >
@@ -139,14 +139,14 @@ export default function Home({ isSmallScreen }) {
                     className="bg-black p-3 rounded-pill shadow text-pink"
                   />
                 </div>
-                <p className="text-white fs-2 text-uppercase text-center pt-3">
+                <p className="text-white fs-3 text-uppercase text-center pt-3">
                   Intellectual
                   <br />
                   Property
                 </p>
               </div>
               <div
-                className="practices floating col-12 col-lg-3 btn-hover rounded py-4"
+                className="practices floating btn-hover rounded py-2"
                 data-bs-toggle="modal"
                 data-bs-target="#businessLawModal"
               >
@@ -156,7 +156,7 @@ export default function Home({ isSmallScreen }) {
                     className="bg-black p-3 rounded-pill shadow text-pink"
                   />
                 </div>
-                <p className="text-white fs-2 text-uppercase text-center pt-3">
+                <p className="text-white fs-3 text-uppercase text-center pt-3">
                   Business
                   <br />
                   Law
@@ -197,15 +197,17 @@ export default function Home({ isSmallScreen }) {
         </div>
       ) : (
         <div className="home-about w-75 mx-auto bg-white shadow px-5 rounded">
+          <div className="row w-100 text-center">
+            <h1 className="pt-5 pb-4 text-uppercase">
+              <div className="about-priscilla">
+                <span className="text-thin">About Attorney</span> Priscilla C.
+                Tran
+              </div>
+            </h1>
+          </div>
           <div className="row">
-            <div className="col-lg-7 pb-4">
-              <h1 className="pt-5 pb-4 text-uppercase">
-                <div className="about-priscilla me-5">
-                  <span className="text-thin">About Attorney</span> Priscilla C.
-                  Tran
-                </div>
-              </h1>
-              <p className="pe-5" style={{ textAlign: "justify" }}>
+            <div className="col-lg-7">
+              <p className="about-text pe-4">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim
                 nulla aliquet porttitor lacus. Eleifend mi in nulla posuere
@@ -236,15 +238,22 @@ export default function Home({ isSmallScreen }) {
                 pellentesque elit eget gravida cum sociis natoque penatibus. A
                 lacus vestibulum sed arcu non odio euismod lacinia at. In vitae
                 turpis massa sed elementum. Malesuada pellentesque elit eget
-                gravida cum sociis. Risus viverra adipiscing at in tellus.
-                Lobortis elementum nibh tellus molestie.
+                gravida cum sociis. Risus viverra adipiscing at ua. Enim nulla
+                aliquet porttitor lacus. Eleifend mi in nulla posuere
+                sollicitudin aliquam ultrices sagittis. Commodo quis imperdiet
+                massa tincidunt nunc pulvinar. Sed ullamcorper morbi dui ut
+                ornare. Lorem donec massa sapien faucibus et molestie ac feugiat
+                sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Enim nulla aliquet porttitor lacus. Eleifend mi in
+                nulla.
               </p>
             </div>
-            <div className="col-lg-5 d-flex align-items-center justify-content-center">
+            <div className="col-lg-5 d-flex align-items-center justify-content-center h-100">
               <img
-                className="rounded about-img py-5"
-                src="https://st4.depositphotos.com/9998432/24360/v/600/depositphotos_243600690-stock-illustration-person-gray-photo-placeholder-girl.jpg"
-                width="100%"
+                className="rounded about-img mb-5 shadow"
+                src="https://wallisphoto.com/IMAGES/2020/headshots/female-attorney-headshot-oc.jpg"
+                width="75%"
                 alt="Attorney Priscilla C. Tran"
               />
             </div>
@@ -411,7 +420,7 @@ export default function Home({ isSmallScreen }) {
             </div>
             <div className="col-12 col-lg-7 ps-5">
               <h2 className="text-center">Let Us Know How We Can Help!</h2>
-              <div className="d-flex justify-content-around py-5 mb-2 text-uppercase w-75 mx-auto">
+              <div className="d-flex justify-content-around py-5 mb-2 text-uppercase mx-auto">
                 <a
                   href="tel:8327766969"
                   className="contact-btn btn-hover text-center bg-dark text-white rounded-pill h-50 p-3"
@@ -580,8 +589,8 @@ export default function Home({ isSmallScreen }) {
             ) : (
               <>
                 <div className="card">
-                  <div className="card-body text-center p-5">
-                    <p className="card-text fs-5">
+                  <div className="card-body text-center p-4">
+                    <p className="card-text card-text-desktop">
                       &quot;Semper risus in hendrerit gravida rutrum quisque
                       non. Commodo quis imperdiet massa tincidunt nunc pulvinar.
                       Sed ullamcorper morbi tincidunt ornare massa. Tempus quam
@@ -592,8 +601,8 @@ export default function Home({ isSmallScreen }) {
                   </div>
                 </div>
                 <div className="card mx-5">
-                  <div className="card-body text-center p-5">
-                    <p className="card-text fs-5">
+                  <div className="card-body text-center p-4">
+                    <p className="card-text card-text-desktop">
                       &quot;Semper risus in hendrerit gravida rutrum quisque
                       non. Commodo quis imperdiet massa tincidunt nunc pulvinar.
                       Sed ullamcorper morbi tincidunt ornare massa. Tempus quam
@@ -604,8 +613,8 @@ export default function Home({ isSmallScreen }) {
                   </div>
                 </div>
                 <div className="card">
-                  <div className="card-body text-center p-5">
-                    <p className="card-text fs-5">
+                  <div className="card-body text-center p-4">
+                    <p className="card-text card-text-desktop">
                       &quot;Semper risus in hendrerit gravida rutrum quisque
                       non. Commodo quis imperdiet massa tincidunt nunc pulvinar.
                       Sed ullamcorper morbi tincidunt ornare massa. Tempus quam
@@ -650,11 +659,11 @@ export default function Home({ isSmallScreen }) {
               <p>
                 In broad terms, personal injury law deals with legal disputes
                 that arise when one person suffers an injury due to another
-                personn&apos;s negligence or wrongful conduct. Unlike criminal law,
-                personal injury cases do not involve the government prosecuting
-                the wrongdoer. Instead, a private plaintiff, the person who is
-                claiming an injury occurred, seeks compensation from a
-                defendant, the person or business accused of causing that
+                personn&apos;s negligence or wrongful conduct. Unlike criminal
+                law, personal injury cases do not involve the government
+                prosecuting the wrongdoer. Instead, a private plaintiff, the
+                person who is claiming an injury occurred, seeks compensation
+                from a defendant, the person or business accused of causing that
                 injury.
               </p>
               <p>
@@ -680,7 +689,7 @@ export default function Home({ isSmallScreen }) {
             </div>
             <div className="modal-footer d-flex justify-content-center align-items-center">
               <a className="modal-btn contact-btn btn-hover text-uppercase text-center bg-dark text-white rounded-pill h-50 p-3 mt-3 mb-4">
-                Get A Consultation
+                Intake Form
                 <FontAwesomeIcon
                   className="text-pink ps-2"
                   icon={faChevronRight}
@@ -718,11 +727,11 @@ export default function Home({ isSmallScreen }) {
               <p>
                 In broad terms, personal injury law deals with legal disputes
                 that arise when one person suffers an injury due to another
-                person&apos;s negligence or wrongful conduct. Unlike criminal law,
-                personal injury cases do not involve the government prosecuting
-                the wrongdoer. Instead, a private plaintiff, the person who is
-                claiming an injury occurred, seeks compensation from a
-                defendant, the person or business accused of causing that
+                person&apos;s negligence or wrongful conduct. Unlike criminal
+                law, personal injury cases do not involve the government
+                prosecuting the wrongdoer. Instead, a private plaintiff, the
+                person who is claiming an injury occurred, seeks compensation
+                from a defendant, the person or business accused of causing that
                 injury.
               </p>
               <p>
@@ -786,11 +795,11 @@ export default function Home({ isSmallScreen }) {
               <p>
                 In broad terms, personal injury law deals with legal disputes
                 that arise when one person suffers an injury due to another
-                personn&apos;s negligence or wrongful conduct. Unlike criminal law,
-                personal injury cases do not involve the government prosecuting
-                the wrongdoer. Instead, a private plaintiff, the person who is
-                claiming an injury occurred, seeks compensation from a
-                defendant, the person or business accused of causing that
+                personn&apos;s negligence or wrongful conduct. Unlike criminal
+                law, personal injury cases do not involve the government
+                prosecuting the wrongdoer. Instead, a private plaintiff, the
+                person who is claiming an injury occurred, seeks compensation
+                from a defendant, the person or business accused of causing that
                 injury.
               </p>
               <p>

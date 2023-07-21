@@ -6,7 +6,7 @@
 
 .home-landing-inner {
   left: 20%;
-  top: 15%;
+  top: 18%;
 }
 
 .home-subtitle {
@@ -43,7 +43,8 @@
       #5d4a1f 62.5%,
       #5d4a1f 100%
     );
-    box-shadow: 0 0 2px #fff, 0 0 5px #fff, 0 0 20px var(--pctpink);
+  box-shadow: 0 0 2px #fff, 0 0 5px #fff, 0 0 20px var(--pctpink);
+  width: 18rem;
 }
 
 .practices p {
@@ -76,13 +77,13 @@
   margin-top: -13rem;
 }
 
-.about-img {
-  filter: saturate(0);
-}
-
 .about-priscilla {
   font-size: 2.4rem;
   border-bottom: 3px solid var(--pctpink);
+}
+
+.about-text {
+  text-align: justify;
 }
 
 .contact-btn {
@@ -94,16 +95,37 @@
   font-weight: 500;
 }
 
+.card-text-desktop {
+  font-size: 2vmin;
+}
+
 #ContactUs {
   scroll-margin-top: 5rem;
 }
 
-iframe .formFooter, iframe .formFooter-heightMask {
+iframe .formFooter,
+iframe .formFooter-heightMask {
   display: none !important;
 }
 
 .carousel-indicators {
   bottom: -25% !important;
+}
+
+@media (max-width: 1750px) {
+  .home-landing-inner {
+    left: 15%;
+  }
+  .home-about {
+    height: 70% !important;
+  }
+  .about-text {
+    height: 60%;
+    overflow-y: scroll;
+  }
+  .about-img {
+    width: 100%;
+  }
 }
 
 @media (max-width: 576px) {
