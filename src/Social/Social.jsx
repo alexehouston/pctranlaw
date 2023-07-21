@@ -11,7 +11,7 @@ export default function Social({ isSmallScreen }) {
         <div className="Social position-fixed bottom-0 w-100 d-flex justify-content-center animate__animated animate__fadeInUp animate__slower">
           <a
             className="social-icon btn-hover mx-4 mb-5 bg-dark rounded-pill"
-            href=""
+            href="https://www.instagram.com/pctlawfirm/"
             target="_blank"
             rel="noreferrer"
           >
@@ -56,7 +56,7 @@ export default function Social({ isSmallScreen }) {
           </a>
           <a
             className="btn-hover mx-4 mb-5"
-            href=""
+            href="https://www.instagram.com/pctlawfirm/"
             target="_blank"
             rel="noreferrer"
           >
