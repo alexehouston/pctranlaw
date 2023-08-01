@@ -473,7 +473,7 @@ export default function Home({ isSmallScreen }) {
                       <input
                         className="form-control rounded p-2"
                         type="text"
-                        placeholder="Subject"
+                        placeholder="Brief Summary of Legal Issue"
                         name="subject"
                       />
                     </div>
