@@ -21,13 +21,18 @@ export default function Footer() {
         </div>
         <div className="col-4 col-lg-2 text-center d-flex flex-column">
           <h6 className="ftr-title fs-5 text-uppercase">Follow Us</h6>
-          <a>
+          <a className="text-black" href="" target="_blank" rel="noreferrer">
             Facebook
           </a>
-          <a>
+          <a
+            className="text-black"
+            href="https://www.instagram.com/pctlawfirm/"
+            target="_blank"
+            rel="noreferrer"
+          >
             Instagram
           </a>
-          <a>
+          <a className="text-black" href="" target="_blank" rel="noreferrer">
             Yelp
           </a>
         </div>

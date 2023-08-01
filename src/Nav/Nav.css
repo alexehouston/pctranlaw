@@ -12,6 +12,11 @@
 .nav-link a {
   letter-spacing: 2px;
   font-weight: 500;
+  transition: all .5s ease;
+}
+
+.nav-link a:hover {
+  color: var(--pctpink) !important;
 }
 
 .dropdown-item:hover {
@@ -32,6 +37,10 @@
 
 .dropdown:hover .dropdown-toggle {
   color: var(--pctpink) !important;
+}
+
+.dropdown-menu.show {
+  inset: 25px auto auto -40px !important;
 }
 
 @keyframes spin {
