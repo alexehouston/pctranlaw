@@ -420,7 +420,7 @@ export default function Home({ isSmallScreen }) {
             </div>
             <div className="col-12 col-lg-7 ps-5">
               <h2 className="text-center">Let Us Know How We Can Help!</h2>
-              <div className="d-flex justify-content-around py-5 mb-2 text-uppercase mx-auto">
+              <div className="d-flex justify-content-around py-5 mb-2 text-uppercase mx-auto w-75">
                 <a
                   href="tel:8327766969"
                   className="contact-btn btn-hover text-center bg-dark text-white rounded-pill h-50 p-3"
@@ -440,81 +440,62 @@ export default function Home({ isSmallScreen }) {
                   pctranlaw.com
                 </a>
               </div>
-              <form
-                name="contact"
-                method="POST"
-                data-netlify="true"
-                data-netlify-honeypot="bot-field"
-              >
-                <input type="hidden" name="form-name" value="contact" />
-                {/* <input type="hidden" name="to" value="alexehouston@gmail.com" /> */}
-                <input type="hidden" name="email" />
-                <input
-                  type="hidden"
-                  name="subject"
-                  value="Priscilla C. Tran Law Firm Inquiry"
-                />
-                <div className="row justify-content-center mx-auto pb-3">
-                  <div className="col-5">
-                    <div className="input-group">
+              <div className="d-flex justify-content-center text-center">
+                <form className="text-center" name="contact" method="POST" data-netlify="true">
+                  <div className="row mb-4">
+                    <div className="col-6">
                       <input
-                        className="form-control shadow"
-                        placeholder="Name"
+                        className="form-control rounded p-2"
                         type="text"
+                        placeholder="Name"
                         name="name"
                       />
                     </div>
-                  </div>
-                  <div className="col-5">
-                    <div className="input-group">
+                    <div className="col-6">
                       <input
-                        className="form-control shadow"
-                        placeholder="Email"
-                        type="text"
-                        name="email"
-                      />
-                    </div>
-                  </div>
-                  <div className="col-5">
-                    <div className="input-group">
-                      <input
-                        className="form-control shadow my-4"
+                        className="form-control rounded p-2"
+                        type="phone"
                         placeholder="Phone"
-                        type="text"
                         name="phone"
                       />
                     </div>
                   </div>
-                  <div className="col-5">
-                    <div className="input-group">
+                  <div className="row mb-4">
+                    <div className="col-6">
                       <input
-                        className="form-control shadow my-4"
-                        placeholder="Subject"
+                        className="form-control rounded p-2"
+                        type="email"
+                        placeholder="Email"
+                        name="email"
+                      />
+                    </div>
+                    <div className="col-6">
+                      <input
+                        className="form-control rounded p-2"
                         type="text"
+                        placeholder="Subject"
                         name="subject"
                       />
                     </div>
                   </div>
-                  <div className="col-10">
-                    <div className="input-group input-button col-12">
+                  <div className="row my-4">
+                    <div className="col-12">
                       <textarea
-                        className="form-control shadow"
-                        placeholder="Brief Description of Your Legal Issue"
+                        className="form-control rounded p-2"
+                        placeholder="Message"
                         name="message"
                       ></textarea>
                     </div>
                   </div>
-                  <div className="col-10">
-                    <div className="input-group input-button">
-                      <input
-                        className="form-control btn btn-primary mt-5"
-                        type="submit"
-                        value="SEND MESSAGE"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </form>
+                  <button
+                    className="contact-btn btn-hover col-12 bg-black text-white border-0 rounded p-2"
+                    type="submit"
+                  >
+                    Submit
+                  </button>
+                  <input type="hidden" name="form-name" value="contact" />
+                </form>
+              </div>
             </div>
           </div>
         </div>
