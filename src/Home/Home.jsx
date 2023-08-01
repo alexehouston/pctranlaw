@@ -473,7 +473,7 @@ export default function Home({ isSmallScreen }) {
                       <input
                         className="form-control rounded p-2"
                         type="text"
-                        placeholder="Brief Summary of Legal Issue"
+                        placeholder="Subject"
                         name="subject"
                       />
                     </div>
@@ -482,7 +482,7 @@ export default function Home({ isSmallScreen }) {
                     <div className="col-12">
                       <textarea
                         className="form-control rounded p-2"
-                        placeholder="Message"
+                        placeholder="Brief Summary of Legal Issue"
                         name="message"
                       ></textarea>
                     </div>
