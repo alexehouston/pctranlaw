@@ -295,105 +295,60 @@ export default function Home({ isSmallScreen }) {
                   </a>
                 </div>
                 <div className="row mx-auto pb-5 d-flex justify-content-center">
-                  <div className="col-6">
-                    <div className="input-group">
-                      <p>
-                        <span
-                          className="form-control-wrap"
-                          data-name="your-name"
-                        >
-                          <input
-                            size="40"
-                            className="form-control text col-6"
-                            aria-invalid="false"
-                            placeholder="Name"
-                            value=""
-                            type="text"
-                            name="your-name"
-                          />
-                        </span>
-                      </p>
+                  <form className="text-center" name="contact" method="POST">
+                    <input type="hidden" name="form-name" value="contact" />
+                    <div className="row mb-4">
+                      <div className="col-6">
+                        <input
+                          className="form-control rounded p-2"
+                          type="text"
+                          placeholder="Name"
+                          name="name"
+                        />
+                      </div>
+                      <div className="col-6">
+                        <input
+                          className="form-control rounded p-2"
+                          type="phone"
+                          placeholder="Phone"
+                          name="phone"
+                        />
+                      </div>
                     </div>
-                  </div>
-                  <div className="col-6">
-                    <div className="input-group">
-                      <p>
-                        <span
-                          className="form-control-wrap"
-                          data-name="your-email"
-                        >
-                          <input
-                            size="40"
-                            className="form-control text"
-                            aria-invalid="false"
-                            placeholder="Email"
-                            value=""
-                            type="text"
-                            name="your-email"
-                          />
-                        </span>
-                      </p>
+                    <div className="row mb-4">
+                      <div className="col-6">
+                        <input
+                          className="form-control rounded p-2"
+                          type="email"
+                          placeholder="Email"
+                          name="email"
+                        />
+                      </div>
+                      <div className="col-6">
+                        <input
+                          className="form-control rounded p-2"
+                          type="text"
+                          placeholder="PCT Law Inquiry"
+                          name="subject"
+                        />
+                      </div>
                     </div>
-                  </div>
-                  <div className="col-6">
-                    <div className="input-group">
-                      <p>
-                        <span className="form-control-wrap" data-name="phone">
-                          <input
-                            size="40"
-                            className="form-control text"
-                            aria-invalid="false"
-                            placeholder="Phone"
-                            value=""
-                            type="text"
-                            name="phone"
-                          />
-                        </span>
-                      </p>
+                    <div className="row my-4">
+                      <div className="col-12">
+                        <textarea
+                          className="form-control rounded p-2"
+                          placeholder="Brief Summary of Legal Issue"
+                          name="message"
+                        ></textarea>
+                      </div>
                     </div>
-                  </div>
-                  <div className="col-6">
-                    <div className="input-group">
-                      <p>
-                        <span className="form-control-wrap" data-name="text-99">
-                          <input
-                            size="40"
-                            className="form-control text"
-                            aria-invalid="false"
-                            placeholder="Subject"
-                            value=""
-                            type="text"
-                            name="text-99"
-                          />
-                        </span>
-                      </p>
-                    </div>
-                  </div>
-                  <div className="col-12">
-                    <div className="input-group input-button">
-                      <p>
-                        <span className="form-control-wrap" data-name="message">
-                          <textarea
-                            cols="80"
-                            rows="4"
-                            className="form-control"
-                            aria-invalid="false"
-                            placeholder="Brief Description of Your Legal Issue"
-                            name="message"
-                          ></textarea>
-                        </span>
-                      </p>
-                    </div>
-                  </div>
-                  <div className="col-12">
-                    <div className="input-group input-button">
-                      <input
-                        className="form-control btn btn-primary"
-                        type="submit"
-                        value="SEND MESSAGE"
-                      />
-                    </div>
-                  </div>
+                    <button
+                      className="contact-btn btn-hover col-12 bg-black text-white border-0 rounded p-2"
+                      type="submit"
+                    >
+                      Submit
+                    </button>
+                  </form>
                 </div>
               </div>
               <div className="col-12 shadow">
@@ -474,7 +429,7 @@ export default function Home({ isSmallScreen }) {
                       <input
                         className="form-control rounded p-2"
                         type="text"
-                        placeholder="Priscilla C. Tran Law Inquiry"
+                        placeholder="PCT Law Inquiry"
                         name="subject"
                       />
                     </div>
