@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faChevronDown,
   faChevronRight,
+  faHouse
 } from "@fortawesome/free-solid-svg-icons";
 import "./Nav.css";
 
@@ -13,7 +14,7 @@ export default function Nav({ isSmallScreen }) {
         <ul className="col-12 mx-auto d-flex justify-content-center flex-wrap align-items-center m-0 p-0 py-2">
           <li className="nav-link text-uppercase">
             <a href="#" className="text-white underline-animation pt-1 my-2">
-              Home
+              <FontAwesomeIcon icon={faHouse} />
             </a>
           </li>
           <li className="nav-link text-uppercase">
@@ -62,7 +63,7 @@ export default function Nav({ isSmallScreen }) {
           </li>
           <li className="nav-link text-uppercase">
             <a href="#" className="text-white underline-animation pt-1 my-2">
-              Consultation{" "}
+              Free Consultation{" "}
               <FontAwesomeIcon icon={faChevronRight} className="text-pink" />
             </a>
           </li>
@@ -125,7 +126,7 @@ export default function Nav({ isSmallScreen }) {
           </li>
           <li className="nav-link text-uppercase">
             <a href="#" className="text-white underline-animation my-2 mx-5">
-              Consultation{" "}
+              Free Consultation{" "}
               <FontAwesomeIcon icon={faChevronRight} className="text-pink" />
             </a>
           </li>
