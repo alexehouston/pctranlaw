@@ -450,7 +450,7 @@ export default function Home({ isSmallScreen }) {
                         className="form-control shadow"
                         placeholder="Name"
                         type="text"
-                        name="Name"
+                        name="name"
                       />
                     </div>
                   </div>
@@ -460,7 +460,7 @@ export default function Home({ isSmallScreen }) {
                         className="form-control shadow"
                         placeholder="Email"
                         type="text"
-                        name="Email"
+                        name="email"
                       />
                     </div>
                   </div>
@@ -470,7 +470,7 @@ export default function Home({ isSmallScreen }) {
                         className="form-control shadow my-4"
                         placeholder="Phone"
                         type="text"
-                        name="Phone"
+                        name="phone"
                       />
                     </div>
                   </div>
@@ -480,7 +480,7 @@ export default function Home({ isSmallScreen }) {
                         className="form-control shadow my-4"
                         placeholder="Subject"
                         type="text"
-                        name="Subject"
+                        name="subject"
                       />
                     </div>
                   </div>
@@ -489,7 +489,7 @@ export default function Home({ isSmallScreen }) {
                       <textarea
                         className="form-control shadow"
                         placeholder="Brief Description of Your Legal Issue"
-                        name="Message"
+                        name="message"
                       ></textarea>
                     </div>
                   </div>
@@ -503,7 +503,6 @@ export default function Home({ isSmallScreen }) {
                     </div>
                   </div>
                 </div>
-                
               </form>
             </div>
           </div>
