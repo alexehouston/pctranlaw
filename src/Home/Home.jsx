@@ -440,9 +440,20 @@ export default function Home({ isSmallScreen }) {
                   pctranlaw.com
                 </a>
               </div>
-              <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+              <form
+                name="contact"
+                method="POST"
+                netlify
+                data-netlify-honeypot="bot-field"
+              >
                 <input type="hidden" name="form-name" value="contact" />
                 <input type="hidden" name="to" value="alexehouston@gmail.com" />
+                <input type="hidden" name="email" />
+                <input
+                  type="hidden"
+                  name="subject"
+                  value="Priscilla C. Tran Law Firm Inquiry"
+                />
                 <div className="row justify-content-center mx-auto pb-3">
                   <div className="col-5">
                     <div className="input-group">
