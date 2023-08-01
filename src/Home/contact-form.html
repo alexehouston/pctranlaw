@@ -1,0 +1,59 @@
+<form
+      className="text-center"
+      name="contact"
+      method="POST"
+      data-netlify="true"
+    >
+      <div className="row mb-4">
+        <div className="col-6">
+          <input
+            className="form-control rounded p-2"
+            type="text"
+            placeholder="Name"
+            name="name"
+          />
+        </div>
+        <div className="col-6">
+          <input
+            className="form-control rounded p-2"
+            type="phone"
+            placeholder="Phone"
+            name="phone"
+          />
+        </div>
+      </div>
+      <div className="row mb-4">
+        <div className="col-6">
+          <input
+            className="form-control rounded p-2"
+            type="email"
+            placeholder="Email"
+            name="email"
+          />
+        </div>
+        <div className="col-6">
+          <input
+            className="form-control rounded p-2"
+            type="text"
+            placeholder="Subject"
+            name="subject"
+          />
+        </div>
+      </div>
+      <div className="row my-4">
+        <div className="col-12">
+          <textarea
+            className="form-control rounded p-2"
+            placeholder="Brief Summary of Legal Issue"
+            name="message"
+          ></textarea>
+        </div>
+      </div>
+      <button
+        className="contact-btn btn-hover col-12 bg-black text-white border-0 rounded p-2"
+        type="submit"
+      >
+        Submit
+      </button>
+      <input type="hidden" name="form-name" value="contact" />
+    </form>
