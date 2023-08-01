@@ -12,26 +12,6 @@ import {
 import "./Home.css";
 
 export default function Home({ isSmallScreen }) {
-  const handleSubmit = (event) => {
-    event.preventDefault();
-
-    const myForm = event.target;
-    const formData = new FormData(myForm);
-
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: new URLSearchParams(formData).toString(),
-    })
-      .then(() => {
-        alert("Form submitted successfully!");
-      })
-      .catch((error) => {
-        alert("Error submitting form. Please try again later.");
-        console.error(error);
-      });
-  };
-
   return (
     <>
       {isSmallScreen ? (
@@ -461,13 +441,8 @@ export default function Home({ isSmallScreen }) {
                 </a>
               </div>
               <div className="d-flex justify-content-center text-center">
-                <form
-                  className="text-center"
-                  name="contact"
-                  method="POST"
-                  data-netlify="true"
-                  onSubmit={handleSubmit}
-                >
+                <form className="text-center" name="contact" method="POST">
+                  <input type="hidden" name="form-name" value="contact" />
                   <div className="row mb-4">
                     <div className="col-6">
                       <input
@@ -519,7 +494,6 @@ export default function Home({ isSmallScreen }) {
                   >
                     Submit
                   </button>
-                  <input type="hidden" name="form-name" value="contact" />
                 </form>
               </div>
             </div>
