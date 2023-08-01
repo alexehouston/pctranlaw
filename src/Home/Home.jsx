@@ -474,9 +474,8 @@ export default function Home({ isSmallScreen }) {
                       <input
                         className="form-control rounded p-2"
                         type="text"
-                        placeholder="Subject"
+                        placeholder="Priscilla C. Tran Law Inquiry"
                         name="subject"
-                        value="Priscilla C. Tran Law Inquiry"
                       />
                     </div>
                   </div>
