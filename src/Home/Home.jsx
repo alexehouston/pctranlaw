@@ -440,66 +440,71 @@ export default function Home({ isSmallScreen }) {
                   pctranlaw.com
                 </a>
               </div>
-              <div className="row justify-content-center mx-auto pb-3">
-                <div className="col-5">
-                  <div className="input-group">
-                    <input
-                      className="form-control shadow"
-                      placeholder="Name"
-                      type="text"
-                      name="your-name"
-                    />
+              <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+                <input type="hidden" name="form-name" value="contact" />
+                <input type="hidden" name="to" value="alexehouston@gmail.com" />
+                <div className="row justify-content-center mx-auto pb-3">
+                  <div className="col-5">
+                    <div className="input-group">
+                      <input
+                        className="form-control shadow"
+                        placeholder="Name"
+                        type="text"
+                        name="Name"
+                      />
+                    </div>
+                  </div>
+                  <div className="col-5">
+                    <div className="input-group">
+                      <input
+                        className="form-control shadow"
+                        placeholder="Email"
+                        type="text"
+                        name="Email"
+                      />
+                    </div>
+                  </div>
+                  <div className="col-5">
+                    <div className="input-group">
+                      <input
+                        className="form-control shadow my-4"
+                        placeholder="Phone"
+                        type="text"
+                        name="Phone"
+                      />
+                    </div>
+                  </div>
+                  <div className="col-5">
+                    <div className="input-group">
+                      <input
+                        className="form-control shadow my-4"
+                        placeholder="Subject"
+                        type="text"
+                        name="Subject"
+                      />
+                    </div>
+                  </div>
+                  <div className="col-10">
+                    <div className="input-group input-button col-12">
+                      <textarea
+                        className="form-control shadow"
+                        placeholder="Brief Description of Your Legal Issue"
+                        name="Message"
+                      ></textarea>
+                    </div>
+                  </div>
+                  <div className="col-10">
+                    <div className="input-group input-button">
+                      <input
+                        className="form-control btn btn-primary mt-5"
+                        type="submit"
+                        value="SEND MESSAGE"
+                      />
+                    </div>
                   </div>
                 </div>
-                <div className="col-5">
-                  <div className="input-group">
-                    <input
-                      className="form-control shadow"
-                      placeholder="Email"
-                      type="text"
-                      name="your-email"
-                    />
-                  </div>
-                </div>
-                <div className="col-5">
-                  <div className="input-group">
-                    <input
-                      className="form-control shadow my-4"
-                      placeholder="Phone"
-                      type="text"
-                      name="phone"
-                    />
-                  </div>
-                </div>
-                <div className="col-5">
-                  <div className="input-group">
-                    <input
-                      className="form-control shadow my-4"
-                      placeholder="Subject"
-                      type="text"
-                      name="text-99"
-                    />
-                  </div>
-                </div>
-                <div className="col-10">
-                  <div className="input-group input-button col-12">
-                    <textarea
-                      className="form-control shadow"
-                      placeholder="Brief Description of Your Legal Issue"
-                      name="message"
-                    ></textarea>
-                  </div>
-                </div>
-                <div className="col-10">
-                  <div className="input-group input-button">
-                    <input
-                      className="form-control btn btn-primary mt-5"
-                      type="submit"
-                      value="SEND MESSAGE"
-                    />
-                  </div>
-                </div>
-              </div>
+                
+              </form>
             </div>
           </div>
         </div>
