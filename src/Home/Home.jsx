@@ -351,11 +351,30 @@ export default function Home({ isSmallScreen }) {
                   </form>
                 </div>
               </div>
-              <div className="col-12 shadow">
-                <img
-                  className="w-100 h-100 shadow rounded"
-                  src="https://images.squarespace-cdn.com/content/v1/568e945169492e8fd6b31c79/1608159840897-QU9MFY76NRTX2168NEYK/_99A1837.jpg"
-                />
+              <div className="col-12 shadow position-relative">
+                <a
+                  href="https://www.google.com/maps/place/5718+Westheimer+Rd+1000+1125,+Houston,+TX+77057/@29.7384872,-95.4814493,17z/data=!3m1!4b1!4m5!3m4!1s0x8640c3d8b898e3b1:0x29bce29c9e907e33!8m2!3d29.7384826!4d-95.4788744?entry=ttu"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-white"
+                >
+                  <img
+                    className="w-100 h-100 shadow rounded"
+                    src="https://res.cloudinary.com/worksuites-cms/image/upload/q_80,w_512/v1/prod/media/images/pkktjd2f3yqdanfswguv.webp"
+                  />
+                  <div
+                    className="position-absolute top-0 text-end end-0 p-3 text-uppercase"
+                    style={{ fontSize: ".8rem" }}
+                  >
+                    <p>
+                      5718 Westheimer Road
+                      <br />
+                      Suite 1000-1125
+                      <br />
+                      Houston, TX 77057
+                    </p>
+                  </div>
+                </a>
               </div>
             </div>
           </div>
@@ -367,11 +386,30 @@ export default function Home({ isSmallScreen }) {
         >
           <h1 className="py-5 text-uppercase text-thin">Contact Us</h1>
           <div className="d-flex pb-5">
-            <div className="col-12 col-lg-5">
-              <img
-                className="w-100 h-100 shadow rounded"
-                src="https://images.squarespace-cdn.com/content/v1/568e945169492e8fd6b31c79/1608159840897-QU9MFY76NRTX2168NEYK/_99A1837.jpg"
-              />
+            <div className="col-12 col-lg-5 position-relative">
+              <a
+                href="https://www.google.com/maps/place/5718+Westheimer+Rd+1000+1125,+Houston,+TX+77057/@29.7384872,-95.4814493,17z/data=!3m1!4b1!4m5!3m4!1s0x8640c3d8b898e3b1:0x29bce29c9e907e33!8m2!3d29.7384826!4d-95.4788744?entry=ttu"
+                target="_blank"
+                rel="noreferrer"
+                className="text-white"
+              >
+                <img
+                  className="w-100 h-100 shadow rounded"
+                  src="https://res.cloudinary.com/worksuites-cms/image/upload/q_80,w_512/v1/prod/media/images/pkktjd2f3yqdanfswguv.webp"
+                />
+                <div
+                  className="position-absolute top-0 text-end end-0 p-3 text-uppercase"
+                  style={{ fontSize: ".8rem" }}
+                >
+                  <p>
+                    5718 Westheimer Road
+                    <br />
+                    Suite 1000-1125
+                    <br />
+                    Houston, TX 77057
+                  </p>
+                </div>
+              </a>
             </div>
             <div className="col-12 col-lg-7 ps-5">
               <h2 className="text-center">Let Us Know How We Can Help!</h2>
