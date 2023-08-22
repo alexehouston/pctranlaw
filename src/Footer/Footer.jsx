@@ -16,8 +16,8 @@ export default function Footer() {
             Business Law
           </a>
         </div>
-        <div className="col-4 col-lg-1">
-          <img src="/assets/PCT-logo.png" height="125" />
+        <div className="col-4 col-lg-2">
+          <img src="/assets/PCT-logo-shadow.png" height="175" />
         </div>
         <div className="col-4 col-lg-2 text-center d-flex flex-column">
           <h6 className="ftr-title fs-5 text-uppercase">Follow Us</h6>
