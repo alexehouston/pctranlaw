@@ -284,7 +284,7 @@ export default function Home({ isSmallScreen }) {
                     (832) 776 - 6979
                   </a>
                   <a
-                    href="mailto:ptran@pctranlaw.com?subject=PCT Law Inquiry"
+                    href="mailto:contact@pctranlaw.com?subject=PCT Law Inquiry"
                     className="btn-hover text-center bg-dark text-white rounded-pill h-50 p-3 my-2"
                   >
                     <FontAwesomeIcon
@@ -422,7 +422,7 @@ export default function Home({ isSmallScreen }) {
                   (832) 776 - 6979
                 </a>
                 <a
-                  href="mailto:ptran@pctranlaw.com?subject=PCT Law Inquiry"
+                  href="mailto:contact@pctranlaw.com?subject=PCT Law Inquiry"
                   className="contact-btn btn-hover text-center bg-dark text-white rounded-pill h-50 p-3"
                 >
                   <FontAwesomeIcon

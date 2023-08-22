@@ -6,12 +6,18 @@ import {
   faClock,
   faEnvelope,
 } from "@fortawesome/free-solid-svg-icons";
-import './ContactBar.css';
+import "./ContactBar.css";
 
 export default function ContactBar() {
   return (
     <div className="ContactBar container-fluid bg-black m-0 py-2 px-0 position-fixed bottom-0 animate__animated animate__fadeInUp animate__slow border-top border-dark">
-      <Marquee className="d-flex justify-content-between" pauseOnClick pauseOnHover autoFill speed={30}>
+      <Marquee
+        className="d-flex justify-content-between"
+        pauseOnClick
+        pauseOnHover
+        autoFill
+        speed={30}
+      >
         <a className="text-uppercase text-thin mx-5" href="tel:8327766979">
           <FontAwesomeIcon icon={faPhone} className="pe-2 text-pink" />
           <span className="contact-info text-white underline-animation">
@@ -29,26 +35,19 @@ export default function ContactBar() {
             5718 Westheimer Road, Suite 1000-1125 Houston, TX 77057
           </span>
         </a>
+        <FontAwesomeIcon icon={faClock} className="pe-2 text-pink" />
+        <span className="contact-info text-white underline-animation">
+          Mon - Fri: 9AM - 5PM
+        </span>
         <a
           className="text-uppercase text-thin mx-5"
-          href="mailto:ptran@pctranlaw.com?subject=PCT Law Inquiry"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <FontAwesomeIcon icon={faClock} className="pe-2 text-pink" />
-          <span className="contact-info text-white underline-animation">
-            Mon - Fri: 9AM - 5PM
-          </span>
-        </a>
-        <a
-          className="text-uppercase text-thin mx-5"
-          href="mailto:ptran@pctranlaw.com?subject=PCT Law Inquiry"
+          href="mailto:contact@pctranlaw.com?subject=PCT Law Inquiry"
           target="_blank"
           rel="noreferrer"
         >
           <FontAwesomeIcon icon={faEnvelope} className="pe-2 text-pink" />
           <span className="contact-info text-white underline-animation">
-            ptran@pctranlaw.com
+            contact@pctranlaw.com
           </span>
         </a>
       </Marquee>
