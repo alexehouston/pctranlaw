@@ -1,5 +1,5 @@
 .home-landing {
-  background-image: url("/assets/lady-justice-home.jpg");
+  background-image: url("/assets/priscilla_home.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -73,6 +73,14 @@
   margin-top: -20rem;
 }
 
+.about-photo {
+  border-radius: 10px;
+}
+
+.about-photo img {
+  width: 100%;
+}
+
 .home-contact {
   margin-top: -13rem;
 }
@@ -93,6 +101,39 @@
 .modal-btn {
   letter-spacing: 3px;
   font-weight: 500;
+}
+
+.testimonial {
+  border: 1px solid var(--pctgold);
+  background: radial-gradient(
+      ellipse farthest-corner at right bottom,
+      #fedb37 0%,
+      #fdb931 8%,
+      #9f7928 30%,
+      #8a6e2f 40%,
+      transparent 80%
+    ),
+    radial-gradient(
+      ellipse farthest-corner at left top,
+      #ffffff 0%,
+      #ffffac 8%,
+      #d1b464 25%,
+      #5d4a1f 62.5%,
+      #5d4a1f 100%
+    );
+  box-shadow: 0 0 2px #fff, 0 0 5px #fff, 0 0 20px var(--pctpink);
+}
+
+.card {
+  width: 24rem !important;
+}
+
+.card-body h5 {
+  text-shadow: 0px 0px 10px black;
+}
+
+.card-title {
+  color: var(--pctpink) !important;
 }
 
 .card-text-desktop {
@@ -130,7 +171,7 @@ iframe .formFooter-heightMask {
 
 @media (max-width: 576px) {
   .home-landing {
-    background-image: url("/assets/lady-justice-home-mobile.jpg");
+    background-image: url("/assets/priscilla_home_mobile.jpg");
   }
 
   .responsive-image {

@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import { useEffect } from "react";
 import Logo from "../Logo/Logo";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -9,9 +10,16 @@ import {
   faEnvelope,
   faChevronRight,
 } from "@fortawesome/free-solid-svg-icons";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import "./Home.css";
 
 export default function Home({ isSmallScreen }) {
+
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <>
       {isSmallScreen ? (
@@ -106,7 +114,7 @@ export default function Home({ isSmallScreen }) {
         </div>
       ) : (
         <div className="container-fluid p-0 h-100 bg-black mb-5">
-          <div className="container-fluid p-0 w-75 text-white">
+          <div className="container-fluid p-0 w-75 text-white" data-aos="fade-up">
             <h1 className="py-5 text-uppercase text-thin">
               Our Practice Areas
             </h1>
@@ -179,7 +187,7 @@ export default function Home({ isSmallScreen }) {
             <div className="mx-auto py-3">
               <img
                 className="rounded about-img"
-                src="https://drummoynetherapycentre.com.au/wp-content/uploads/2019/08/Headshot-Placeholder-Female-1.jpg"
+                src="/assets/headshots/priscilla_1.jpg"
                 width="100%"
               />
               <p className="text-center pt-3">
@@ -196,7 +204,7 @@ export default function Home({ isSmallScreen }) {
           </div>
         </div>
       ) : (
-        <div className="home-about w-75 mx-auto bg-white shadow px-5 rounded">
+        <div className="home-about w-75 mx-auto bg-white shadow px-5 rounded" data-aos="fade-up">
           <div className="row w-100 text-center">
             <h1 className="pt-5 pb-4 text-uppercase">
               <div className="about-priscilla">
@@ -205,9 +213,9 @@ export default function Home({ isSmallScreen }) {
               </div>
             </h1>
           </div>
-          <div className="row">
+          <div className="row w-100">
             <div className="col-lg-7">
-              <p className="about-text pe-4">
+              <p className="about-text ps-4 pt-5">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim
                 nulla aliquet porttitor lacus. Eleifend mi in nulla posuere
@@ -236,24 +244,13 @@ export default function Home({ isSmallScreen }) {
                 quam pellentesque nec nam aliquam sem et. Posuere urna nec
                 tincidunt praesent semper feugiat nibh sed pulvinar. Malesuada
                 pellentesque elit eget gravida cum sociis natoque penatibus. A
-                lacus vestibulum sed arcu non odio euismod lacinia at. In vitae
-                turpis massa sed elementum. Malesuada pellentesque elit eget
-                gravida cum sociis. Risus viverra adipiscing at ua. Enim nulla
-                aliquet porttitor lacus. Eleifend mi in nulla posuere
-                sollicitudin aliquam ultrices sagittis. Commodo quis imperdiet
-                massa tincidunt nunc pulvinar. Sed ullamcorper morbi dui ut
-                ornare. Lorem donec massa sapien faucibus et molestie ac feugiat
-                sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna
-                aliqua. Enim nulla aliquet porttitor lacus. Eleifend mi in
-                nulla.
+                lacus vestibulum sed arcu non.
               </p>
             </div>
-            <div className="col-lg-5 d-flex align-items-center justify-content-center h-100">
+            <div className="about-photo col-lg-5 d-flex align-items-center justify-content-center overflow-hidden mb-5 p-3">
               <img
-                className="rounded about-img mb-5 shadow"
-                src="https://wallisphoto.com/IMAGES/2020/headshots/female-attorney-headshot-oc.jpg"
-                width="75%"
+              className="w-75 shadow rounded"
+                src="/assets/headshots/priscilla_2_cropped.jpg"
                 alt="Attorney Priscilla C. Tran"
               />
             </div>
@@ -382,11 +379,17 @@ export default function Home({ isSmallScreen }) {
       ) : (
         <div
           id="ContactUs"
-          className="bg-white container-fluid p-0 w-75 my-5 pb-5"
+          className="bg-white container-fluid p-0 w-75 my-5 pb-5" data-aos="fade-up"
         >
           <h1 className="py-5 text-uppercase text-thin">Contact Us</h1>
           <div className="d-flex pb-5">
-            <div className="col-12 col-lg-5 position-relative">
+          <div className="col-12 col-lg-5 position-relative">
+                <img
+                  className="w-100 h-100 shadow rounded"
+                  src="/assets/headshots/priscilla_3_cropped.jpg"
+                />
+            </div>
+            {/* <div className="col-12 col-lg-5 position-relative">
               <a
                 href="https://www.google.com/maps/place/5718+Westheimer+Rd+1000+1125,+Houston,+TX+77057/@29.7384872,-95.4814493,17z/data=!3m1!4b1!4m5!3m4!1s0x8640c3d8b898e3b1:0x29bce29c9e907e33!8m2!3d29.7384826!4d-95.4788744?entry=ttu"
                 target="_blank"
@@ -410,7 +413,7 @@ export default function Home({ isSmallScreen }) {
                   </p>
                 </div>
               </a>
-            </div>
+            </div> */}
             <div className="col-12 col-lg-7 ps-5">
               <h2 className="text-center">Let Us Know How We Can Help!</h2>
               <div className="d-flex justify-content-around py-5 mb-2 text-uppercase mx-auto w-75">
@@ -495,7 +498,7 @@ export default function Home({ isSmallScreen }) {
       )}
 
       <div className="bg-black container-fluid h-75 d-flex flex-column">
-        <div className="container-fluid w-75 d-flex flex-column">
+        <div className="container-fluid w-75 d-flex flex-column" data-aos="fade-up">
           <h1 className="mt-4 py-5 text-uppercase text-white text-thin">
             Client Testimonials
           </h1>
@@ -528,7 +531,7 @@ export default function Home({ isSmallScreen }) {
                   </div>
                   <div className="carousel-inner">
                     <div className="carousel-item active">
-                      <div className="card">
+                      <div className="card testimonial floating text-white">
                         <div className="card-body text-center p-4">
                           <p className="card-text">
                             &quot;Semper risus in hendrerit gravida rutrum
@@ -543,7 +546,7 @@ export default function Home({ isSmallScreen }) {
                       </div>
                     </div>
                     <div className="carousel-item">
-                      <div className="card">
+                      <div className="card testimonial floating text-white">
                         <div className="card-body text-center p-4">
                           <p className="card-text">
                             &quot;Semper risus in hendrerit gravida rutrum
@@ -558,7 +561,7 @@ export default function Home({ isSmallScreen }) {
                       </div>
                     </div>
                     <div className="carousel-item">
-                      <div className="card">
+                      <div className="card testimonial floating text-white">
                         <div className="card-body text-center p-4">
                           <p className="card-text">
                             &quot;Semper risus in hendrerit gravida rutrum
@@ -577,40 +580,37 @@ export default function Home({ isSmallScreen }) {
               </>
             ) : (
               <>
-                <div className="card">
+                <div className="card testimonial floating text-white">
                   <div className="card-body text-center p-4">
-                    <p className="card-text card-text-desktop">
+                    <p className="card-text card-text-desktop py-4">
                       &quot;Semper risus in hendrerit gravida rutrum quisque
                       non. Commodo quis imperdiet massa tincidunt nunc pulvinar.
                       Sed ullamcorper morbi tincidunt ornare massa. Tempus quam
-                      pellentesque nec nam aliquam sem et. Posuere urna nec
-                      tincidunt praesent semper feugiat nibh sed pulvinar.&quot;
+                      pellentesque nec nam aliquam sem et.&quot;
                     </p>
-                    <h5 className="card-title fs-4">- Priscilla C.</h5>
+                    <h5 className="card-title fs-3 text-uppercase">- Priscilla C.</h5>
                   </div>
                 </div>
-                <div className="card mx-5">
+                <div className="card testimonial floating text-white mx-5">
                   <div className="card-body text-center p-4">
-                    <p className="card-text card-text-desktop">
+                    <p className="card-text card-text-desktop py-4">
                       &quot;Semper risus in hendrerit gravida rutrum quisque
                       non. Commodo quis imperdiet massa tincidunt nunc pulvinar.
                       Sed ullamcorper morbi tincidunt ornare massa. Tempus quam
-                      pellentesque nec nam aliquam sem et. Posuere urna nec
-                      tincidunt praesent semper feugiat nibh sed pulvinar.&quot;
+                      pellentesque nec nam aliquam sem et.&quot;
                     </p>
-                    <h5 className="card-title fs-3">- Priscilla C.</h5>
+                    <h5 className="card-title fs-3 text-uppercase">- Priscilla C.</h5>
                   </div>
                 </div>
-                <div className="card">
+                <div className="card testimonial floating text-white">
                   <div className="card-body text-center p-4">
-                    <p className="card-text card-text-desktop">
+                    <p className="card-text card-text-desktop py-4">
                       &quot;Semper risus in hendrerit gravida rutrum quisque
                       non. Commodo quis imperdiet massa tincidunt nunc pulvinar.
                       Sed ullamcorper morbi tincidunt ornare massa. Tempus quam
-                      pellentesque nec nam aliquam sem et. Posuere urna nec
-                      tincidunt praesent semper feugiat nibh sed pulvinar.&quot;
+                      pellentesque nec nam aliquam sem et.&quot;
                     </p>
-                    <h5 className="card-title fs-3">- Priscilla C.</h5>
+                    <h5 className="card-title fs-3 text-uppercase">- Priscilla C.</h5>
                   </div>
                 </div>
               </>

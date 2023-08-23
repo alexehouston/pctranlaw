@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faChevronDown,
   faChevronRight,
-  faHouse
+  faHouse,
 } from "@fortawesome/free-solid-svg-icons";
 import "./Nav.css";
 
@@ -71,7 +71,7 @@ export default function Nav({ isSmallScreen }) {
       ) : (
         <ul className="col-10 mx-auto d-flex justify-content-between align-items-center m-0 py-2">
           <li className="nav-link text-uppercase">
-            <a href="#" className="text-white underline-animation my-2 mx-5">
+            <a href="#" className="nav-link-a text-white underline-animation my-2 mx-5">
               Home
             </a>
           </li>
@@ -120,12 +120,41 @@ export default function Nav({ isSmallScreen }) {
             </div>
           </li>
           <li className="nav-link text-uppercase">
-            <a href="#ContactUs" className="text-white underline-animation my-2 mx-5">
+            <div className="dropdown underline-animation my-2 mx-5 d-flex align-items-center">
+              <a
+                className="dropdown-toggle underline-animation text-white"
+                href="#"
+                role="button"
+                id="navLinksDropdown"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Legal Team{" "}
+                <FontAwesomeIcon icon={faChevronDown} className="text-pink" />
+              </a>
+              <ul className="dropdown-menu" aria-labelledby="navLinksDropdown">
+                <li>
+                  <a className="dropdown-item">Priscilla C. Tran</a>
+                </li>
+                <li>
+                  <a className="dropdown-item">Priscilla C. Tran</a>
+                </li>
+                <li>
+                  <a className="dropdown-item">Priscilla C. Tran</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li className="nav-link text-uppercase">
+            <a
+              href="#ContactUs"
+              className="nav-link-a text-white underline-animation my-2 mx-5"
+            >
               Contact Us
             </a>
           </li>
           <li className="nav-link text-uppercase">
-            <a href="#" className="text-white underline-animation my-2 mx-5">
+            <a href="#" className="nav-link-a text-white underline-animation my-2 mx-5">
               Free Consultation{" "}
               <FontAwesomeIcon icon={faChevronRight} className="text-pink" />
             </a>

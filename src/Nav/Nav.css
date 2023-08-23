@@ -15,12 +15,16 @@
   transition: all .5s ease;
 }
 
-.nav-link a:hover {
+.nav-link-a:hover {
   color: var(--pctpink) !important;
 }
 
 .dropdown-item:hover {
   background-color: var(--pctpink) !important;
+}
+
+.dropdown-item:hover > .dropdown-item a {
+  color: #000 !important;
 }
 
 .dropdown-toggle::after {
