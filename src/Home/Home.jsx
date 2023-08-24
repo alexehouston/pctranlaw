@@ -633,7 +633,7 @@ export default function Home({ isSmallScreen }) {
                       src="/assets/stars-gold.png"
                       alt="Stars"
                     />
-                    <p className="card-text card-text-desktop py-4">
+                    <p className="card-text card-text-desktop pt-4 pb-2">
                       &quot;Semper risus in hendrerit gravida rutrum quisque
                       non. Commodo quis imperdiet massa tincidunt nunc pulvinar.
                       Sed ullamcorper morbi tincidunt ornare massa. Tempus quam
@@ -651,7 +651,7 @@ export default function Home({ isSmallScreen }) {
                       src="/assets/stars-gold.png"
                       alt="Stars"
                     />
-                    <p className="card-text card-text-desktop py-4">
+                    <p className="card-text card-text-desktop pt-4 pb-2">
                       &quot;Semper risus in hendrerit gravida rutrum quisque
                       non. Commodo quis imperdiet massa tincidunt nunc pulvinar.
                       Sed ullamcorper morbi tincidunt ornare massa. Tempus quam
@@ -669,7 +669,7 @@ export default function Home({ isSmallScreen }) {
                       src="/assets/stars-gold.png"
                       alt="Stars"
                     />
-                    <p className="card-text card-text-desktop py-4">
+                    <p className="card-text card-text-desktop pt-4 pb-2">
                       &quot;Semper risus in hendrerit gravida rutrum quisque
                       non. Commodo quis imperdiet massa tincidunt nunc pulvinar.
                       Sed ullamcorper morbi tincidunt ornare massa. Tempus quam

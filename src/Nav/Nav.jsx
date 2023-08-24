@@ -101,10 +101,10 @@ export default function Nav({ isSmallScreen }) {
           </li>
         </ul>
       ) : (
-        <ul className="col-10 mx-auto d-flex justify-content-between align-items-center m-0 py-2">
+        <ul className="nav-links col-12 px-5 d-flex justify-content-between align-items-center m-0 py-2">
           <li className="nav-link text-uppercase">
             <a href="#" className="nav-link-a text-white underline-animation my-2">
-              Home
+              <FontAwesomeIcon icon={faHouse} />
             </a>
           </li>
           <li className="nav-link text-uppercase">
