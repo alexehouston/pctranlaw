@@ -171,7 +171,7 @@ iframe .formFooter-heightMask {
 @media (max-width: 576px) {
   .home-landing {
     background-image: url("/assets/priscilla_home_mobile.jpg");
-    height: 90%;
+    height: 85%;
   }
 
   .responsive-image {
