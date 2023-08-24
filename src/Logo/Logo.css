@@ -1,18 +1,31 @@
 .pct-logo {
-    height: 15rem;
-    width: 15rem;
-    transform-style: preserve-3d;
-    transform-origin: 50%;
-    animation: spin 8s infinite;
-    animation-timing-function: linear;
-    margin: 1.5rem;
-  }
-  
+  height: 15rem;
+  width: 15rem;
+  transform-style: preserve-3d;
+  transform-origin: 50%;
+  animation: spin 8s infinite;
+  animation-timing-function: linear;
+  margin: 1.5rem;
+}
+
+.pct-logo .front,
+.pct-logo .back {
+  position: absolute;
+  height: 15rem;
+  width: 15rem;
+  background-size: cover;
+  background-image: url("/assets/PCT-3d-logo.png");
+}
+
+@media (max-width: 576px) {
+  .pct-logo,
   .pct-logo .front,
   .pct-logo .back {
-    position: absolute;
-    height: 15rem;
-    width: 15rem;
-    background-size: cover;
-    background-image: url("/assets/PCT-3d-logo.png");
+    height: 10rem;
+    width: 10rem;
   }
+
+  .pct-logo {
+    margin: 2rem 0 1rem 0;
+  }
+}

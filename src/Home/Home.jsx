@@ -22,7 +22,7 @@ export default function Home({ isSmallScreen }) {
   return (
     <>
       {isSmallScreen ? (
-        <div className="home-landing d-flex flex-column align-items-center home-text animate__animated animate__fadeInUp animate__slow h-100 pt-5">
+        <div className="home-landing d-flex flex-column align-items-center home-text animate__animated animate__fadeInUp animate__slow pt-5">
           <Logo />
           <img
             className="home-title pb-2 responsive-image pt-3"
@@ -217,9 +217,9 @@ export default function Home({ isSmallScreen }) {
               </div>
             </h1>
           </div>
-          <div className="row w-100">
-            <div className="col-lg-7">
-              <p className="about-text ps-3 py-5">
+          {/* <div className="row w-100"> */}
+            <div className="col-12 col-lg-6 pb-4">
+              <p className="about-text">
                 <span className="fs-2 lh-1">Lorem</span> ipsum dolor sit amet,
                 consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                 labore et dolore magna aliqua. Enim nulla aliquet porttitor
@@ -240,18 +240,17 @@ export default function Home({ isSmallScreen }) {
                 gravida cum sociis. Risus viverra adipiscing at in tellus.
                 Lobortis elementum nibh tellus molestie nunc non blandit. Massa
                 tincidunt dui ut ornare. Lorem donec massa sapien faucibus et
-                molestie ac feugiat sed. Lorem ipsum dolor sit.
+                molestie ac feugiat sed.
               </p>
             </div>
-            <div className="about-photo col-lg-6 position-absolute bottom-0 end-0">
+            <div className="about-photo col-lg-6 position-absolute bottom-0 end-0 d-flex justify-content-center">
               <img
-                className=""
                 src="/assets/headshots/priscilla_2_transparent.png"
                 alt="Attorney Priscilla C. Tran"
               />
             </div>
           </div>
-        </div>
+        // </div>
       )}
 
       {isSmallScreen ? (

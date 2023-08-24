@@ -78,7 +78,7 @@
 }
 
 .about-photo img {
-  width: 100%;
+  width: 90%;
 }
 
 .home-contact {
@@ -88,10 +88,6 @@
 .about-priscilla {
   font-size: 2.4rem;
   border-bottom: 3px solid var(--pctpink);
-}
-
-.about-text {
-  
 }
 
 .contact-btn {
@@ -158,6 +154,11 @@ iframe .formFooter-heightMask {
     left: 15%;
   }
 
+  /* .about-text {
+    overflow-y: scroll;
+    height: 25rem;
+  } */
+
   .card-text-desktop {
     font-size: 1.5vmin;
   }
@@ -170,10 +171,11 @@ iframe .formFooter-heightMask {
 @media (max-width: 576px) {
   .home-landing {
     background-image: url("/assets/priscilla_home_mobile.jpg");
+    height: 95%;
   }
 
   .responsive-image {
-    max-width: 24rem;
+    max-width: 80%;
     margin: 0 !important;
   }
 
