@@ -91,11 +91,15 @@
 }
 
 .about-text {
-  text-align: justify;
+  
 }
 
 .contact-btn {
   box-shadow: var(--pct-pink-shadow);
+}
+
+.contact-img {
+  margin-top: -3rem;
 }
 
 .modal-btn {
@@ -128,10 +132,6 @@
   width: 24rem !important;
 }
 
-.card-body h5 {
-  text-shadow: 0px 0px 10px black;
-}
-
 .card-title {
   color: var(--pctpink) !important;
 }
@@ -157,15 +157,13 @@ iframe .formFooter-heightMask {
   .home-landing-inner {
     left: 15%;
   }
-  .home-about {
-    height: 70% !important;
+
+  .card-text-desktop {
+    font-size: 1.5vmin;
   }
-  .about-text {
-    height: 60%;
-    overflow-y: scroll;
-  }
-  .about-img {
-    width: 100%;
+
+  .card h5 {
+    font-size: 1.25rem !important;
   }
 }
 
@@ -202,5 +200,13 @@ iframe .formFooter-heightMask {
 
   .home-contact-inner {
     width: 90% !important;
+  }
+
+  .card {
+    width: auto !important;
+  }
+
+  .card {
+    margin: 1rem 0 2rem;
   }
 }

@@ -15,6 +15,15 @@
 
 @media (max-width: 576px) {
     .Social {
-        margin-bottom: 4rem;
+        margin-bottom: 0;
+    }
+
+    .social-icons {
+        margin-bottom: 1.5rem;
+    }
+
+    .consultation {
+        margin-bottom: 8rem;
+        letter-spacing: 1px;
     }
 }

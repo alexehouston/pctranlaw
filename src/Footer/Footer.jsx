@@ -1,6 +1,7 @@
+import PropTypes from "prop-types";
 import "./Footer.css";
 
-export default function Footer() {
+export default function Footer({isSmallScreen}) {
   return (
     <div className="container-fluid bg-white">
       <div className="ftr row d-flex justify-content-center align-items-center text-center text-black py-5">
@@ -17,7 +18,7 @@ export default function Footer() {
           </a>
         </div>
         <div className="col-4 col-lg-2">
-          <img src="/assets/PCT-logo-shadow.png" height="175" />
+          <img className={isSmallScreen ? "w-100" : "w-75"} src="/assets/PCT-logo-shadow.png" />
         </div>
         <div className="col-4 col-lg-2 text-center d-flex flex-column">
           <h6 className="ftr-title fs-5 text-uppercase">Follow Us</h6>
@@ -45,3 +46,7 @@ export default function Footer() {
     </div>
   );
 }
+
+Footer.propTypes = {
+  isSmallScreen: PropTypes.bool.isRequired,
+};

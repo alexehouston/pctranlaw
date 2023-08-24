@@ -36,7 +36,7 @@ export default function ContactBar() {
           </span>
         </a>
         <FontAwesomeIcon icon={faClock} className="pe-2 text-pink" />
-        <span className="contact-info text-white underline-animation">
+        <span className="contact-info text-white underline-animation text-uppercase">
           Mon - Fri: 9AM - 5PM
         </span>
         <a

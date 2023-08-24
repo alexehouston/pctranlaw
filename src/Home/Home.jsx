@@ -15,7 +15,6 @@ import "aos/dist/aos.css";
 import "./Home.css";
 
 export default function Home({ isSmallScreen }) {
-
   useEffect(() => {
     AOS.init();
   }, []);
@@ -114,7 +113,10 @@ export default function Home({ isSmallScreen }) {
         </div>
       ) : (
         <div className="container-fluid p-0 h-100 bg-black mb-5">
-          <div className="container-fluid p-0 w-75 text-white" data-aos="fade-up">
+          <div
+            className="container-fluid p-0 w-75 text-white"
+            data-aos="fade-up"
+          >
             <h1 className="py-5 text-uppercase text-thin">
               Our Practice Areas
             </h1>
@@ -184,28 +186,30 @@ export default function Home({ isSmallScreen }) {
                 Tran
               </div>
             </h1>
-            <div className="mx-auto py-3">
-              <img
-                className="rounded about-img"
-                src="/assets/headshots/priscilla_1.jpg"
-                width="100%"
-              />
-              <p className="text-center pt-3">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim
-                nulla aliquet porttitor lacus. Eleifend mi in nulla posuere
-                sollicitudin aliquam ultrices sagittis. Viverra nam libero justo
-                laoreet sit amet cursus. Proin nibh nisl condimentum id
-                venenatis a condimentum. Massa tincidunt dui ut ornare. Lorem
-                donec massa sapien faucibus et molestie ac feugiat sed. Duis
-                tristique sollicitudin nibh sit.
+            <div className="mx-auto pt-4">
+              <p className="text-center">
+                <span className="fs-2 lh-1">Lorem</span> ipsum dolor sit amet,
+                consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua. Enim nulla aliquet porttitor
+                lacus. Eleifend mi in nulla posuere sollicitudin aliquam
+                ultrices sagittis. Viverra nam libero justo laoreet sit amet
+                cursus. Proin nibh nisl condimentum id venenatis a condimentum.
+                Massa tincidunt dui ut ornare. Lorem donec massa sapien faucibus
+                et molestie ac feugiat sed.
               </p>
+              <img
+                className="w-100"
+                src="/assets/headshots/priscilla_2_transparent.png"
+              />
             </div>
           </div>
         </div>
       ) : (
-        <div className="home-about w-75 mx-auto bg-white shadow px-5 rounded" data-aos="fade-up">
-          <div className="row w-100 text-center">
+        <div
+          className="home-about w-75 mx-auto bg-white shadow px-5 rounded position-relative"
+          data-aos="fade-up"
+        >
+          <div className="row">
             <h1 className="pt-5 pb-4 text-uppercase">
               <div className="about-priscilla">
                 <span className="text-thin">About Attorney</span> Priscilla C.
@@ -215,42 +219,34 @@ export default function Home({ isSmallScreen }) {
           </div>
           <div className="row w-100">
             <div className="col-lg-7">
-              <p className="about-text ps-4 pt-5">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim
-                nulla aliquet porttitor lacus. Eleifend mi in nulla posuere
-                sollicitudin aliquam ultrices sagittis. Viverra nam libero justo
-                laoreet sit amet cursus. Proin nibh nisl condimentum id
-                venenatis a condimentum. Massa tincidunt dui ut ornare. Lorem
-                donec massa sapien faucibus et molestie ac feugiat sed. Duis
-                tristique sollicitudin nibh sit. Semper risus in hendrerit
-                gravida rutrum quisque non. Commodo quis imperdiet massa
-                tincidunt nunc pulvinar. Sed ullamcorper morbi tincidunt ornare
-                massa. Tempus quam pellentesque nec nam aliquam sem et. Posuere
-                urna nec tincidunt praesent semper feugiat nibh sed pulvinar.
-                Malesuada pellentesque elit eget gravida cum sociis natoque
-                penatibus. Donec pretium vulputate sapien nec sagittis aliquam
-                malesuada. A lacus vestibulum sed arcu non odio euismod lacinia
-                at. In vitae turpis massa sed elementum. Malesuada pellentesque
-                elit eget gravida cum sociis. Risus viverra adipiscing at in
-                tellus. Lobortis elementum nibh tellus molestie nunc non
-                blandit. Massa tincidunt dui ut ornare. Lorem donec massa sapien
-                faucibus et molestie ac feugiat sed. Lorem ipsum dolor sit amet,
+              <p className="about-text ps-3 py-5">
+                <span className="fs-2 lh-1">Lorem</span> ipsum dolor sit amet,
                 consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                 labore et dolore magna aliqua. Enim nulla aliquet porttitor
                 lacus. Eleifend mi in nulla posuere sollicitudin aliquam
-                ultrices sagittis. Commodo quis imperdiet massa tincidunt nunc
-                pulvinar. Sed ullamcorper morbi tincidunt ornare massa. Tempus
-                quam pellentesque nec nam aliquam sem et. Posuere urna nec
-                tincidunt praesent semper feugiat nibh sed pulvinar. Malesuada
-                pellentesque elit eget gravida cum sociis natoque penatibus. A
-                lacus vestibulum sed arcu non.
+                ultrices sagittis. Viverra nam libero justo laoreet sit amet
+                cursus. Proin nibh nisl condimentum id venenatis a condimentum.
+                Massa tincidunt dui ut ornare. Lorem donec massa sapien faucibus
+                et molestie ac feugiat sed. Duis tristique sollicitudin nibh
+                sit. Semper risus in hendrerit gravida rutrum quisque non.
+                Commodo quis imperdiet massa tincidunt nunc pulvinar. Sed
+                ullamcorper morbi tincidunt ornare massa. Tempus quam
+                pellentesque nec nam aliquam sem et. Posuere urna nec tincidunt
+                praesent semper feugiat nibh sed pulvinar. Malesuada
+                pellentesque elit eget gravida cum sociis natoque penatibus.
+                Donec pretium vulputate sapien nec sagittis aliquam malesuada. A
+                lacus vestibulum sed arcu non odio euismod lacinia at. In vitae
+                turpis massa sed elementum. Malesuada pellentesque elit eget
+                gravida cum sociis. Risus viverra adipiscing at in tellus.
+                Lobortis elementum nibh tellus molestie nunc non blandit. Massa
+                tincidunt dui ut ornare. Lorem donec massa sapien faucibus et
+                molestie ac feugiat sed. Lorem ipsum dolor sit.
               </p>
             </div>
-            <div className="about-photo col-lg-5 d-flex align-items-center justify-content-center overflow-hidden mb-5 p-3">
+            <div className="about-photo col-lg-6 position-absolute bottom-0 end-0">
               <img
-              className="w-75 shadow rounded"
-                src="/assets/headshots/priscilla_2_cropped.jpg"
+                className=""
+                src="/assets/headshots/priscilla_2_transparent.png"
                 alt="Attorney Priscilla C. Tran"
               />
             </div>
@@ -259,185 +255,26 @@ export default function Home({ isSmallScreen }) {
       )}
 
       {isSmallScreen ? (
-        <div className="home-contact container-fluid bg-white">
-          <div className="home-contact-inner container-fluid p-0">
-            <h1 className="pt-5 pb-4 text-uppercase text-thin text-center">
-              Contact Us
-            </h1>
-            <div className="d-flex pb-5 flex-column">
-              <div className="col-12">
-                <h2 className="text-center fs-4">
-                  Let Us Know How We Can Help!
-                </h2>
-                <div className="d-flex flex-column justify-content-center pt-4 pb-5 text-uppercase mx-auto">
-                  <a
-                    href="tel:8327766979"
-                    className="btn-hover text-center bg-dark text-white rounded-pill h-50 p-3 my-2"
-                  >
-                    <FontAwesomeIcon
-                      className="text-pink pe-2"
-                      icon={faPhone}
-                    />{" "}
-                    (832) 776 - 6979
-                  </a>
-                  <a
-                    href="mailto:contact@pctranlaw.com?subject=PCT Law Inquiry"
-                    className="btn-hover text-center bg-dark text-white rounded-pill h-50 p-3 my-2"
-                  >
-                    <FontAwesomeIcon
-                      className="text-pink pe-2"
-                      icon={faEnvelope}
-                    />{" "}
-                    ptran<span className="text-pink small">@</span>pctranlaw.com
-                  </a>
-                </div>
-                <div className="row mx-auto pb-5 d-flex justify-content-center">
-                  <form className="text-center" name="contact" method="POST">
-                    <input type="hidden" name="form-name" value="contact" />
-                    <div className="row mb-4">
-                      <div className="col-6">
-                        <input
-                          className="form-control rounded p-2"
-                          type="text"
-                          placeholder="Name"
-                          name="name"
-                        />
-                      </div>
-                      <div className="col-6">
-                        <input
-                          className="form-control rounded p-2"
-                          type="phone"
-                          placeholder="Phone"
-                          name="phone"
-                        />
-                      </div>
-                    </div>
-                    <div className="row mb-4">
-                      <div className="col-6">
-                        <input
-                          className="form-control rounded p-2"
-                          type="email"
-                          placeholder="Email"
-                          name="email"
-                        />
-                      </div>
-                      <div className="col-6">
-                        <input
-                          className="form-control rounded p-2"
-                          type="text"
-                          placeholder="PCT Law Inquiry"
-                          name="subject"
-                        />
-                      </div>
-                    </div>
-                    <div className="row my-4">
-                      <div className="col-12">
-                        <textarea
-                          className="form-control rounded p-2"
-                          placeholder="Brief Summary of Legal Issue"
-                          name="message"
-                        ></textarea>
-                      </div>
-                    </div>
-                    <button
-                      className="contact-btn btn-hover col-12 bg-black text-white border-0 rounded p-2"
-                      type="submit"
-                    >
-                      Submit
-                    </button>
-                  </form>
-                </div>
-              </div>
-              <div className="col-12 shadow position-relative">
-                <a
-                  href="https://www.google.com/maps/place/5718+Westheimer+Rd+1000+1125,+Houston,+TX+77057/@29.7384872,-95.4814493,17z/data=!3m1!4b1!4m5!3m4!1s0x8640c3d8b898e3b1:0x29bce29c9e907e33!8m2!3d29.7384826!4d-95.4788744?entry=ttu"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="text-white"
-                >
-                  <img
-                    className="w-100 h-100 shadow rounded"
-                    src="https://res.cloudinary.com/worksuites-cms/image/upload/q_80,w_512/v1/prod/media/images/pkktjd2f3yqdanfswguv.webp"
-                  />
-                  <div
-                    className="position-absolute top-0 text-end end-0 p-3 text-uppercase"
-                    style={{ fontSize: ".8rem" }}
-                  >
-                    <p>
-                      5718 Westheimer Road
-                      <br />
-                      Suite 1000-1125
-                      <br />
-                      Houston, TX 77057
-                    </p>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      ) : (
         <div
           id="ContactUs"
-          className="bg-white container-fluid p-0 w-75 my-5 pb-5" data-aos="fade-up"
+          className="bg-white container-fluid p-0 w-75 pb-5"
+          data-aos="fade-up"
         >
-          <h1 className="py-5 text-uppercase text-thin">Contact Us</h1>
+          <h1 className="py-5 mb-3 text-uppercase text-thin">Contact Us</h1>
           <div className="d-flex pb-5">
-          <div className="col-12 col-lg-5 position-relative">
+            <div>
+              <div className="contact-img col-12 mx-auto d-flex justify-content-center pe-3">
                 <img
-                  className="w-100 h-100 shadow rounded"
-                  src="/assets/headshots/priscilla_3_cropped.jpg"
+                  className="w-75"
+                  src="/assets/headshots/priscilla_3_transparent.png"
                 />
-            </div>
-            {/* <div className="col-12 col-lg-5 position-relative">
-              <a
-                href="https://www.google.com/maps/place/5718+Westheimer+Rd+1000+1125,+Houston,+TX+77057/@29.7384872,-95.4814493,17z/data=!3m1!4b1!4m5!3m4!1s0x8640c3d8b898e3b1:0x29bce29c9e907e33!8m2!3d29.7384826!4d-95.4788744?entry=ttu"
-                target="_blank"
-                rel="noreferrer"
-                className="text-white"
-              >
-                <img
-                  className="w-100 h-100 shadow rounded"
-                  src="https://res.cloudinary.com/worksuites-cms/image/upload/q_80,w_512/v1/prod/media/images/pkktjd2f3yqdanfswguv.webp"
-                />
-                <div
-                  className="position-absolute top-0 text-end end-0 p-3 text-uppercase"
-                  style={{ fontSize: ".8rem" }}
-                >
-                  <p>
-                    5718 Westheimer Road
-                    <br />
-                    Suite 1000-1125
-                    <br />
-                    Houston, TX 77057
-                  </p>
-                </div>
-              </a>
-            </div> */}
-            <div className="col-12 col-lg-7 ps-5">
-              <h2 className="text-center">Let Us Know How We Can Help!</h2>
-              <div className="d-flex justify-content-around py-5 mb-2 text-uppercase mx-auto w-75">
-                <a
-                  href="tel:8327766969"
-                  className="contact-btn btn-hover text-center bg-dark text-white rounded-pill h-50 p-3"
-                >
-                  <FontAwesomeIcon className="text-pink pe-2" icon={faPhone} />{" "}
-                  (832) 776 - 6979
-                </a>
-                <a
-                  href="mailto:contact@pctranlaw.com?subject=PCT Law Inquiry"
-                  className="contact-btn btn-hover text-center bg-dark text-white rounded-pill h-50 p-3"
-                >
-                  <FontAwesomeIcon
-                    className="text-pink pe-2"
-                    icon={faEnvelope}
-                  />{" "}
-                  ptran<span className="text-pink small">@</span>
-                  pctranlaw.com
-                </a>
               </div>
-              <div className="d-flex justify-content-center text-center">
-                <form className="text-center" name="contact" method="POST">
+              <div className="d-flex justify-content-center text-center gold-plate p-4 rounded mx-auto shadow text-white">
+                <form
+                  className="text-center col-12"
+                  name="contact"
+                  method="POST"
+                >
                   <input type="hidden" name="form-name" value="contact" />
                   <div className="row mb-4">
                     <div className="col-6">
@@ -470,7 +307,7 @@ export default function Home({ isSmallScreen }) {
                       <input
                         className="form-control rounded p-2"
                         type="text"
-                        placeholder="PCT Law Inquiry"
+                        placeholder="Subject"
                         name="subject"
                       />
                     </div>
@@ -484,8 +321,215 @@ export default function Home({ isSmallScreen }) {
                       ></textarea>
                     </div>
                   </div>
+                  <fieldset className="mb-4">
+                    <legend className="fs-6 pb-1">
+                      Select a preferred method of contact
+                    </legend>
+                    <div className="row">
+                      <div className="col-4">
+                        <label className="wpforms-field-label-inline txt-shadow">
+                          <input
+                            type="checkbox"
+                            className="form-check-input me-2"
+                            name="preferredMethod[]"
+                            value="Call"
+                          />
+                          Call
+                        </label>
+                      </div>
+                      <div className="col-4">
+                        <label className="wpforms-field-label-inline txt-shadow">
+                          <input
+                            type="checkbox"
+                            className="form-check-input me-2"
+                            name="preferredMethod[]"
+                            value="Text"
+                          />
+                          Text
+                        </label>
+                      </div>
+                      <div className="col-4">
+                        <label className="wpforms-field-label-inline txt-shadow">
+                          <input
+                            type="checkbox"
+                            className="form-check-input me-2"
+                            name="preferredMethod[]"
+                            value="Email"
+                          />
+                          Email
+                        </label>
+                      </div>
+                    </div>
+                  </fieldset>
                   <button
                     className="contact-btn btn-hover col-12 bg-black text-white border-0 rounded p-2"
+                    type="submit"
+                  >
+                    Submit
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div className="d-flex flex-column justify-content-around text-uppercase">
+            <a
+              href="tel:8327766969"
+              className="contact-btn btn-hover text-center bg-dark text-white rounded-pill h-50 p-3"
+            >
+              <FontAwesomeIcon className="text-pink pe-2" icon={faPhone} />{" "}
+              (832) 776 - 6979
+            </a>
+            <a
+              href="mailto:contact@pctranlaw.com?subject=PCT Law Inquiry"
+              className="contact-btn btn-hover text-center bg-dark text-white rounded-pill h-50 p-3 mt-4"
+            >
+              <FontAwesomeIcon className="text-pink pe-2" icon={faEnvelope} />{" "}
+              ptran<span className="text-pink small">@</span>
+              pctranlaw.com
+            </a>
+          </div>
+        </div>
+      ) : (
+        <div
+          id="ContactUs"
+          className="bg-white container-fluid p-0 w-75 my-5 pb-5"
+          data-aos="fade-up"
+        >
+          <h1 className="py-5 text-uppercase text-thin">Contact Us</h1>
+          <div className="d-flex pb-5">
+            <div className="col-12 gold-plate rounded shadow position-relative">
+              <div className="d-flex justify-content-around py-5 mt-5 text-uppercase mx-auto w-100 position-absolute">
+                <a
+                  href="tel:8327766969"
+                  className="contact-btn btn-hover text-center bg-dark text-white rounded-pill h-50 p-3"
+                >
+                  <FontAwesomeIcon className="text-pink pe-2" icon={faPhone} />{" "}
+                  (832) 776 - 6979
+                </a>
+                <a
+                  href="mailto:contact@pctranlaw.com?subject=PCT Law Inquiry"
+                  className="contact-btn btn-hover text-center bg-dark text-white rounded-pill h-50 p-3"
+                >
+                  <FontAwesomeIcon
+                    className="text-pink pe-2"
+                    icon={faEnvelope}
+                  />{" "}
+                  ptran<span className="text-pink small">@</span>
+                  pctranlaw.com
+                </a>
+              </div>
+              <div className="contact-img col-12 mx-auto w-50 d-flex justify-content-center pe-5">
+                <img
+                  className="w-75"
+                  src="/assets/headshots/priscilla_3_transparent.png"
+                />
+              </div>
+              <div className="d-flex justify-content-center text-center gold-plate w-75 p-5 rounded mx-auto mb-5 shadow text-white">
+                <form
+                  className="text-center col-12"
+                  name="contact"
+                  method="POST"
+                >
+                  <input type="hidden" name="form-name" value="contact" />
+                  <div className="row mb-4">
+                    <div className="col-6">
+                      <input
+                        className="form-control rounded p-2"
+                        type="text"
+                        placeholder="Name"
+                        name="name"
+                      />
+                    </div>
+                    <div className="col-6">
+                      <input
+                        className="form-control rounded p-2"
+                        type="phone"
+                        placeholder="Phone"
+                        name="phone"
+                      />
+                    </div>
+                  </div>
+                  <div className="row mb-4">
+                    <div className="col-6">
+                      <input
+                        className="form-control rounded p-2"
+                        type="email"
+                        placeholder="Email"
+                        name="email"
+                      />
+                    </div>
+                    <div className="col-6">
+                      <input
+                        className="form-control rounded p-2"
+                        type="text"
+                        placeholder="Subject"
+                        name="subject"
+                      />
+                    </div>
+                  </div>
+                  <div className="row my-4">
+                    <div className="col-12">
+                      <textarea
+                        className="form-control rounded p-2"
+                        placeholder="Brief Summary of Legal Issue"
+                        name="message"
+                      ></textarea>
+                    </div>
+                  </div>
+                  <fieldset className="mb-4">
+                    <legend className="fs-5 pb-1">
+                      Select a preferred method of contact
+                    </legend>
+                    <div className="row">
+                      <div className="col-4">
+                        <label className="wpforms-field-label-inline">
+                          <input
+                            type="checkbox"
+                            className="form-check-input me-2 txt-shadow"
+                            name="preferredMethod[]"
+                            value="Call"
+                          />
+                          <FontAwesomeIcon
+                            className="text-pink"
+                            icon={faPhone}
+                          />{" "}
+                          Call
+                        </label>
+                      </div>
+                      <div className="col-4">
+                        <label className="wpforms-field-label-inline">
+                          <input
+                            type="checkbox"
+                            className="form-check-input me-2 txt-shadow"
+                            name="preferredMethod[]"
+                            value="Text"
+                          />
+                          <FontAwesomeIcon
+                            className="text-pink"
+                            icon={faPhone}
+                          />{" "}
+                          Text
+                        </label>
+                      </div>
+                      <div className="col-4">
+                        <label className="wpforms-field-label-inline">
+                          <input
+                            type="checkbox"
+                            className="form-check-input me-2 txt-shadow"
+                            name="preferredMethod[]"
+                            value="Email"
+                          />
+                          <FontAwesomeIcon
+                            className="text-pink"
+                            icon={faEnvelope}
+                          />{" "}
+                          Email
+                        </label>
+                      </div>
+                    </div>
+                  </fieldset>
+                  <button
+                    className="contact-btn btn-hover col-4 bg-black text-white border-0 rounded p-2"
                     type="submit"
                   >
                     Submit
@@ -498,7 +542,10 @@ export default function Home({ isSmallScreen }) {
       )}
 
       <div className="bg-black container-fluid h-75 d-flex flex-column">
-        <div className="container-fluid w-75 d-flex flex-column" data-aos="fade-up">
+        <div
+          className="container-fluid w-75 d-flex flex-column"
+          data-aos="fade-up"
+        >
           <h1 className="mt-4 py-5 text-uppercase text-white text-thin">
             Client Testimonials
           </h1>
@@ -506,7 +553,7 @@ export default function Home({ isSmallScreen }) {
             {isSmallScreen ? (
               <>
                 <div id="testimonialCarousel" className="carousel slide">
-                  <div className="carousel-indicators">
+                  <div className="carousel-indicators pb-4">
                     <button
                       type="button"
                       data-bs-target="#testimonialCarousel"
@@ -541,7 +588,7 @@ export default function Home({ isSmallScreen }) {
                             aliquam sem et. Posuere urna nec tincidunt praesent
                             semper feugiat nibh sed pulvinar.&quot;
                           </p>
-                          <h5 className="card-title fs-4">- Priscilla C.</h5>
+                          <h5 className="card-title txt-shadow fs-4">- Priscilla C.</h5>
                         </div>
                       </div>
                     </div>
@@ -556,7 +603,7 @@ export default function Home({ isSmallScreen }) {
                             aliquam sem et. Posuere urna nec tincidunt praesent
                             semper feugiat nibh sed pulvinar.&quot;
                           </p>
-                          <h5 className="card-title fs-4">- Priscilla C.</h5>
+                          <h5 className="card-title txt-shadow fs-4">- Priscilla C.</h5>
                         </div>
                       </div>
                     </div>
@@ -571,7 +618,7 @@ export default function Home({ isSmallScreen }) {
                             aliquam sem et. Posuere urna nec tincidunt praesent
                             semper feugiat nibh sed pulvinar.&quot;
                           </p>
-                          <h5 className="card-title fs-4">- Priscilla C.</h5>
+                          <h5 className="card-title txt-shadow fs-4">- Priscilla C.</h5>
                         </div>
                       </div>
                     </div>
@@ -582,35 +629,56 @@ export default function Home({ isSmallScreen }) {
               <>
                 <div className="card testimonial floating text-white">
                   <div className="card-body text-center p-4">
+                    <img
+                      className="w-75"
+                      src="/assets/stars-gold.png"
+                      alt="Stars"
+                    />
                     <p className="card-text card-text-desktop py-4">
                       &quot;Semper risus in hendrerit gravida rutrum quisque
                       non. Commodo quis imperdiet massa tincidunt nunc pulvinar.
                       Sed ullamcorper morbi tincidunt ornare massa. Tempus quam
                       pellentesque nec nam aliquam sem et.&quot;
                     </p>
-                    <h5 className="card-title fs-3 text-uppercase">- Priscilla C.</h5>
+                    <h5 className="card-title txt-shadow fs-3 text-uppercase">
+                      - Priscilla C.
+                    </h5>
                   </div>
                 </div>
                 <div className="card testimonial floating text-white mx-5">
                   <div className="card-body text-center p-4">
+                    <img
+                      className="w-75"
+                      src="/assets/stars-gold.png"
+                      alt="Stars"
+                    />
                     <p className="card-text card-text-desktop py-4">
                       &quot;Semper risus in hendrerit gravida rutrum quisque
                       non. Commodo quis imperdiet massa tincidunt nunc pulvinar.
                       Sed ullamcorper morbi tincidunt ornare massa. Tempus quam
                       pellentesque nec nam aliquam sem et.&quot;
                     </p>
-                    <h5 className="card-title fs-3 text-uppercase">- Priscilla C.</h5>
+                    <h5 className="card-title txt-shadow fs-3 text-uppercase">
+                      - Priscilla C.
+                    </h5>
                   </div>
                 </div>
                 <div className="card testimonial floating text-white">
                   <div className="card-body text-center p-4">
+                    <img
+                      className="w-75"
+                      src="/assets/stars-gold.png"
+                      alt="Stars"
+                    />
                     <p className="card-text card-text-desktop py-4">
                       &quot;Semper risus in hendrerit gravida rutrum quisque
                       non. Commodo quis imperdiet massa tincidunt nunc pulvinar.
                       Sed ullamcorper morbi tincidunt ornare massa. Tempus quam
                       pellentesque nec nam aliquam sem et.&quot;
                     </p>
-                    <h5 className="card-title fs-3 text-uppercase">- Priscilla C.</h5>
+                    <h5 className="card-title txt-shadow fs-3 text-uppercase">
+                      - Priscilla C.
+                    </h5>
                   </div>
                 </div>
               </>
