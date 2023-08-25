@@ -207,50 +207,55 @@ export default function Home({ isSmallScreen }) {
         </div>
       ) : (
         <div
-          className="home-about w-75 mx-auto bg-white shadow px-5 rounded position-relative"
+          className="home-about w-75 mx-auto bg-white shadow px-5 rounded"
           data-aos="fade-up"
         >
-          <div className="row">
-            <h1 className="pt-5 pb-4 text-uppercase">
+          <div className="row pb-4">
+            <h1 className="pt-5 pb-4 text-uppercase text-center">
               <div className="about-priscilla">
                 <span className="text-thin">About Attorney</span> Priscilla C.
                 Tran
               </div>
             </h1>
-          </div>
-          {/* <div className="row w-100"> */}
-          <div className="col-12 col-lg-6 pb-4">
-            <p className="about-text">
-              <span className="fs-2 lh-1">Lorem</span> ipsum dolor sit amet,
-              consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-              labore et dolore magna aliqua. Enim nulla aliquet porttitor lacus.
-              Eleifend mi in nulla posuere sollicitudin aliquam ultrices
-              sagittis. Viverra nam libero justo laoreet sit amet cursus. Proin
-              nibh nisl condimentum id venenatis a condimentum. Massa tincidunt
-              dui ut ornare. Lorem donec massa sapien faucibus et molestie ac
-              feugiat sed. Duis tristique sollicitudin nibh sit. Semper risus in
-              hendrerit gravida rutrum quisque non. Commodo quis imperdiet massa
-              tincidunt nunc pulvinar. Sed ullamcorper morbi tincidunt ornare
-              massa. Tempus quam pellentesque nec nam aliquam sem et. Posuere
-              urna nec tincidunt praesent semper feugiat nibh sed pulvinar.
-              Malesuada pellentesque elit eget gravida cum sociis natoque
-              penatibus. Donec pretium vulputate sapien nec sagittis aliquam
-              malesuada. A lacus vestibulum sed arcu non odio euismod lacinia
-              at. In vitae turpis massa sed elementum. Malesuada pellentesque
-              elit eget gravida cum sociis. Risus viverra adipiscing at in
-              tellus. Lobortis elementum nibh tellus molestie nunc non blandit.
-              Massa tincidunt dui ut ornare. Lorem donec massa sapien faucibus
-              et molestie ac feugiat sed.
-            </p>
-          </div>
-          <div className="about-photo col-lg-6 position-absolute bottom-0 end-0 d-flex justify-content-center">
-            <img
-              src="/assets/headshots/priscilla_2_transparent.png"
-              alt="Attorney Priscilla C. Tran"
-            />
+            <div className="about-photo col-lg-4 d-flex align-items-center">
+              <img
+                className="w-100 rounded shadow"
+                src="/assets/headshots/priscilla_2_cropped.jpg"
+                alt="Attorney Priscilla C. Tran"
+              />
+            </div>
+            <div className="col-12 col-lg-8 d-flex align-items-center">
+              <p className="about-text m-0 p-3">
+                <b>Attorney Priscilla C. Tran</b> lorem ipsum dolor sit amet,
+                consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua. Enim nulla aliquet porttitor
+                lacus. Eleifend mi in nulla posuere sollicitudin aliquam
+                ultrices sagittis. Viverra nam libero justo laoreet sit amet
+                cursus. Proin nibh nisl condimentum id venenatis a condimentum.
+                Massa tincidunt dui ut ornare. Lorem donec massa sapien faucibus
+                et molestie ac feugiat sed. Duis tristique sollicitudin nibh
+                sit. Semper risus in hendrerit gravida rutrum quisque non.
+                Commodo quis imperdiet massa tincidunt nunc pulvinar. Sed
+                ullamcorper morbi tincidunt ornare massa. Tempus quam
+                pellentesque nec nam aliquam sem et. Posuere urna nec tincidunt
+                praesent semper feugiat nibh sed pulvinar. Malesuada
+                pellentesque elit eget gravida cum sociis natoque penatibus.
+                Donec pretium vulputate sapien nec sagittis aliquam malesuada. A
+                lacus vestibulum sed arcu non odio euismod lacinia at. In vitae
+                turpis massa sed elementum. Malesuada pellentesque elit eget
+                gravida cum sociis. Risus viverra adipiscing at in tellus.
+                Lobortis elementum nibh tellus molestie nunc non blandit. Massa
+                tincidunt dui ut ornare. Lorem donec massa sapien faucibus et
+                molestie ac feugiat sed. Duis tristique sollicitudin nibh sit.
+                Semper risus in hendrerit gravida rutrum quisque non. Commodo
+                quis imperdiet massa tincidunt nunc pulvinar. Sed ullamcorper
+                morbi tincidunt ornare massa. Lorem donec massa sapien faucibus
+                et molestie ac feugiat sed. Duis tristique sollicitudin nibh
+                sit. Semper risus in hendrerit gravida.
+              </p>
+            </div>
           </div>
         </div>
-        // </div>
       )}
 
       {isSmallScreen ? (
@@ -259,7 +264,7 @@ export default function Home({ isSmallScreen }) {
           className="bg-white container-fluid p-0 w-75 pb-5"
           data-aos="fade-up"
         >
-          <h1 className="py-5 mb-3 text-uppercase text-thin">Contact Us</h1>
+          <h1 className="py-5 mb-0 text-uppercase text-thin">Contact Us</h1>
           <div className="d-flex pb-5">
             <div>
               <div className="contact-img col-12 mx-auto d-flex justify-content-center pe-3">
@@ -320,8 +325,18 @@ export default function Home({ isSmallScreen }) {
                       ></textarea>
                     </div>
                   </div>
+                  <div className="row my-4">
+                    <div className="col-12">
+                      <input
+                        className="form-control rounded p-2"
+                        type="file"
+                        name="attachment"
+                        accept=".pdf, .doc, .docx"
+                      />
+                    </div>
+                  </div>
                   <fieldset className="mb-4">
-                    <legend className="fs-6 pb-1">
+                    <legend className="fs-5 pb-1">
                       Select a preferred method of contact
                     </legend>
                     <div className="row">
@@ -330,9 +345,13 @@ export default function Home({ isSmallScreen }) {
                           <input
                             type="checkbox"
                             className="form-check-input me-2"
-                            name="preferredMethod[]"
+                            name="contact-method"
                             value="Call"
                           />
+                          <FontAwesomeIcon
+                            className="text-pink"
+                            icon={faPhone}
+                          />{" "}
                           Call
                         </label>
                       </div>
@@ -341,9 +360,13 @@ export default function Home({ isSmallScreen }) {
                           <input
                             type="checkbox"
                             className="form-check-input me-2"
-                            name="preferredMethod[]"
+                            name="contact-method"
                             value="Text"
                           />
+                          <FontAwesomeIcon
+                            className="text-pink"
+                            icon={faPhone}
+                          />{" "}
                           Text
                         </label>
                       </div>
@@ -352,9 +375,13 @@ export default function Home({ isSmallScreen }) {
                           <input
                             type="checkbox"
                             className="form-check-input me-2"
-                            name="preferredMethod[]"
+                            name="contact-method"
                             value="Email"
                           />
+                          <FontAwesomeIcon
+                            className="text-pink"
+                            icon={faEnvelope}
+                          />{" "}
                           Email
                         </label>
                       </div>
@@ -370,21 +397,57 @@ export default function Home({ isSmallScreen }) {
               </div>
             </div>
           </div>
-          <div className="d-flex flex-column justify-content-around text-uppercase">
+          <div className="h-100 d-flex flex-column justify-content-between text-uppercase">
             <a
               href="tel:8327766969"
-              className="contact-btn btn-hover text-center bg-black text-white rounded-pill h-50 p-3"
+              className="contact-btn btn-hover text-center bg-black text-white rounded-pill p-3 my-3"
             >
               <FontAwesomeIcon className="text-pink pe-2" icon={faPhone} />{" "}
               (832) 776 - 6979
             </a>
             <a
               href="mailto:contact@pctranlaw.com?subject=PCT Law Inquiry"
-              className="contact-btn btn-hover text-center bg-black text-white rounded-pill h-50 p-3 mt-4"
+              className="contact-btn btn-hover text-center bg-black text-white rounded-pill p-3 my-3"
             >
               <FontAwesomeIcon className="text-pink pe-2" icon={faEnvelope} />{" "}
-              ptran<span className="text-pink small">@</span>
+              contact<span className="text-pink small">@</span>
               pctranlaw.com
+            </a>
+            <div>
+              <img
+                className="w-100 rounded shadow mt-5"
+                src="/assets/office.webp"
+                alt="Houston Office"
+              />
+              <div className="text-center mt-5">
+                <h4 className="visit-us mx-auto">Visit Our Office</h4>
+                <a
+                  href="https://www.google.com/maps/place/5718+Westheimer+Rd+1000+1125,+Houston,+TX+77057/@29.7384872,-95.4814493,17z/data=!3m1!4b1!4m5!3m4!1s0x8640c3d8b898e3b1:0x29bce29c9e907e33!8m2!3d29.7384826!4d-95.4788744?entry=ttu"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-black"
+                >
+                  <p className="underline-animation">
+                    5718 Westheimer Road
+                    <br />
+                    Suite 1000-1125
+                    <br />
+                    Houston, TX 77057
+                  </p>
+                </a>
+              </div>
+            </div>
+            <a
+              href="https://www.google.com/maps/place/5718+Westheimer+Rd+1000+1125,+Houston,+TX+77057/@29.7384872,-95.4814493,17z/data=!3m1!4b1!4m5!3m4!1s0x8640c3d8b898e3b1:0x29bce29c9e907e33!8m2!3d29.7384826!4d-95.4788744?entry=ttu"
+              target="_blank"
+              rel="noreferrer"
+              className="contact-btn btn-hover text-center bg-black text-white rounded-pill p-3 my-3"
+            >
+              <FontAwesomeIcon
+                className="text-pink pe-2"
+                icon={faLocationDot}
+              />{" "}
+              Get Directions
             </a>
           </div>
         </div>
@@ -427,7 +490,9 @@ export default function Home({ isSmallScreen }) {
                       alt="Houston Office"
                     />
                     <div className="text-center mt-5">
-                      <h4 className="visit-us w-75 mx-auto">Visit Our Office</h4>
+                      <h4 className="visit-us w-75 mx-auto">
+                        Visit Our Office
+                      </h4>
                       <a
                         href="https://www.google.com/maps/place/5718+Westheimer+Rd+1000+1125,+Houston,+TX+77057/@29.7384872,-95.4814493,17z/data=!3m1!4b1!4m5!3m4!1s0x8640c3d8b898e3b1:0x29bce29c9e907e33!8m2!3d29.7384826!4d-95.4788744?entry=ttu"
                         target="_blank"
@@ -601,7 +666,7 @@ export default function Home({ isSmallScreen }) {
           <h1 className="mt-4 py-5 text-uppercase text-white text-thin">
             Client Testimonials
           </h1>
-          <div className="mt-4 d-flex justify-content-between">
+          <div className="mt-2 d-flex justify-content-between">
             {isSmallScreen ? (
               <>
                 <div id="testimonialCarousel" className="carousel slide">
@@ -636,11 +701,10 @@ export default function Home({ isSmallScreen }) {
                             &quot;Semper risus in hendrerit gravida rutrum
                             quisque non. Commodo quis imperdiet massa tincidunt
                             nunc pulvinar. Sed ullamcorper morbi tincidunt
-                            ornare massa. Tempus quam pellentesque nec nam
-                            aliquam sem et. Posuere urna nec tincidunt praesent
-                            semper feugiat nibh sed pulvinar.&quot;
+                            ornare massa. Tempus quam pellentesque nec
+                            nam.&quot;
                           </p>
-                          <h5 className="card-title txt-shadow fs-4">
+                          <h5 className="card-title contact-btn bg-black rounded-pill p-2 mx-auto txt-shadow text-uppercase">
                             - Priscilla C.
                           </h5>
                         </div>
@@ -653,11 +717,10 @@ export default function Home({ isSmallScreen }) {
                             &quot;Semper risus in hendrerit gravida rutrum
                             quisque non. Commodo quis imperdiet massa tincidunt
                             nunc pulvinar. Sed ullamcorper morbi tincidunt
-                            ornare massa. Tempus quam pellentesque nec nam
-                            aliquam sem et. Posuere urna nec tincidunt praesent
-                            semper feugiat nibh sed pulvinar.&quot;
+                            ornare massa. Tempus quam pellentesque nec
+                            nam.&quot;
                           </p>
-                          <h5 className="card-title txt-shadow fs-4">
+                          <h5 className="card-title contact-btn bg-black rounded-pill p-2 mx-auto txt-shadow text-uppercase">
                             - Priscilla C.
                           </h5>
                         </div>
@@ -670,11 +733,10 @@ export default function Home({ isSmallScreen }) {
                             &quot;Semper risus in hendrerit gravida rutrum
                             quisque non. Commodo quis imperdiet massa tincidunt
                             nunc pulvinar. Sed ullamcorper morbi tincidunt
-                            ornare massa. Tempus quam pellentesque nec nam
-                            aliquam sem et. Posuere urna nec tincidunt praesent
-                            semper feugiat nibh sed pulvinar.&quot;
+                            ornare massa. Tempus quam pellentesque nec
+                            nam.&quot;
                           </p>
-                          <h5 className="card-title txt-shadow fs-4">
+                          <h5 className="card-title contact-btn bg-black rounded-pill p-2 mx-auto txt-shadow text-uppercase">
                             - Priscilla C.
                           </h5>
                         </div>
