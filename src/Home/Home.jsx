@@ -24,6 +24,7 @@ export default function Home({ isSmallScreen }) {
     <>
       {isSmallScreen ? (
         <div className="home-landing d-flex flex-column align-items-center home-text animate__animated animate__fadeInUp animate__slow pt-5">
+          <div className="licensed-in mt-3 text-uppercase"><small>Licensed in Minnesota & Texas</small></div>
           <Logo />
           <img
             className="home-title pb-2 responsive-image pt-3"
