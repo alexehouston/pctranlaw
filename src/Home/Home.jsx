@@ -373,14 +373,14 @@ export default function Home({ isSmallScreen }) {
           <div className="d-flex flex-column justify-content-around text-uppercase">
             <a
               href="tel:8327766969"
-              className="contact-btn btn-hover text-center bg-dark text-white rounded-pill h-50 p-3"
+              className="contact-btn btn-hover text-center bg-black text-white rounded-pill h-50 p-3"
             >
               <FontAwesomeIcon className="text-pink pe-2" icon={faPhone} />{" "}
               (832) 776 - 6979
             </a>
             <a
               href="mailto:contact@pctranlaw.com?subject=PCT Law Inquiry"
-              className="contact-btn btn-hover text-center bg-dark text-white rounded-pill h-50 p-3 mt-4"
+              className="contact-btn btn-hover text-center bg-black text-white rounded-pill h-50 p-3 mt-4"
             >
               <FontAwesomeIcon className="text-pink pe-2" icon={faEnvelope} />{" "}
               ptran<span className="text-pink small">@</span>
@@ -401,7 +401,7 @@ export default function Home({ isSmallScreen }) {
                 <div className="h-100 d-flex flex-column justify-content-between text-uppercase">
                   <a
                     href="tel:8327766969"
-                    className="contact-btn btn-hover text-center bg-dark text-white rounded-pill p-3 my-3 w-75"
+                    className="contact-btn btn-hover text-center bg-black text-white rounded-pill p-3 my-3 w-75"
                   >
                     <FontAwesomeIcon
                       className="text-pink pe-2"
@@ -411,7 +411,7 @@ export default function Home({ isSmallScreen }) {
                   </a>
                   <a
                     href="mailto:contact@pctranlaw.com?subject=PCT Law Inquiry"
-                    className="contact-btn btn-hover text-center bg-dark text-white rounded-pill p-3 my-3 w-75"
+                    className="contact-btn btn-hover text-center bg-black text-white rounded-pill p-3 my-3 w-75"
                   >
                     <FontAwesomeIcon
                       className="text-pink pe-2"
@@ -426,8 +426,8 @@ export default function Home({ isSmallScreen }) {
                       src="/assets/office.webp"
                       alt="Houston Office"
                     />
-                    <div className="text-center mt-4">
-                      <h4>Visit Our Office</h4>
+                    <div className="text-center mt-5">
+                      <h4 className="visit-us w-75 mx-auto">Visit Our Office</h4>
                       <a
                         href="https://www.google.com/maps/place/5718+Westheimer+Rd+1000+1125,+Houston,+TX+77057/@29.7384872,-95.4814493,17z/data=!3m1!4b1!4m5!3m4!1s0x8640c3d8b898e3b1:0x29bce29c9e907e33!8m2!3d29.7384826!4d-95.4788744?entry=ttu"
                         target="_blank"
@@ -448,7 +448,7 @@ export default function Home({ isSmallScreen }) {
                     href="https://www.google.com/maps/place/5718+Westheimer+Rd+1000+1125,+Houston,+TX+77057/@29.7384872,-95.4814493,17z/data=!3m1!4b1!4m5!3m4!1s0x8640c3d8b898e3b1:0x29bce29c9e907e33!8m2!3d29.7384826!4d-95.4788744?entry=ttu"
                     target="_blank"
                     rel="noreferrer"
-                    className="contact-btn btn-hover text-center bg-dark text-white rounded-pill p-3 my-3 w-75"
+                    className="contact-btn btn-hover text-center bg-black text-white rounded-pill p-3 my-3 w-75"
                   >
                     <FontAwesomeIcon
                       className="text-pink pe-2"
@@ -803,7 +803,7 @@ export default function Home({ isSmallScreen }) {
               <small>* Consultations will start at $250/hour. *</small>
             </div>
             <div className="modal-footer d-flex justify-content-center align-items-center">
-              <a className="modal-btn contact-btn btn-hover text-uppercase text-center bg-dark text-white rounded-pill h-50 p-3 mt-3 mb-4">
+              <a className="modal-btn contact-btn btn-hover text-uppercase text-center bg-black text-white rounded-pill h-50 p-3 mt-3 mb-4">
                 Intake Form
                 <FontAwesomeIcon
                   className="text-pink ps-2"
@@ -871,7 +871,7 @@ export default function Home({ isSmallScreen }) {
               <small>* Consultations will start at $250/hour. *</small>
             </div>
             <div className="modal-footer d-flex justify-content-center align-items-center">
-              <a className="modal-btn contact-btn btn-hover text-uppercase text-center bg-dark text-white rounded-pill h-50 p-3 mt-3 mb-4">
+              <a className="modal-btn contact-btn btn-hover text-uppercase text-center bg-black text-white rounded-pill h-50 p-3 mt-3 mb-4">
                 Get A Consultation
                 <FontAwesomeIcon
                   className="text-pink ps-2"
@@ -939,7 +939,7 @@ export default function Home({ isSmallScreen }) {
               <small>* Consultations will start at $250/hour. *</small>
             </div>
             <div className="modal-footer d-flex justify-content-center align-items-center">
-              <a className="modal-btn contact-btn btn-hover text-uppercase text-center bg-dark text-white rounded-pill h-50 p-3 mt-3 mb-4">
+              <a className="modal-btn contact-btn btn-hover text-uppercase text-center bg-black text-white rounded-pill h-50 p-3 mt-3 mb-4">
                 Get A Consultation
                 <FontAwesomeIcon
                   className="text-pink ps-2"
