@@ -141,7 +141,7 @@
 }
 
 .card-title {
-  color: var(--pctpink) !important;
+  width: 60%;
 }
 
 .card-text-desktop {
@@ -170,8 +170,12 @@ iframe .formFooter-heightMask {
     font-size: 1.7vmin;
   }
 
+  .card-title {
+    width: 65%;
+  }
+
   .card h5 {
-    font-size: 1.3rem !important;
+    font-size: 1.2rem !important;
   }
 
   .practices-container {
@@ -185,6 +189,12 @@ iframe .formFooter-heightMask {
   .practices p {
     letter-spacing: 2px;
     font-size: 1.5rem !important;
+  }
+}
+
+@media (max-height: 800px) {
+  .practices-container {
+    height: 120% !important;
   }
 }
 

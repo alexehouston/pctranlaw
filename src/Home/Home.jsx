@@ -397,11 +397,11 @@ export default function Home({ isSmallScreen }) {
           <h1 className="py-5 text-uppercase text-thin">Contact Us</h1>
           <div className="col-12">
             <div className="row mx-auto">
-              <div className="col-5 p-0">
-                <div className="d-flex flex-column justify-content-center text-uppercase">
+              <div className="col-5 p-0 d-flex-column justify-content-between">
+                <div className="h-100 d-flex flex-column justify-content-between text-uppercase">
                   <a
                     href="tel:8327766969"
-                    className="contact-btn btn-hover text-center bg-dark text-white rounded-pill h-50 p-3 my-3 w-75"
+                    className="contact-btn btn-hover text-center bg-dark text-white rounded-pill p-3 my-3 w-75"
                   >
                     <FontAwesomeIcon
                       className="text-pink pe-2"
@@ -411,7 +411,7 @@ export default function Home({ isSmallScreen }) {
                   </a>
                   <a
                     href="mailto:contact@pctranlaw.com?subject=PCT Law Inquiry"
-                    className="contact-btn btn-hover text-center bg-dark text-white rounded-pill h-50 p-3 my-3 w-75"
+                    className="contact-btn btn-hover text-center bg-dark text-white rounded-pill p-3 my-3 w-75"
                   >
                     <FontAwesomeIcon
                       className="text-pink pe-2"
@@ -448,7 +448,7 @@ export default function Home({ isSmallScreen }) {
                     href="https://www.google.com/maps/place/5718+Westheimer+Rd+1000+1125,+Houston,+TX+77057/@29.7384872,-95.4814493,17z/data=!3m1!4b1!4m5!3m4!1s0x8640c3d8b898e3b1:0x29bce29c9e907e33!8m2!3d29.7384826!4d-95.4788744?entry=ttu"
                     target="_blank"
                     rel="noreferrer"
-                    className="contact-btn btn-hover text-center bg-dark text-white rounded-pill h-50 p-3 my-3 w-75"
+                    className="contact-btn btn-hover text-center bg-dark text-white rounded-pill p-3 my-3 w-75"
                   >
                     <FontAwesomeIcon
                       className="text-pink pe-2"
@@ -515,6 +515,16 @@ export default function Home({ isSmallScreen }) {
                           placeholder="Brief Summary of Legal Issue"
                           name="message"
                         ></textarea>
+                      </div>
+                    </div>
+                    <div className="row my-4">
+                      <div className="col-12">
+                        <input
+                          className="form-control rounded p-2"
+                          type="file"
+                          name="attachment"
+                          accept=".pdf, .doc, .docx"
+                        />
                       </div>
                     </div>
                     <fieldset className="mb-4">
@@ -678,7 +688,7 @@ export default function Home({ isSmallScreen }) {
                 <div className="card testimonial floating text-white">
                   <div className="card-body text-center p-4">
                     <img
-                      className="w-75"
+                      className="w-50"
                       src="/assets/stars-gold.png"
                       alt="Stars"
                     />
@@ -688,15 +698,15 @@ export default function Home({ isSmallScreen }) {
                       Sed ullamcorper morbi tincidunt ornare massa. Tempus quam
                       pellentesque nec nam aliquam sem et.&quot;
                     </p>
-                    <h5 className="card-title txt-shadow fs-3 text-uppercase">
-                      - Priscilla C.
+                    <h5 className="card-title contact-btn bg-black rounded-pill p-2 mx-auto txt-shadow fs-4 text-uppercase">
+                      Priscilla C.
                     </h5>
                   </div>
                 </div>
                 <div className="card testimonial floating text-white mx-5">
                   <div className="card-body text-center p-4">
                     <img
-                      className="w-75"
+                      className="w-50"
                       src="/assets/stars-gold.png"
                       alt="Stars"
                     />
@@ -706,15 +716,15 @@ export default function Home({ isSmallScreen }) {
                       Sed ullamcorper morbi tincidunt ornare massa. Tempus quam
                       pellentesque nec nam aliquam sem et.&quot;
                     </p>
-                    <h5 className="card-title txt-shadow fs-3 text-uppercase">
-                      - Priscilla C.
+                    <h5 className="card-title contact-btn bg-black rounded-pill p-2 mx-auto txt-shadow fs-4 text-uppercase">
+                      Priscilla C.
                     </h5>
                   </div>
                 </div>
                 <div className="card testimonial floating text-white">
                   <div className="card-body text-center p-4">
                     <img
-                      className="w-75"
+                      className="w-50"
                       src="/assets/stars-gold.png"
                       alt="Stars"
                     />
@@ -724,8 +734,8 @@ export default function Home({ isSmallScreen }) {
                       Sed ullamcorper morbi tincidunt ornare massa. Tempus quam
                       pellentesque nec nam aliquam sem et.&quot;
                     </p>
-                    <h5 className="card-title txt-shadow fs-3 text-uppercase">
-                      - Priscilla C.
+                    <h5 className="card-title contact-btn bg-black rounded-pill p-2 mx-auto txt-shadow fs-4 text-uppercase">
+                      Priscilla C.
                     </h5>
                   </div>
                 </div>
