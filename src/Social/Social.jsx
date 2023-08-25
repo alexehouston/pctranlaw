@@ -61,7 +61,7 @@ export default function Social({ isSmallScreen }) {
             >
               <FontAwesomeIcon
                 icon={faFacebook}
-                className="social-icon btn-hover fs-4 p-2 text-white bg-black rounded-pill"
+                className="social-icon btn-hover fs-3 p-2 text-white bg-black rounded-pill"
               />
             </a>
             <a
@@ -72,7 +72,7 @@ export default function Social({ isSmallScreen }) {
             >
               <FontAwesomeIcon
                 icon={faInstagram}
-                className="social-icon btn-hover fs-4 p-2 text-white bg-black rounded-pill"
+                className="social-icon btn-hover fs-3 p-2 text-white bg-black rounded-pill"
               />
             </a>
             <a
@@ -81,12 +81,12 @@ export default function Social({ isSmallScreen }) {
             >
               <FontAwesomeIcon
                 icon={faEnvelope}
-                className="social-icon btn-hover fs-4 p-2 text-white bg-black rounded-pill"
+                className="social-icon btn-hover fs-3 p-2 text-white bg-black rounded-pill"
               />
             </a>
           </div>
           <a
-            className="consultation position-fixed contact-btn border border-dark btn-hover mx-4 bg-black rounded-pill text-white text-center text-uppercase fs-5 py-2 px-4 animate__animated animate__fadeInLeft animate__slower"
+            className="consultation position-fixed contact-btn border border-dark btn-hover mx-4 bg-black rounded-pill text-white text-center text-uppercase py-2 px-4 animate__animated animate__fadeInLeft animate__slower"
             href="mailto:contact@pctranlaw.com?subject=PCT Law Inquiry"
           >
             Free Consultation{" "}

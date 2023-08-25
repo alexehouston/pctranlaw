@@ -2,7 +2,6 @@ import PropTypes from "prop-types";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faChevronDown,
-  faChevronRight,
   faHouse,
 } from "@fortawesome/free-solid-svg-icons";
 import "./Nav.css";
