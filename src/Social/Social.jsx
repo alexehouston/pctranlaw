@@ -8,7 +8,7 @@ export default function Social({ isSmallScreen }) {
   return (
     <>
       {isSmallScreen ? (
-        <div className="Social d-flex flex-column align-items-center justify-content-center position-fixed bottom-0 w-100">
+        <div className="Social d-flex flex-column align-items-center justify-content-center position-fixed w-100">
           <div className="social-icons w-100 d-flex justify-content-center animate__animated animate__fadeInUp animate__slower">
             <a
               className="social-icon btn-hover mx-4 bg-black rounded-pill"

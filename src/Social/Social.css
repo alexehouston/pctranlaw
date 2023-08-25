@@ -23,7 +23,8 @@
 
 @media (max-width: 576px) {
   .Social {
-    margin-bottom: 6rem !important;
+    bottom: 12%;
+    margin: 0;
   }
 
   .social-icons {
