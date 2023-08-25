@@ -21,21 +21,6 @@
   letter-spacing: 2px;
 }
 
-@media (max-width: 576px) {
-  .Social {
-    bottom: 12%;
-    margin: 0;
-  }
-
-  .social-icons {
-    margin-bottom: 1rem;
-  }
-
-  .consultation {
-    letter-spacing: 1px;
-  }
-}
-
 @media (max-height: 800px) {
   .Social {
     top: 30%;
@@ -51,5 +36,21 @@
   .consultation {
     top: 8%;
     right: 1.5%;
+  }
+}
+
+@media (max-width: 576px) {
+  .Social {
+    top: auto;
+    bottom: 12%;
+    margin: 0;
+  }
+
+  .social-icons {
+    margin-bottom: 1rem;
+  }
+
+  .consultation {
+    letter-spacing: 1px;
   }
 }
