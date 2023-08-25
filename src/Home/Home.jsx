@@ -593,7 +593,7 @@ export default function Home({ isSmallScreen }) {
         </div>
       )}
 
-      <div className="bg-black container-fluid h-75 d-flex flex-column">
+      <div className="testimonials-container bg-black container-fluid d-flex flex-column">
         <div
           className="container-fluid w-75 d-flex flex-column"
           data-aos="fade-up"

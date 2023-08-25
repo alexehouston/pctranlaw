@@ -119,6 +119,10 @@
   font-weight: 500;
 }
 
+.testimonials-container {
+  height: 75%;
+}
+
 .testimonial {
   border: 1px solid var(--pctgold);
   background: radial-gradient(
@@ -208,6 +212,10 @@ iframe .formFooter-heightMask {
 
   #ContactUs {
     scroll-margin-top: 10rem;
+  }
+
+  .testimonials-container {
+    height: 80%;
   }
 }
 
