@@ -186,10 +186,6 @@ iframe .formFooter-heightMask {
     left: 15%;
   }
 
-  .home-services {
-    flex-direction: column;
-  }
-
   .about-text {
     font-size: 1vw;
   }
@@ -218,6 +214,10 @@ iframe .formFooter-heightMask {
     letter-spacing: 2px;
     font-size: 1.5rem !important;
   }
+
+  .testimonial {
+    margin: 0 2rem;
+  }
 }
 
 @media (max-height: 800px) {
@@ -227,7 +227,7 @@ iframe .formFooter-heightMask {
   }
 
   .practices-container {
-    height: 150% !important;
+    height: 140% !important;
   }
 
   #ContactUs {
@@ -252,6 +252,7 @@ iframe .formFooter-heightMask {
   .home-services {
     padding: 0;
     display: flex;
+    flex-direction: column;
     align-items: center;
   }
 
