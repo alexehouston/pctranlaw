@@ -23,7 +23,7 @@
 
 @media (max-width: 576px) {
   .Social {
-    margin-bottom: 0;
+    margin-bottom: 5rem;
   }
 
   .social-icons {
@@ -31,7 +31,6 @@
   }
 
   .consultation {
-    margin-bottom: 8rem;
     letter-spacing: 1px;
   }
 }
