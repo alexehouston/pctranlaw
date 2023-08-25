@@ -13,12 +13,12 @@
   transform: scale(1.3);
 }
 
-.consultation { 
-    top: 10%;
-    right: 2.5%;
-    z-index: 999;
-    font-weight: 500;
-    letter-spacing: 2px;
+.consultation {
+  top: 10%;
+  right: 2.5%;
+  z-index: 999;
+  font-weight: 500;
+  letter-spacing: 2px;
 }
 
 @media (max-width: 576px) {
@@ -37,7 +37,11 @@
 }
 
 @media (max-height: 800px) {
-    .consultation {
-        top: 12%;
-    }
+  .Social {
+    margin-bottom: 14rem;
+  }
+
+  .consultation {
+    top: 12%;
+  }
 }
