@@ -11,7 +11,7 @@ export default function Social({ isSmallScreen }) {
         <div className="Social d-flex flex-column align-items-center justify-content-center position-fixed bottom-0 w-100">
           <div className="social-icons w-100 d-flex justify-content-center animate__animated animate__fadeInUp animate__slower">
             <a
-              className="social-icon btn-hover mx-4 bg-dark rounded-pill"
+              className="social-icon btn-hover mx-4 bg-black rounded-pill"
               href="https://www.instagram.com/pctlawfirm/"
               target="_blank"
               rel="noreferrer"
@@ -22,7 +22,7 @@ export default function Social({ isSmallScreen }) {
               />
             </a>
             <a
-              className="social-icon btn-hover mx-4 bg-dark rounded-pill"
+              className="social-icon btn-hover mx-4 bg-black rounded-pill"
               href=""
               target="_blank"
               rel="noreferrer"
@@ -33,7 +33,7 @@ export default function Social({ isSmallScreen }) {
               />
             </a>
             <a
-              className="social-icon btn-hover mx-4 bg-dark rounded-pill"
+              className="social-icon btn-hover mx-4 bg-black rounded-pill"
               href="mailto:contact@pctranlaw.com?subject=PCT Law Inquiry"
             >
               <FontAwesomeIcon
@@ -43,46 +43,56 @@ export default function Social({ isSmallScreen }) {
             </a>
           </div>
           <a
-            className="consultation social-icon btn-hover mx-4 bg-dark rounded-pill text-white text-center text-uppercase py-2 px-4 animate__animated animate__fadeInUp animate__slower"
+            className="consultation social-icon btn-hover mx-4 bg-black rounded-pill text-white text-center text-uppercase py-2 px-4 animate__animated animate__fadeInUp animate__slower"
             href="mailto:contact@pctranlaw.com?subject=PCT Law Inquiry"
           >
-            Free Consultation <FontAwesomeIcon className="text-pink" icon={faChevronRight}/>
+            Free Consultation{" "}
+            <FontAwesomeIcon className="text-pink" icon={faChevronRight} />
           </a>
         </div>
       ) : (
-        <div className="Social position-fixed bottom-0 d-flex flex-column animate__animated animate__fadeInLeft animate__slower">
+        <>
+          <div className="Social position-fixed bottom-0 d-flex flex-column animate__animated animate__fadeInLeft animate__slower">
+            <a
+              className="btn-hover mx-4 mb-5"
+              href=""
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FontAwesomeIcon
+                icon={faFacebook}
+                className="social-icon btn-hover fs-4 p-2 text-white bg-black rounded-pill"
+              />
+            </a>
+            <a
+              className="btn-hover mx-4 mb-5"
+              href="https://www.instagram.com/pctlawfirm/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FontAwesomeIcon
+                icon={faInstagram}
+                className="social-icon btn-hover fs-4 p-2 text-white bg-black rounded-pill"
+              />
+            </a>
+            <a
+              className="btn-hover mx-4 mb-5"
+              href="mailto:contact@pctranlaw.com?subject=PCT Law Inquiry"
+            >
+              <FontAwesomeIcon
+                icon={faEnvelope}
+                className="social-icon btn-hover fs-4 p-2 text-white bg-black rounded-pill"
+              />
+            </a>
+          </div>
           <a
-            className="btn-hover mx-4 mb-5"
-            href=""
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FontAwesomeIcon
-              icon={faFacebook}
-              className="social-icon btn-hover fs-4 p-2 text-white bg-dark rounded-pill"
-            />
-          </a>
-          <a
-            className="btn-hover mx-4 mb-5"
-            href="https://www.instagram.com/pctlawfirm/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FontAwesomeIcon
-              icon={faInstagram}
-              className="social-icon btn-hover fs-4 p-2 text-white bg-dark rounded-pill"
-            />
-          </a>
-          <a
-            className="btn-hover mx-4 mb-5"
+            className="consultation position-fixed contact-btn border border-dark btn-hover mx-4 bg-black rounded-pill text-white text-center text-uppercase fs-5 py-2 px-4 animate__animated animate__fadeInLeft animate__slower"
             href="mailto:contact@pctranlaw.com?subject=PCT Law Inquiry"
           >
-            <FontAwesomeIcon
-              icon={faEnvelope}
-              className="social-icon btn-hover fs-4 p-2 text-white bg-dark rounded-pill"
-            />
+            Free Consultation{" "}
+            <FontAwesomeIcon className="text-pink" icon={faChevronRight} />
           </a>
-        </div>
+        </>
       )}
     </>
   );
