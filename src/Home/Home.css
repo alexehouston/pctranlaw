@@ -2,6 +2,7 @@
   background-image: url("/assets/priscilla_home.jpg");
   background-size: cover;
   background-position: center;
+  height: 100%;
 }
 
 .home-landing-inner {
@@ -23,6 +24,11 @@
 .home-btn {
   letter-spacing: 5px;
   font-size: 1.25rem;
+}
+
+.home-services {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .practices-container {
@@ -88,6 +94,7 @@
 .about-text {
   font-size: 1.2rem;
   text-align: justify;
+  padding: 1rem;
 }
 
 .home-contact {
@@ -179,6 +186,10 @@ iframe .formFooter-heightMask {
     left: 15%;
   }
 
+  .home-services {
+    flex-direction: column;
+  }
+
   .about-text {
     font-size: 1vw;
   }
@@ -216,7 +227,7 @@ iframe .formFooter-heightMask {
   }
 
   .practices-container {
-    height: 120% !important;
+    height: 150% !important;
   }
 
   #ContactUs {
@@ -225,6 +236,79 @@ iframe .formFooter-heightMask {
 
   .testimonials-container {
     height: 80%;
+  }
+}
+
+@media (max-width: 850px) {
+  .home-landing {
+    background-image: url("/assets/priscilla_home_mobile.jpg");
+    height: 150%;
+  }
+
+  .home-landing {
+    margin-top: -10rem;
+  }
+
+  .home-services {
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+
+  .practices-container {
+    height: 123% !important;
+  }
+
+  .practices {
+    width: 75% !important;
+    margin: 2rem;
+  }
+
+  .home-about {
+    margin-top: -15rem;
+  }
+
+  .about-priscilla {
+    font-size: 1.75rem;
+  }
+
+  .about-text {
+    font-size: 0.9rem;
+    overflow: visible;
+    overflow-y: scroll;
+    height: 15rem;
+    padding: 0 !important;
+  }
+
+  .contact-inner {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .contact-inner > div:first-child > div:first-child {
+    align-items: center !important;
+  }
+
+  .contact-inner > div:nth-child(2) {
+    width: 100%;
+    margin: 4rem 0;
+  }
+
+  .testimonials-container {
+    height: 105%;
+  }
+
+  .testimonials-inner {
+    flex-direction: column;
+  }
+
+  .testimonial {
+    width: 100% !important;
+    margin: 1.5rem 0 !important;
+  }
+
+  .card-body img {
+    width: 30% !important;
   }
 }
 

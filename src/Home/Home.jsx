@@ -34,7 +34,7 @@ export default function Home({ isSmallScreen }) {
           </h1>
         </div>
       ) : (
-        <div className="home-landing home-text animate__animated animate__fadeInUp animate__slow h-100">
+        <div className="home-landing home-text animate__animated animate__fadeInUp animate__slow">
           <div className="home-landing-inner position-absolute d-flex flex-column align-items-center">
             <Logo />
             <img
@@ -121,7 +121,7 @@ export default function Home({ isSmallScreen }) {
             <h1 className="py-5 text-uppercase text-thin">
               Our Practice Areas
             </h1>
-            <div className="py-5 home-services d-flex justify-content-around">
+            <div className="home-services d-flex justify-content-around">
               <div
                 className="practices floating bg-white btn-hover rounded py-4"
                 data-bs-toggle="modal"
@@ -210,22 +210,22 @@ export default function Home({ isSmallScreen }) {
           className="home-about w-75 mx-auto bg-white shadow px-5 rounded"
           data-aos="fade-up"
         >
+          <h1 className="pt-5 pb-4 text-uppercase text-center">
+            <div className="about-priscilla">
+              <span className="text-thin">About Attorney</span> Priscilla C.
+              Tran
+            </div>
+          </h1>
           <div className="row pb-4">
-            <h1 className="pt-5 pb-4 text-uppercase text-center">
-              <div className="about-priscilla">
-                <span className="text-thin">About Attorney</span> Priscilla C.
-                Tran
-              </div>
-            </h1>
-            <div className="about-photo col-lg-4 d-flex align-items-center">
+            <div className="about-photo col-sm-5 col-md-5 col-lg-4 d-flex align-items-center">
               <img
                 className="w-100 rounded shadow"
                 src="/assets/headshots/priscilla_2_cropped.jpg"
                 alt="Attorney Priscilla C. Tran"
               />
             </div>
-            <div className="col-12 col-lg-8 d-flex align-items-center">
-              <p className="about-text m-0 p-3">
+            <div className="col-sm-7 col-md-7 col-lg-8 d-flex align-items-center">
+              <p className="about-text m-0">
                 <b>Attorney Priscilla C. Tran</b> lorem ipsum dolor sit amet,
                 consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                 labore et dolore magna aliqua. Enim nulla aliquet porttitor
@@ -459,8 +459,8 @@ export default function Home({ isSmallScreen }) {
         >
           <h1 className="py-5 text-uppercase text-thin">Contact Us</h1>
           <div className="col-12">
-            <div className="row mx-auto">
-              <div className="col-5 p-0 d-flex-column justify-content-between">
+            <div className="contact-inner row mx-auto">
+              <div className="col-sm-12 col-md-12 col-lg-5 p-0 d-flex-column justify-content-between">
                 <div className="h-100 d-flex flex-column justify-content-between text-uppercase">
                   <a
                     href="tel:8327766969"
@@ -666,7 +666,7 @@ export default function Home({ isSmallScreen }) {
           <h1 className="mt-4 py-5 text-uppercase text-white text-thin">
             Client Testimonials
           </h1>
-          <div className="mt-2 d-flex justify-content-between">
+          <div className="testimonials-inner mt-2 d-flex justify-content-between">
             {isSmallScreen ? (
               <>
                 <div id="testimonialCarousel" className="carousel slide">
@@ -765,7 +765,7 @@ export default function Home({ isSmallScreen }) {
                     </h5>
                   </div>
                 </div>
-                <div className="card testimonial floating text-white mx-5">
+                <div className="card testimonial floating text-white">
                   <div className="card-body text-center p-4">
                     <img
                       className="w-50"

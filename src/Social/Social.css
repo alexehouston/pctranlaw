@@ -46,3 +46,10 @@
     right: 1.5%;
   }
 }
+
+@media (max-width: 850px) {
+  .consultation {
+    top: 8%;
+    right: 1.5%;
+  }
+}
