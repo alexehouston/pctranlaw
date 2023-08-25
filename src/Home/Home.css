@@ -193,6 +193,11 @@ iframe .formFooter-heightMask {
 }
 
 @media (max-height: 800px) {
+  .home-landing-inner {
+    left: 12%;
+    top: 12%;
+  }
+
   .practices-container {
     height: 120% !important;
   }
