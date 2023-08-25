@@ -86,7 +86,7 @@ export default function Social({ isSmallScreen }) {
             </a>
           </div>
           <a
-            className="consultation position-fixed contact-btn border border-dark btn-hover mx-4 bg-black rounded-pill text-white text-center text-uppercase py-2 px-4 animate__animated animate__fadeInLeft animate__slower"
+            className="consultation position-fixed contact-btn border border-dark btn-hover mx-4 bg-black rounded-pill text-white text-center text-uppercase py-2 px-4 animate__animated animate__fadeInRight animate__slower"
             href="mailto:contact@pctranlaw.com?subject=PCT Law Inquiry"
           >
             Free Consultation{" "}
