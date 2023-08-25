@@ -94,8 +94,12 @@
   box-shadow: var(--pct-pink-shadow);
 }
 
+#ContactUs h4 {
+  letter-spacing: 3px;
+}
+
 .contact-img {
-  margin-top: -3rem;
+  margin-top: -7rem;
 }
 
 .modal-btn {
@@ -153,11 +157,6 @@ iframe .formFooter-heightMask {
   .home-landing-inner {
     left: 15%;
   }
-
-  /* .about-text {
-    overflow-y: scroll;
-    height: 25rem;
-  } */
 
   .card-text-desktop {
     font-size: 1.7vmin;
