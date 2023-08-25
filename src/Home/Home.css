@@ -342,7 +342,10 @@ iframe .formFooter-heightMask {
 
   .home-services {
     flex-direction: column !important;
-    row-gap: 3rem;
+  }
+
+  .practices {
+    width: 100% !important;
   }
 
   .home-about {
