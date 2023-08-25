@@ -35,6 +35,7 @@ export default function Home({ isSmallScreen }) {
         </div>
       ) : (
         <div className="home-landing home-text animate__animated animate__fadeInUp animate__slow">
+          <div className="licensed-in position-absolute text-uppercase">Licensed in Minnesota & Texas</div>
           <div className="home-landing-inner position-absolute d-flex flex-column align-items-center">
             <Logo />
             <img
