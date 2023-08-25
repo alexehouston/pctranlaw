@@ -113,7 +113,7 @@ export default function Home({ isSmallScreen }) {
           </div>
         </div>
       ) : (
-        <div className="container-fluid p-0 h-100 bg-black mb-5">
+        <div className="practices-container container-fluid p-0 bg-black mb-5">
           <div
             className="container-fluid p-0 w-75 text-white"
             data-aos="fade-up"
@@ -121,9 +121,9 @@ export default function Home({ isSmallScreen }) {
             <h1 className="py-5 text-uppercase text-thin">
               Our Practice Areas
             </h1>
-            <div className="py-5 mt-5 home-services d-flex justify-content-around">
+            <div className="py-5 home-services d-flex justify-content-around">
               <div
-                className="practices floating bg-white btn-hover rounded py-2"
+                className="practices floating bg-white btn-hover rounded py-4"
                 data-bs-toggle="modal"
                 data-bs-target="#personalInjuryModal"
               >
@@ -140,7 +140,7 @@ export default function Home({ isSmallScreen }) {
                 </p>
               </div>
               <div
-                className="practices floating btn-hover rounded py-2"
+                className="practices floating btn-hover rounded py-4"
                 data-bs-toggle="modal"
                 data-bs-target="#intellectualPropertyModal"
               >
@@ -157,7 +157,7 @@ export default function Home({ isSmallScreen }) {
                 </p>
               </div>
               <div
-                className="practices floating btn-hover rounded py-2"
+                className="practices floating btn-hover rounded py-4"
                 data-bs-toggle="modal"
                 data-bs-target="#businessLawModal"
               >
@@ -434,7 +434,7 @@ export default function Home({ isSmallScreen }) {
                         rel="noreferrer"
                         className="text-black"
                       >
-                        <p>
+                        <p className="underline-animation">
                           5718 Westheimer Road
                           <br />
                           Suite 1000-1125
@@ -465,7 +465,7 @@ export default function Home({ isSmallScreen }) {
                     src="/assets/headshots/priscilla_3_transparent.png"
                   />
                 </div>
-                <div className="d-flex justify-content-center text-center gold-plate w-75 p-5 rounded mx-auto mb-5 shadow text-white">
+                <div className="contact-form d-flex justify-content-center text-center gold-plate p-5 rounded mx-auto mb-5 shadow text-white">
                   <form
                     className="text-center col-12"
                     name="contact"
@@ -523,11 +523,11 @@ export default function Home({ isSmallScreen }) {
                       </legend>
                       <div className="row">
                         <div className="col-4">
-                          <label className="wpforms-field-label-inline">
+                          <label className="wpforms-field-label-inline txt-shadow">
                             <input
                               type="checkbox"
-                              className="form-check-input me-2 txt-shadow"
-                              name="preferredMethod[]"
+                              className="form-check-input me-2"
+                              name="contact-method"
                               value="Call"
                             />
                             <FontAwesomeIcon
@@ -538,11 +538,11 @@ export default function Home({ isSmallScreen }) {
                           </label>
                         </div>
                         <div className="col-4">
-                          <label className="wpforms-field-label-inline">
+                          <label className="wpforms-field-label-inline txt-shadow">
                             <input
                               type="checkbox"
-                              className="form-check-input me-2 txt-shadow"
-                              name="preferredMethod[]"
+                              className="form-check-input me-2"
+                              name="contact-method"
                               value="Text"
                             />
                             <FontAwesomeIcon
@@ -553,11 +553,11 @@ export default function Home({ isSmallScreen }) {
                           </label>
                         </div>
                         <div className="col-4">
-                          <label className="wpforms-field-label-inline">
+                          <label className="wpforms-field-label-inline txt-shadow">
                             <input
                               type="checkbox"
-                              className="form-check-input me-2 txt-shadow"
-                              name="preferredMethod[]"
+                              className="form-check-input me-2"
+                              name="contact-method"
                               value="Email"
                             />
                             <FontAwesomeIcon

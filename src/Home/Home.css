@@ -25,6 +25,10 @@
   font-size: 1.25rem;
 }
 
+.practices-container {
+  height: 100%;
+}
+
 .practices {
   border: 1px solid var(--pctgold);
   background: radial-gradient(
@@ -44,7 +48,7 @@
       #5d4a1f 100%
     );
   box-shadow: 0 0 2px #fff, 0 0 5px #fff, 0 0 20px var(--pctpink);
-  width: 18rem;
+  width: 25%;
 }
 
 .practices p {
@@ -100,6 +104,10 @@
 
 .contact-img {
   margin-top: -7rem;
+}
+
+.contact-form {
+  width: 85%;
 }
 
 .modal-btn {
@@ -166,15 +174,17 @@ iframe .formFooter-heightMask {
     font-size: 1.3rem !important;
   }
 
+  .practices-container {
+    height: 90% !important;
+  }
+
   .practices {
     width: 28%;
-    height: 100%;
   }
 
   .practices p {
     letter-spacing: 2px;
-    font-size: 1.25rem !important;
-    
+    font-size: 1.5rem !important;
   }
 }
 
