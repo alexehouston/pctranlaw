@@ -24,7 +24,9 @@ export default function Home({ isSmallScreen }) {
     <>
       {isSmallScreen ? (
         <div className="home-landing d-flex flex-column align-items-center home-text animate__animated animate__fadeInUp animate__slow pt-5">
-          <div className="licensed-in mt-3 text-uppercase"><small>Licensed in Minnesota & Texas</small></div>
+          <div className="licensed-in mt-3 text-uppercase">
+            <small>Licensed in Minnesota & Texas</small>
+          </div>
           <Logo />
           <img
             className="home-title pb-2 responsive-image pt-3"
@@ -36,7 +38,9 @@ export default function Home({ isSmallScreen }) {
         </div>
       ) : (
         <div className="home-landing home-text animate__animated animate__fadeInUp animate__slow">
-          <div className="licensed-in position-absolute text-uppercase">Licensed in Minnesota & Texas</div>
+          <div className="licensed-in position-absolute text-uppercase">
+            Licensed in Minnesota & Texas
+          </div>
           <div className="home-landing-inner position-absolute d-flex flex-column align-items-center">
             <Logo />
             <img
@@ -191,18 +195,17 @@ export default function Home({ isSmallScreen }) {
             </h1>
             <div className="mx-auto pt-4">
               <p className="text-center">
-                <span className="fs-2 lh-1">Lorem</span> ipsum dolor sit amet,
-                consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                labore et dolore magna aliqua. Enim nulla aliquet porttitor
-                lacus. Eleifend mi in nulla posuere sollicitudin aliquam
-                ultrices sagittis. Viverra nam libero justo laoreet sit amet
-                cursus. Proin nibh nisl condimentum id venenatis a condimentum.
-                Massa tincidunt dui ut ornare. Lorem donec massa sapien faucibus
-                et molestie ac feugiat sed.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim
+                nulla aliquet porttitor lacus. Eleifend mi in nulla posuere
+                sollicitudin aliquam ultrices sagittis. Viverra nam libero justo
+                laoreet sit amet cursus. Proin nibh nisl condimentum id
+                venenatis a condimentum. Massa tincidunt dui ut ornare. Lorem
+                donec massa sapien faucibus et molestie ac feugiat sed.
               </p>
               <img
                 className="w-100"
-                src="/assets/headshots/priscilla_2_transparent.png"
+                src="/assets/headshots/priscilla_1_transparent.png"
               />
             </div>
           </div>
@@ -222,7 +225,7 @@ export default function Home({ isSmallScreen }) {
             <div className="about-photo col-sm-5 col-md-5 col-lg-4 d-flex align-items-center">
               <img
                 className="w-100 rounded shadow"
-                src="/assets/headshots/priscilla_2_cropped.jpg"
+                src="/assets/headshots/priscilla_1_edit.jpg"
                 alt="Attorney Priscilla C. Tran"
               />
             </div>
@@ -338,7 +341,7 @@ export default function Home({ isSmallScreen }) {
                     </div>
                   </div>
                   <fieldset className="mb-4">
-                    <legend className="fs-5 pb-1">
+                    <legend className="fs-6 pb-1">
                       Select a preferred method of contact
                     </legend>
                     <div className="row">
@@ -350,11 +353,13 @@ export default function Home({ isSmallScreen }) {
                             name="contact-method"
                             value="Call"
                           />
-                          <FontAwesomeIcon
-                            className="text-pink"
-                            icon={faPhone}
-                          />{" "}
-                          Call
+                          <small>
+                            <FontAwesomeIcon
+                              className="text-pink"
+                              icon={faPhone}
+                            />{" "}
+                            Call
+                          </small>
                         </label>
                       </div>
                       <div className="col-4">
@@ -365,11 +370,13 @@ export default function Home({ isSmallScreen }) {
                             name="contact-method"
                             value="Text"
                           />
-                          <FontAwesomeIcon
-                            className="text-pink"
-                            icon={faPhone}
-                          />{" "}
-                          Text
+                          <small>
+                            <FontAwesomeIcon
+                              className="text-pink"
+                              icon={faPhone}
+                            />{" "}
+                            Text
+                          </small>
                         </label>
                       </div>
                       <div className="col-4">
@@ -380,11 +387,13 @@ export default function Home({ isSmallScreen }) {
                             name="contact-method"
                             value="Email"
                           />
-                          <FontAwesomeIcon
-                            className="text-pink"
-                            icon={faEnvelope}
-                          />{" "}
-                          Email
+                          <small>
+                            <FontAwesomeIcon
+                              className="text-pink"
+                              icon={faEnvelope}
+                            />{" "}
+                            Email
+                          </small>
                         </label>
                       </div>
                     </div>

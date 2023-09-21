@@ -1,5 +1,5 @@
 .home-landing {
-  background-image: url("/assets/priscilla_home.jpg");
+  background-image: url("/assets/lady-justice-home.jpg");
   background-size: cover;
   background-position: center;
   height: 100%;
@@ -323,7 +323,7 @@ iframe .formFooter-heightMask {
 
 @media (max-width: 576px) {
   .home-landing {
-    background-image: url("/assets/priscilla_home_mobile.jpg");
+    background-image: url("/assets/lady-justice-home-mobile.jpg");
     height: 95%;
     margin: 0;
   }
@@ -366,7 +366,7 @@ iframe .formFooter-heightMask {
   }
 
   .testimonials-container {
-    height: 80%;
+    height: 70%;
   }
 
   .card {
