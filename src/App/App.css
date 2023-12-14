@@ -110,13 +110,29 @@ li {
       #5d4a1f 62.5%,
       #5d4a1f 100%
     );
+  box-shadow: 0 0 2px #fff, 0 0 5px #fff, 0 0 20px var(--pctpink);
 }
 
-.pink-plate {
-  border-color: #D9A3A9;
-  background: linear-gradient(180deg,#FFE6E9 0%,#DDA6AE 49%, #B76E79 51%,#DDA6AE 100%);
+.btn-shadow {
+  box-shadow: var(--pct-pink-shadow);
 }
 
 .txt-shadow {
   text-shadow: 0px 0px 10px #000 !important;
+}
+
+.floating {
+  animation: floating 3s ease-in-out infinite;
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 15px);
+  }
+  100% {
+    transform: translate(0, -0px);
+  }
 }

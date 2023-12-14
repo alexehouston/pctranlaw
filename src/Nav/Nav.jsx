@@ -8,15 +8,15 @@ import "./Nav.css";
 
 export default function Nav({ isSmallScreen }) {
   return (
-    <div className="Nav animate__animated animate__fadeInDown animate__slow bg-black container-fluid border-bottom border-dark">
+    <div className="Nav navbar fixed-top py-0 animate__animated animate__fadeInDown animate__slow bg-black container-fluid border-bottom border-dark">
       {isSmallScreen ? (
         <ul className="col-12 mx-auto d-flex justify-content-center flex-wrap align-items-center m-0 p-0 py-2">
-          <li className="nav-link text-uppercase">
+          <li className="nav-link h-100 text-uppercase">
             <a href="#" className="text-white underline-animation pt-1 my-2">
               <FontAwesomeIcon icon={faHouse} />
             </a>
           </li>
-          <li className="nav-link text-uppercase">
+          <li className="nav-link h-100 text-uppercase">
             <div className="dropdown underline-animation pt-1 my-2 mx-4 d-flex align-items-center">
               <a
                 className="dropdown-toggle underline-animation text-white"
@@ -60,7 +60,7 @@ export default function Nav({ isSmallScreen }) {
               </ul>
             </div>
           </li>
-          <li className="nav-link text-uppercase">
+          <li className="nav-link h-100 text-uppercase">
           <div className="dropdown underline-animation pt-1 my-2 d-flex align-items-center">
               <a
                 className="dropdown-toggle underline-animation text-white"
@@ -101,12 +101,12 @@ export default function Nav({ isSmallScreen }) {
         </ul>
       ) : (
         <ul className="nav-links col-11 col-lg-10 mx-auto d-flex justify-content-between align-items-center m-0 py-2">
-          <li className="nav-link text-uppercase">
+          <li className="nav-link h-100 text-uppercase">
             <a href="#" className="nav-link-a text-white underline-animation my-2">
               <FontAwesomeIcon icon={faHouse} />
             </a>
           </li>
-          <li className="nav-link text-uppercase">
+          <li className="nav-link h-100 text-uppercase">
             <div className="dropdown underline-animation my-2 d-flex align-items-center">
               <a
                 className="dropdown-toggle underline-animation text-white"
@@ -150,7 +150,7 @@ export default function Nav({ isSmallScreen }) {
               </ul>
             </div>
           </li>
-          <li className="nav-link text-uppercase">
+          <li className="nav-link h-100 text-uppercase">
             <div className="dropdown underline-animation my-2 d-flex align-items-center">
               <a
                 className="dropdown-toggle underline-animation text-white"
@@ -176,7 +176,7 @@ export default function Nav({ isSmallScreen }) {
               </ul>
             </div>
           </li>
-          <li className="nav-link text-uppercase">
+          <li className="nav-link h-100 text-uppercase">
             <a
               href="#ContactUs"
               className="nav-link-a text-white underline-animation my-2"

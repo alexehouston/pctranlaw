@@ -1,0 +1,17 @@
+#ContactUs h4 {
+  letter-spacing: 3px;
+  border-bottom: 2px solid var(--pctgold);
+}
+
+.contact-img {
+  margin-top: -7rem;
+}
+
+.modal-btn {
+  letter-spacing: 3px;
+  font-weight: 500;
+}
+
+#ContactUs {
+  scroll-margin-top: 10rem;
+}

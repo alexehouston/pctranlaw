@@ -10,7 +10,7 @@ import "./ContactBar.css";
 
 export default function ContactBar() {
   return (
-    <div className="ContactBar container-fluid bg-black m-0 py-2 px-0 position-fixed bottom-0 animate__animated animate__fadeInUp animate__slow border-top border-dark">
+    <div className="container-fluid bg-black m-0 py-2 px-0 navbar fixed-bottom animate__animated animate__fadeInUp animate__slow border-top border-dark">
       <Marquee
         className="d-flex justify-content-between"
         pauseOnClick

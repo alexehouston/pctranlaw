@@ -1,0 +1,28 @@
+.home-about {
+    background: linear-gradient(
+    to bottom,
+    #000 0%,
+    #000 50%,
+    #fff 50%,
+    #fff 100%
+  );
+}
+
+.about-text {
+  font-size: 1.2rem;
+  text-align: justify;
+  padding: 1rem;
+}
+
+.about-priscilla {
+  border-bottom: 3px solid var(--pctpink);
+}
+
+@media (max-width: 850px) {
+  .about-text {
+    overflow: visible;
+    overflow-y: scroll;
+    height: 20rem;
+    padding: 0 !important;
+  }
+}
