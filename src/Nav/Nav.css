@@ -45,19 +45,12 @@
   }
 }
 
-@media (max-width: 1000px) {
-  .nav-links {
-    padding: 0 !important;
-  }
-}
-
 @media (max-width: 576px) {
   .nav-link a {
     font-size: 0.8rem;
   }
 
-  .pct-logo {
-    margin-top: 2rem;
-    margin-bottom: 1rem;
+  .nav-links {
+    line-height: 2;
   }
 }

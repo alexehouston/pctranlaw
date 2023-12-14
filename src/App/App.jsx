@@ -27,11 +27,10 @@ export default function App() {
   return (
     <div className="container-fluid p-0 vh-100">
       <ContactBar />
-      {/* <Logo /> */}
-      <Nav isSmallScreen={isSmallScreen} />
-      <Home isSmallScreen={isSmallScreen} />
+      <Nav />
+      <Home />
       <Social isSmallScreen={isSmallScreen} />
-      <Footer isSmallScreen={isSmallScreen} />
+      <Footer />
     </div>
   );
 }
