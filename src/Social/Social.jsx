@@ -8,34 +8,34 @@ export default function Social() {
     <>
       <div className="social-icon-container position-fixed d-flex">
         <a
-          className="btn-hover mb-lg-5 mx-5 mx-lg-4"
+          className="btn-hover mb-lg-5 mx-4 bg-black rounded-pill border border-dark btn-shadow btn-hover lh-1"
           href=""
           target="_blank"
           rel="noreferrer"
         >
           <FontAwesomeIcon
             icon={faFacebook}
-            className="social-icon btn-shadow btn-hover border border-dark fs-3 p-2 text-white bg-black rounded-pill"
+            className="social-icon fs-3 p-2 text-white"
           />
         </a>
         <a
-          className="btn-hover mb-lg-5 mx-5 mx-lg-4"
+          className="btn-hover mb-lg-5 mx-4 bg-black rounded-pill border border-dark btn-shadow btn-hover lh-1"
           href="https://www.instagram.com/pctlawfirm/"
           target="_blank"
           rel="noreferrer"
         >
           <FontAwesomeIcon
             icon={faInstagram}
-            className="social-icon btn-shadow btn-hover border border-dark fs-3 p-2 text-white bg-black rounded-pill"
+            className="social-icon fs-3 p-2 text-white"
           />
         </a>
         <a
-          className="btn-hover mb-lg-5 mx-5 mx-lg-4"
+          className="btn-hover mb-lg-5 mx-4 bg-black rounded-pill border border-dark btn-shadow btn-hover lh-1"
           href="mailto:contact@pctranlaw.com?subject=PCT Law Inquiry"
         >
           <FontAwesomeIcon
             icon={faEnvelope}
-            className="social-icon btn-shadow btn-hover border border-dark fs-3 p-2 text-white bg-black rounded-pill"
+            className="social-icon fs-3 p-2 text-white"
           />
         </a>
       </div>
