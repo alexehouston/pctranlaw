@@ -26,13 +26,13 @@
 
 @media (max-width: 567px) {
   .social-icon-container {
-    bottom: 18%;
+    bottom: 20%;
   }
 
   .consultation {
     top: auto;
     right: auto;
-    bottom: 10%;
+    bottom: 12%;
     display: flex;
     width: 100vw;
     justify-content: center;
