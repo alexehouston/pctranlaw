@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import Logo from "../Logo/Logo";
 import Practices from "../Practices/Practices";
+import Social from "../Social/Social";
 import About from "../About/About";
 import Contact from "../Contact/Contact";
 import Testimonials from "../Testimonials/Testimonials";
@@ -17,6 +18,7 @@ export default function Home() {
 
   return (
     <>
+      <Social />
       <div className="container-fluid home-landing home-text animate__animated animate__fadeInUp animate__slow">
         <div className="container">
           <div className="row vh-100 d-flex align-items-center">
