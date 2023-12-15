@@ -10,7 +10,7 @@
   left: 2.5%;
   font-weight: 500;
   letter-spacing: 1px;
-  border-bottom: 2px solid var(--pctgold)
+  border-bottom: 2px solid var(--pctgold);
 }
 
 .home-subtitle {
@@ -32,6 +32,10 @@
   .home-landing {
     margin-top: -10rem;
   }
+
+  .licensed-in {
+    top: 15%;
+  }
 }
 
 @media (max-width: 576px) {
@@ -48,5 +52,10 @@
     font-size: 1.25rem;
     letter-spacing: 4px;
     line-height: 0;
+  }
+
+  .licensed-in {
+    top: 9%;
+    left: 15%;
   }
 }
